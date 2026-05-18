@@ -59,8 +59,27 @@ def build_system_prompt(analyst_slug: str, wiki_pages: dict[str, str]) -> str:
 """
 
 
+def check_password() -> bool:
+    if st.session_state.get("authenticated"):
+        return True
+    pwd = st.secrets.get("APP_PASSWORD")
+    if not pwd:
+        return True
+    entered = st.text_input("Password", type="password", key="pw_input")
+    if st.button("Enter"):
+        if entered == pwd:
+            st.session_state.authenticated = True
+            st.rerun()
+        else:
+            st.error("Incorrect password")
+    return False
+
+
 def main():
     st.set_page_config(page_title="Analyst Brains", page_icon="🧠", layout="wide")
+
+    if not check_password():
+        st.stop()
 
     with st.sidebar:
         st.title("🧠 Analyst Brains")
