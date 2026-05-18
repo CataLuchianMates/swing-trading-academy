@@ -60,12 +60,12 @@ def parse_article_date(href: str) -> datetime | None:
 
 
 def make_filename(title: str, date: datetime) -> str:
-    """Title-YYMMDD.md"""
+    """YYMMDD-title.md"""
     slug = re.sub(r"[^\w\s-]", "", title.lower())
     slug = re.sub(r"[\s_]+", "-", slug).strip("-")
     slug = re.sub(r"-+", "-", slug)[:60]
     date_str = date.strftime("%y%m%d")
-    return f"{slug}-{date_str}.md"
+    return f"{date_str}-{slug}.md"
 
 
 def extract_article_content(html: str, title: str, date: datetime, url: str) -> str:
