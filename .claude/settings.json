@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "llmwiki-lyn-alden": {
+      "command": "/Users/catalinmates/Documents/Personal/swing-trading-academy/analyst-brains/llmwiki/mcp/.venv/bin/python",
+      "args": ["-m", "local_server", "--workspace", "/Users/catalinmates/Documents/Personal/swing-trading-academy/investment_research/lyn-alden"],
+      "env": {
+        "PYTHONPATH": "/Users/catalinmates/Documents/Personal/swing-trading-academy/analyst-brains/llmwiki/mcp"
+      }
+    }
+  }
+}
