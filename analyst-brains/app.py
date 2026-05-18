@@ -13,8 +13,8 @@ WIKI_DIR = PROJECT_ROOT / "wiki"
 PERSONAS_DIR = BRAINS_DIR / "personas"
 
 ANALYSTS = {
-    "Lyn Alden": "lyn_alden",
-    # Add more: "Marlin Capital": "marlin_capital", "Doomberg": "doomberg"
+    "Lyn Alden": "lyn-alden",
+    # Add more: "Marlin Capital": "marlin-capital", "Doomberg": "doomberg"
 }
 
 MODEL = "claude-sonnet-4-20250514"
