@@ -1,172 +1,113 @@
 # Lyn Alden — Bitcoin Framework
 
-> Bitcoin thesis, bull/bear conditions, relationship to liquidity and fiscal deficits, price/timing views, and on-chain indicators. Synthesized from 26 premium newsletters (2025-05-25 through 2026-05-10).
+*Last updated: May 2026. Based on 62 premium newsletter articles (January 2024 – May 2026).*
 
 ---
 
-## Core Framework: Bitcoin as Monetary Premium Asset
+## Why Lyn Holds Bitcoin
 
-Lyn's bitcoin thesis is not primarily about price speculation. It is anchored in **monetary network theory**:
-- Bitcoin is the only cryptocurrency with genuine decentralization (no off switch, no multi-sig admin council)
-- As fiscal deficits grow globally, demand for assets outside the banking system increases
-- Bitcoin benefits from permissionlessness: AI agents need money that doesn't require a bank account; stablecoins serve daily transactions; bitcoin serves as monetary premium / store of value
-- The Lightning network provides the payment layer; Bitcoin base layer provides the settlement finality
+Lyn's bitcoin thesis is not based on technology hype or speculative price targets. It fits within her broader fiscal dominance framework as the purest expression of hard money in the digital age. She makes the following foundational arguments:
 
-**Key distinction from other crypto:**
-> "Bitcoin is the only crypto asset that has actual decentralization. Everything else has an off switch." [2026-04-25-fiscal-re-acceleration.md]
+**1. Fixed supply in a world of infinite fiat:** Bitcoin's supply is capped at 21 million coins with issuance rates set by code, not by committees. After the April 2024 halving, new supply issuance fell to 0.8% annualized — less than gold's stock-to-flow ratio. Unlike gold, which has unknown above-ground reserve estimates and variable mining economics, bitcoin's supply schedule is known exactly in advance.
 
-DeFi, ETH, and most altcoins have centralized governance (multi-sig councils), making them functionally equivalent to a less efficient bank. Lyn is **structurally bearish on all crypto except bitcoin and stablecoins**.
+**2. Correlation with global M2 (83%):** In September 2024, Lyn and Sam Callahan co-published analysis showing bitcoin's 83% correlation with dollar-denominated global M2 over a multi-year window. This confirms that bitcoin primarily behaves as a global liquidity barometer rather than as a technology speculation. When central banks globally expand money supply, bitcoin rises; when they contract, bitcoin falls. This correlation was repeatedly cited and validated throughout the 2024-2026 period.
 
----
+**3. Institutional permanence:** By 2025, bitcoin spot ETFs (especially BlackRock's IBIT) were absorbing hundreds of millions of dollars in daily inflows at peak. Institutional custody solutions, sovereign wealth fund allocations, and the emergence of bitcoin treasury companies created a structurally different demand profile than any prior cycle.
 
-## Bitcoin and Global Liquidity
+**4. AI agent payments:** In the February 2026 report, Lyn introduces a new demand thesis: AI agents operating autonomously will need permissionless payment rails. Bitcoin (and stablecoins) are the natural answer because they require no corporate permission or banking relationship to use. As AI agents proliferate, this creates a structural new demand category.
 
-The most important empirical relationship in Lyn's bitcoin framework:
+**5. Lightning Network adoption:** River Financial's November 2025 data (published in the March 2026 report) showed massive growth in Lightning volumes despite bitcoin's price being flat year-over-year. Average transaction sizes grew dramatically, suggesting the shift from micropayments to moderate-value transfers. Lyn, through her Ego Death Capital venture fund, has direct data confirming even higher volumes than public reports. The network is growing in real utility, not speculative price action.
 
-**Global M2 (aggregate money supply across major economies) has ~0.9 correlation with bitcoin on 12-month timeframes.**
+## Bitcoin vs Other Hedges
 
-This is higher than any other asset class. The reason: bitcoin is the most globally liquid, 24/7 accessible risk asset with no credit risk or jurisdiction restriction. When global money supply expands, the marginal new dollar finds bitcoin easily.
+Lyn holds both gold and bitcoin as hard asset hedges. Her specific differentiation:
 
-> "When global liquidity expands, bitcoin is one of the first assets to respond. When global liquidity contracts, it's one of the first to fall." [A Bank and Tech Barbell, 2025-05-25]
+**Gold:** Long since 2018 at ~$1,500/oz. Held continuously through the entire 2024-2026 period. Gold is the macro hedge: multipolar world, central bank reserve diversification, fiscal dominance. Physical gold has no counterparty risk. Gold's 5,000-year track record as money is an irreplaceable form of trust network. Lyn never sold gold and would not short it.
 
-This is why Lyn uses the Fed's balance sheet, TGA, reverse repo, and global M2 as the primary leading indicators for bitcoin — not price patterns.
+**Bitcoin:** Held alongside gold, not instead of it. Bitcoin is more volatile, more correlated to liquidity cycles, and has different risk characteristics — but in the long run, its fixed supply and global accessibility make it a complement to gold. Bitcoin is "easier to transport than gold, real estate, or equities tied to a specific country" — cited during the Hormuz crisis as a reason for bitcoin's relative stability when Persian Gulf residents may have sought to exit local assets.
 
----
+**Bitcoin vs Ethereum/altcoins:** Lyn is explicitly and persistently bearish on virtually all cryptocurrencies except bitcoin and stablecoins. She published a December 2025 public article "Why Most Cryptocurrencies Won't Accrue Value" summarizing this view. The argument: most crypto is circular speculation (platforms for trading tokens, whose primary use case is to trade more tokens). Ethereum's DeFi ecosystem is characterized by recursive leverage and centralized governance masquerading as decentralization. By April 2026, a major DeFi hack on Ethereum-adjacent protocols, with multiple "decentralized" platforms freezing funds via multi-sig quorum action, confirmed her structural critique.
 
-## Halving Cycle Debunked
+## Bitcoin Price History (2025-2026)
 
-Lyn explicitly argues the four-year halving cycle is no longer a valid framework for timing bitcoin:
+The price history across the 62 articles covers one of the most volatile and narrative-rich periods in bitcoin's history:
 
-- Mining supply is now ~0.8% annual issuance — too small to move price
-- The prior cycles (2012, 2016, 2020) were driven by supply halving when mining represented 5–10%+ of supply
-- Now, price is driven by demand (primarily liquidity-driven) not supply
-- The "cycle clock" thesis gives false precision to an inherently uncertain process
+| Date | Event | Price |
+|------|--------|-------|
+| Jan 2025 | Start of coverage cycle | ~$95-100k |
+| April 9, 2025 | Liberation Day selloff low | ~$75k |
+| May 2025 | New all-time high | $112k |
+| July 2025 | New all-time high | $123k |
+| October 2025 | New all-time high | $126k |
+| Oct 2025 | $19.5B crypto liquidation flash crash (Friday night) | Down sharply from $126k |
+| November 2025 | Bitcoin fell below $90k | ~$85-90k |
+| Nov 22, 2025 | What Lyn called "the low" | ~$82-85k |
+| Dec-Jan 2026 | Choppy sideways recovery | $88-97k range |
+| Late Jan 2026 | Kevin Warsh nomination crash | Sub-$80k |
+| February 6, 2026 | Second attempt at bottom | ~$75-78k |
+| March 2026 | Grinding sideways at $60-70k range | ~$65k average |
+| April 2026 | Long consolidation phase, DCA accumulation zone | $60-70k |
+| April 25, 2026 | New highs since early February | Breaking above prior resistance |
+| May 2026 (latest) | Breaking out above $82k | $82k+ |
 
-> "The four-year halving cycle argument is debunked." [Liquidity Shutdowns, Tariffs, and Earnings, 2025-11-09]
+## On-Chain Indicators Lyn Tracks
 
----
+**MVRV Z-Score (Market Value to Realized Value):** The ratio of bitcoin's market capitalization to its realized capitalization (the cost basis of all coins based on their last movement). When MVRV is extremely high, it means most holders are sitting on large gains and the market is at risk of distribution. When it is low or negative, it means many holders are at or below breakeven — a capitulation zone. Lyn tracked MVRV throughout the 2025 cycle: it remained healthy (not overextended) even at $112k-$126k highs, then reset to "historically average levels" by November 2025 and further to "most oversold in years" by early 2026. The reset of MVRV was a key buy signal.
 
-## Key On-Chain Indicators
+**HODL Wave / Coin Age Distribution:** Tracks what percentage of the supply has been unmoved for 1+ years. At the $126k peak, only ~8% of supply had been mobilized from long-term holders in the entire 2024-2025 bull run — moving the unmoved 1-year+ supply from 70.5% to 62.5%. This is the *smallest distribution* of any prior bitcoin bull market. The implication: holders sold less, which means either conviction is higher, or the institutional holding structure changed, or there is still significant upside potential before the bull market's natural distribution phase completes.
 
-### MVRV Z-Score (Market Value to Realized Value)
-- Compares current price to the average cost basis of all coins on-chain
-- **High MVRV (>3)**: Excessive unrealized profit in market → distribution phase, caution
-- **Low MVRV (<0.5)**: Most coins near or below cost basis → capitulation, buy zone
-- Used by Lyn to identify cycle extremes — not precise timing, but provides conviction ranges
+**Weekly RSI:** Bitcoin's weekly relative strength index fell to "around historical lows" by February 2026 — comparable to the 2022 bear market bottom. Lyn cited this as part of the accumulation case.
 
-During 2025–2026 correction: MVRV reset to historically average levels by Nov 2025, then to near-zero by May 2026 — indicating strong accumulation conditions. [A Look at the AI Hyperscalers, 2025-11-23; Emerging Markets Breakout, 2026-05-10]
+**Perpetual futures funding rates:** At the lows of early 2026, funding rates were negative or flat, meaning leveraged long positions were not present. Clean slate for the next move.
 
-### HODL Wave
-- Percentage of supply not moved in 1+ year = long-term holder base
-- Rising HODL wave = coins leaving exchanges into cold storage = distribution drying up
-- Lyn uses this to gauge "supply exhaustion" — when weakly-held coins rotate to strong hands
+## The "4-Year Cycle" Debate
 
-### mNAV Premium (Bitcoin Treasury Companies)
-- For companies like MicroStrategy (MSTR), mNAV = market cap / value of bitcoin held
-- **mNAV > 2.5x**: Premium signals exhaustion — market is pricing in future BTC purchases at current premium levels, which is unsustainable
-- **GBTC analogy**: Lyn repeatedly warns that when GBTC traded at premium, it was a top signal; when treasury company mNAV is extreme, same dynamic applies
-- Metaplanet (TYO: 3350) was a small buy at **0.97x mNAV** — near-NAV entry [Liquidity Pivot and Banking Update, 2025-10-26]
+One of the recurrent themes in Lyn's bitcoin coverage: she explicitly argues that the 4-year halving cycle is *no longer the dominant driver* of bitcoin prices. In the past, halvings (which reduce new supply by 50%) were highly meaningful because new supply was 4-8% of outstanding supply. After the April 2024 halving, new supply is only 0.8% annually — less than gold, immaterial relative to institutional flows. The cycles now are driven primarily by global liquidity cycles (global M2) and by demand shifts (institutional adoption waves, AI agent demand, treasury company issuance).
 
----
+This matters for reading the 2025-2026 selloff. Many bearish analysts in late 2025 argued the "4-year cycle is over" and that bitcoin would enter a multi-year bear market. Lyn's counter: this selloff was driven by specific negative factors (MSCI delisting MSTR, tight domestic US liquidity, rising Japanese bond yields, Kevin Warsh hawkish fears, and the crypto industry overhang). These were macro-driven corrections, not secular cycle ends.
 
-## MicroStrategy / MSTR Deep Dive
+## Bitcoin Treasury Companies
 
-MSTR is Lyn's most detailed case study for bitcoin treasury companies.
+Lyn analyzed the bitcoin treasury company ecosystem extensively from 2024 through 2026. The key players: MicroStrategy (MSTR, rebranded Strategy in 2025), Nakamoto Holdings, and others.
 
-**MSTR capital structure evolution:**
-- 2020–2024: Primarily convertible bonds to accumulate bitcoin (low-cost debt, bitcoin upside)
-- 2025: Shift to preferred stocks (STRF — "Fortress Income"; STRC — "No Limits"; STRK; STRD)
-- STRF added to Fortress Income portfolio as high-yield income vehicle
+**MSTR mNAV Framework:** Lyn co-developed a publicly referenced framework for MSTR's premium-to-NAV. MicroStrategy holds bitcoin as its primary treasury asset and issues equity/debt to buy more. When MSTR trades at a high premium to NAV, it can issue stock or converts above book value to buy more bitcoin — this is immediately accretive to per-share bitcoin exposure. When it trades at or below NAV, this dynamic reverses. Lyn's rules: trim at ~3x NAV or higher (she trimmed in November 2024 at ~$400/share, equivalent to ~3x NAV at the time); sell cash-secured puts when approaching 2x NAV; trim opportunistically in 2025.
 
-**MSTR stress test (Q2 2025 earnings call):**
-- Lyn asked Saylor about 90%+ bitcoin drawdown survivability
-- Saylor: Convertibles can be retired with bitcoin collateral; preferred stocks have no maturity; company would survive even extreme scenarios
-- Lyn's take: More survivable than most people think, but requires conviction that bitcoin price doesn't stay down permanently
+**Strategy Capital Allocation Framework (mNAV Zones):**
+- Above 4x mNAV: Active equity issuance is maximally accretive
+- 2.5-4x mNAV: Opportunistic issuance only
+- 1-2.5x mNAV: Issuance only for mandatory coupon/dividend payments
+- Below 1x mNAV: Consider equity buybacks
 
-**MSTR cash-secured puts:**
-- Sep 2025: Sold $250–260 Jan 2026 puts as income trade [Precious Metals and Commodities Update, 2025-09-28]
+**MSTR's Structural Shift:** In the August 2025 report, Lyn documents MSTR's shift from convertible bond financing (2024) to preferred stock financing (2025). New instruments: STRF (9% fixed dividend), STRC (9% variable, $100 target redemption), STRK, and STRD. The rationale: preferred stock is "perpetual capital" with no maturity date, unlike convertible bonds that eventually convert or mature. Lyn added STRF to the Fortress Income portfolio and STRC to the No Limits portfolio. She views STRC specifically as competing with money markets for yield-seeking capital.
 
-**MSTR position:**
-- Held in multiple portfolios throughout 2025–2026
-- Not a size bet — "corporate buyer thesis" is compelling but GBTC premium analogy is the warning
+Key stress test: Saylor's stated analysis that even an 80% bitcoin drawdown would not cause MSTR to miss a preferred dividend; a 90% drawdown might cause some temporary suspension but not permanent failure.
 
-[Updates on Tariffs, Liquidity, and Strategy, 2025-08-03; Fed Dilemmas and SLR Updates, 2025-06-22]
+**Nakamoto Holdings:** David Bailey's bitcoin treasury company raised $710M in May 2025. Ego Death Capital (the venture fund Lyn is a partner at) participated in related ecosystem investments.
 
----
+## Macro Conditions for Bitcoin: Bullish vs Bearish
 
-## Bitcoin Price/Timing Views
+**Bullish conditions:**
+- Global M2 expanding (Fed balance sheet growing, dollar weakening, foreign central banks easing)
+- TGA drawdowns (pro-liquidity injections)
+- Fed cutting cycle actively ongoing
+- Bitcoin MVRV below historical average (accumulation zone)
+- HODL wave showing long-term holder accumulation
+- Minimal perpetual futures leverage (no crowded longs to liquidate)
 
-### 2025 Bull Cycle
-| Date | Price | Event |
-|------|-------|-------|
-| May 2025 | $112k | New ATH; Lyn bullish |
-| Jul 2025 | $123k | New ATH; "alt season" commentary |
-| Aug 2025 | Corrects | Caution on near-term, structural bull intact |
-| Nov 2025 | ~$75k | Deepest correction; MVRV reset; "most oversold in years" |
-| Nov 22, 2025 | Bottom | Lyn identifies this as likely cycle bottom |
+**Bearish conditions:**
+- Global M2 contracting (tight Fed, QT, rising dollar)
+- TGA refilling (liquidity drain)
+- Japan tightening aggressively (yen carry trade unwind)
+- MVRV at euphoric extremes (distribution zone)
+- High perpetual futures funding rates (crowded longs vulnerable to flash crashes)
+- Crypto industry contagion (failed platforms or projects creating systematic sell pressure)
 
-### 2026 Bear Phase / Bottom Hunt
-| Date | Price | Lyn's Assessment |
-|------|-------|-----------------|
-| Dec 2025 | Recovering | Base case: Nov 22 bottom holds |
-| Jan 2026 | ~$97k | Brief recovery above $96k then rolled lower |
-| Feb 1, 2026 | Sub-$80k | Nov 22 low breached; new base forming |
-| Feb 6, 2026 | New low | "Worst sentiment since 2017"; structurally bullish intact |
-| Mar 2026 | $60k–$70k | Range; "ideal accumulation period"; grind, not V-bottom |
-| Mar 29, 2026 | $60k–$70k | DCA thesis; $50k–$60k as deeper support |
-| Apr 14, 2026 | ~$71k | "Layer more capital in" |
-| Apr 25, 2026 | ~$78k | "Bottom forming"; fresh high since Feb |
-| May 10, 2026 | $81k | "Bottom likely in"; MVRV near zero |
+Q4 2025 was characterized by multiple simultaneous bearish conditions: QT continued, TGA refilling, Bank of Japan tightening, MSCI announcing MSTR delisting (forcing passive index fund selling). The combination drove bitcoin from $126k to below $90k.
 
-**Consistent pattern:** Lyn never calls a precise bottom but systematically uses MVRV + sentiment + momentum indicators to identify high-probability accumulation zones. [Multiple articles 2025-11-23 through 2026-05-10]
+## Current State (May 2026)
+
+By the May 2026 report, bitcoin had climbed back above $82k — the highest since early February 2026. Lyn's view: "I continue to operate with the base case that the bottom is in. I don't expect explosive upside in the months ahead, but rather expect a long and uncertain grind upward from here." MVRV had fully reset. Most valuation measures were at historical averages. The "fast money" was already out of the market before the Iran war began. Bitcoin outperformed the S&P 500 and gold since the start of the war (March 2026) — not because it's a new safe haven, Lyn cautions, but because sellers were already exhausted.
 
 ---
 
-## Bitcoin vs. Gold in 2026
-
-During the Hormuz crisis (March–May 2026), bitcoin outperformed gold. Some argued this proved bitcoin is now a safe haven. Lyn's counter:
-
-> "Occam's Razor suggests a simpler explanation: gold was overbought going into this crisis, and bitcoin was oversold going into this crisis." [Hormuz Crisis and Building a Watch List, 2026-03-29]
-
-Bitcoin already shed most leveraged positions before the war. Fast money was out. Gold had gone parabolic to $4,000–5,500 range and was due for a flush. The relative outperformance is about positioning, not a fundamental shift in bitcoin's role.
-
----
-
-## Lightning Network — Payment Infrastructure
-
-Lyn is a partner at **Ego Death Capital**, a bitcoin-focused venture fund. She tracks Lightning network growth closely:
-
-- **River Financial (Nov 2025 data)**: Lightning volume up massively YoY despite flat bitcoin price
-- Average transaction size growing = institutional/exchange usage increasing
-- Chaumian ecash and Ark emerging as "last mile" solutions; Lightning as the middle-layer backbone
-- River's data captures only visible nodes — actual volume is higher (Ego Death portfolio companies confirm)
-- **Stablecoin supply**: ~$250B as of mid-2025; Lyn expects $1T+ as AI agents, global settlement, and dollarization demands grow
-
-[Tariffs, Liquidity, Bitcoin, and LatAm Equities, 2025-07-20; Tariffs, Iran, and Rapid Impacts from AI, 2026-03-01]
-
----
-
-## Bitcoin as AI Agent Money
-
-One of Lyn's more forward-looking observations from Feb 2026:
-- AI agents need money to operate autonomously (book flights, pay for services, fund sub-tasks)
-- Stablecoins and bitcoin are the natural solutions: permissionless, open-source, no bank account required
-- Bitcoin benefits from its network effect — AI agents prefer existing rails
-- This is a structural long-term demand driver not captured in traditional adoption metrics
-
-[The Boom in AI Agents, 2026-02-01]
-
----
-
-## DeFi and Altcoin Bearish Thesis
-
-Consistent across all 26 articles:
-- **ETH**: Centralization through liquid staking (Lido controls ~30%+ of staked ETH); MEV creates further centralization pressure. [DeFi analysis, 2022 quotes cited in Fiscal Re-Acceleration]
-- **XRP**: "At risk of giving up its entire post-election surge"; ~$100B market cap unjustified; long-term bearish
-- **ETHBTC ratio**: Forming lower-highs on long-term chart; structural BTC dominance increase
-- **DeFi TVL**: Never exceeded 2021 peak through 2026; stagnating structurally
-- **KelpDAO hack → Arbitrum freeze (Apr 18, 2026)**: Proved DeFi is centralized in practice (11 multi-sig addresses control freeze)
-
-Lyn holds "small positions for hands-on research" in altcoins but no investment thesis positions.
-
-[The Boom in AI Agents, 2026-02-01; Fiscal Re-Acceleration, 2026-04-25]
+*See also: [macro-framework.md](macro-framework.md) for fiscal dominance as the context | [usd-liquidity-thesis.md](usd-liquidity-thesis.md) for global M2 mechanics | [key-tickers.md](key-tickers.md) for MSTR and related treasury companies*

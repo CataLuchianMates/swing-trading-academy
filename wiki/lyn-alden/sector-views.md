@@ -1,207 +1,122 @@
 # Lyn Alden — Sector Views
 
-> Banks/financials, energy, AI/tech, healthcare, commodities, real estate, and other sectors. Synthesized from 26 premium newsletters (2025-05-25 through 2026-05-10).
+*Last updated: May 2026. Based on 62 premium newsletter articles (January 2024 – May 2026).*
 
 ---
 
-## Banks and Financials — Highest Conviction Long
+## Financials: Super-Regional Banks (Highest Conviction)
 
-Banks are Lyn's single largest equity conviction call across the entire 2025–2026 period. She is **moderately bullish** on US regional and super-regional banks.
+Banks are Lyn's highest-conviction US equity sector throughout the entire 2024-2026 period. The thesis has multiple reinforcing layers:
 
-### Why Banks Now
-1. **Cheap valuations**: 10–13x P/E vs. historical 15–20x norms
-2. **Unrealized losses shrinking**: Peaked at ~$700B in 2023 (SVB era); down to ~$306B as of 2026
-3. **Net interest margin recovery**: As deposit repricing normalizes, margins expand
-4. **Two-scenario win**: If rates stay high → banks earn more on assets. If rates cut → unrealized losses shrink further. Both constructive.
-5. **32% safe assets vs. 13% pre-GFC**: Banks are the safest they've been structurally since before 2008
-6. **Lending activity recovering**: Bank loans increasing steadily through 2025–2026
+**Structural argument:** US banks hold 32% of assets in cash and Treasuries — nearly a record high, versus only 13% at the peak of the 2007 pre-GFC bubble. The banking system entered this period fundamentally better capitalized than any time in living memory. The 2023 Silicon Valley Bank crisis was an idiosyncratic event affecting banks with unique characteristics (large uninsured deposits above the $250k FDIC limit, heavy concentration in long-duration Treasuries), not a systemic problem.
 
-### Preferred Banks
-| Ticker | Company | P/E | Lyn's View |
-|--------|---------|-----|-----------|
-| **USB** | US Bancorp | ~11–12x | Core holding; "largest pure-play regional bank"; preferred over JPM at 16x |
-| **TFC** | Truist Financial | ~12–13x | Southeast exposure; reached post-Liberation Day highs quietly |
-| **PNC** | PNC Financial | ~12–13x | Large regional; diversified fee income |
-| **OZK** | Bank OZK | — | "Touching cycle highs" Aug 2025; more speculative regional |
-| **CIB** | Bancolombia | — | Colombian bank; EM banking exposure; added Aug 2025 |
-| **SMFG** | Sumitomo Mitsui | — | Japanese bank; benefits from rising Japanese rates |
+**Interest rate cycle argument:** Banks benefit from a positive yield curve (earning more on loans than they pay on deposits). The Fed's rate-cutting cycle since September 2024 was initially expected to hurt net interest margins, but Lyn argued the opposite: mild, gradual rate cuts combined with ongoing fiscal stimulus and balance sheet expansion are the optimal scenario for banks — good net interest income, improving credit quality, and balance sheet growth.
 
-### Avoided / Lower Conviction
-- **JPM** (JP Morgan Chase): Trading at ~16x P/E as of July 2025 → too expensive vs. regionals
-- **WFC**, **BAC**: Mentioned but not preferred; less specific conviction
+**Fiscal dominance beneficiaries:** In a fiscal dominance environment, the government constantly injects capital into the financial system via deficits. Banks, as the primary intermediaries, receive interest payments on their $4T+ Treasury holdings (paid by the government to the banking sector as interest expense) and on the $3T in reserves held at the Fed (earning IORB). As the Fed's balance sheet expands, bank reserves grow — and those reserves are interest-bearing.
 
-### Private Credit Risk — Manageable
-Lyn has tracked private credit concerns extensively (Oct 2025, Mar 2026) and consistently concludes: **contagion from NDFIs to banks is manageable, not 2008-scale**.
-- US banks have $1.7–1.9T in NDFI exposure (7–8% of total assets)
-- Even 50% default across all NDFI loans = ~$750B–$950B hit = severe but absorbable
-- First-loss to private credit investors, not banks
-- Wells Fargo, Truist, PNC have 3–12% of assets in private credit exposure
-- "The biggest bubble is at the sovereign level, not the private sector level"
+**Valuation:** Super-regional banks (USB, TFC, PNC) traded at 11-13x earnings throughout 2025 and into 2026 — below their historical average multiples, versus the S&P 500 at 20-25x. With 4%+ dividend yields, they offered both income and valuation upside.
 
-[A Bank and Tech Barbell, 2025-05-25; Bank Stress Tests and Liquidity Strains, 2025-07-06; Private Credit, Software, and Energy, 2026-03-15; Fiscal Re-Acceleration, 2026-04-25]
+### US Bancorp (USB)
+The primary bank holding. 5th largest US bank by assets. 13M retail clients. 2,200 branches. Bought initially in Q1 2025. Lyn's preferred bank versus JPM specifically because: USB at 12x PE versus JPM at 16x PE with better growth trajectory relative to valuation. After a 2023 capital hit from rising rates impaired its securities portfolio, USB rebuilt its capital ratio to new highs. Quarterly dividend of ~4%. Lyn added in December 2025 and April 2026 citing this as among the best risk/reward in the US market at those prices.
 
----
+### Truist Financial (TFC)
+8th largest US bank. Similar fundamentals to USB: below-average PE, 4%+ dividend, conservative lending standards. One concern cited: some private credit exposure (~$19.5B on $535B in assets, or 3.6% — manageable). Lyn added to TFC position on multiple dips through 2025-2026.
 
-## Energy — Structural Hedge, Not a Chase
+### PNC Financial (PNC)
+Added to the super-regional bank thesis in December 2025 as a third position. Trading at approximately historical average valuation (versus USB and TFC trading below average). Cited alongside USB and TFC as "fairly priced risk" in the December 2025 piece. Same structural tailwinds apply.
 
-### View Evolution
-| Period | View |
-|--------|------|
-| 2024 | Initiate positions in oilfield services; diversified energy |
-| Sep 2025 | Reload oilfield services (SLB, HAL, VAL) at bottoms — "bottoming worth watching" |
-| Feb 2026 | Sell VAL after 90% gain (merger acquisition); VAL/RIG deal at all-time highs |
-| Mar 2026 | XLE at new all-time highs due to Hormuz; "caution against chasing" |
-| Apr–May 2026 | Hold energy; cash accumulating for opportunistic deployment |
+### OZK (Bank OZK)
+Regional bank (8th tier). Reached cycle highs in late 2025 despite persistent commercial real estate concerns. Lyn cited this as evidence that well-managed regional banks with diversified lending can outperform even during a commercial real estate downturn.
 
-### Preferred Sub-Sectors
-**Transporters > Producers**
-- **EPD** (Enterprise Products Partners): "Gold standard income holding"; ~7% yield; 25 consecutive years of distribution increases; owns pipelines, not exploration risk [The Silent Bull Market in Dividends, 2025-08-31]
-- **OKE** (ONEOK): Similar to EPD; mentioned as preferred alongside EPD [Implications of the Fed's Structural Shift, 2025-12-21]
+## Financials: Payments
 
-**Producers (held but not adding)**
-- **XOM** (ExxonMobil): Near highs; not adding; held as hedge
+**Visa (V)** — Long-term holding. One of Lyn's highest-conviction payment network positions. The thesis: Visa has one of the strongest network effects of any company — adding more merchants increases value to cardholders, adding more cardholders increases value to merchants. Regulatory shields, anti-fraud infrastructure, consumer rewards, and purchase protection services create switching costs that stablecoins and crypto networks don't match for everyday consumer use cases.
 
-**Oilfield Services (cycle play)**
-- **SLB** (Schlumberger): World's largest OFS; bought and held; +36–43% in months from Oct 2025 low
-- **HAL** (Halliburton): Similar to SLB; held; shifted to "neutral hold" after Feb 2026 gains
-- **VAL** (Valaris): Bought Oct 2023; went deep negative; reloaded at bottom; exited Feb 2026 on RIG/VAL merger acquisition at all-time highs (+90% type gains)
+Lyn was patient on Visa: she noted it was briefly overvalued at 42x PE in mid-2021 and waited for valuation to normalize. By April 2026, trading at ~25x earnings (its lowest in a decade), Lyn added a tranche. AA- credit rating, no net debt, strong dividend growth, and share buybacks funded by high ROIC. Revenue growth in low double-digits expected to gradually decelerate to high single-digits.
 
-**Geopolitical Context (Hormuz Crisis):**
-- Confirmation that energy exposure is the right portfolio hedge for Hormuz/Iran tail risks
-- Energy stocks hit new all-time highs (XLE, IXC) during crisis
-- Fertilizer stocks also benefiting (natural gas = fertilizer input)
-- Russia as unexpected beneficiary (oil exports + world's largest fertilizer exporter)
+**PayPal (PYPL)** — Added in October 2025. Deep value thesis: 15x PE, $1.4B net debt vs $4.9B net income (0.3x ratio), new CEO transformation story, and OpenAI ChatGPT integration announced. By November 2025, PYPL announced its first-ever dividend. Lyn increased the PYPL position in November 2025 (raised to 12% in newsletter, sold in "Other Holdings"). By March 2026, as the Hormuz crisis created broader selloffs, Lyn described PYPL as "about as cheap as the tobacco stocks were a few years ago" — potential acquisition target thesis emerging.
 
-[Precious Metals and Commodities Update, 2025-09-28; A Look at Disrupted Software Companies, 2026-02-15; Private Credit, Software, and Energy, 2026-03-15]
+**Fiserv (FI)** — Held until November 2025 when a triple earnings miss revealed the new CEO had acknowledged the prior CEO padded numbers. $29B debt / 8x income with zero revenue growth became disqualifying. Position sold or reduced. The point: Lyn uses Fiserv as a cautionary tale about how high debt with decelerating growth is dangerous.
 
----
+## Energy: Producers, Services, and Transporters
 
-## AI / Technology — Nuanced and Evolving
+Lyn's energy framework distinguishes between three categories:
 
-Lyn's technology views are the most dynamic sector in her coverage. She evolved from enthusiastic early-stage bulls to significant skepticism on hyperscalers.
+**Producers** (XOM, CVX): Hold for income and geopolitical tail risk hedge. Not actively adding at 2025 near-highs. XOM was cited as "somewhat richly priced" relative to earnings in early 2026 even as it held near all-time highs.
 
-### Semiconductors — Bullish (Hardware)
+**Services** (SLB, HAL, VAL): The preferred trade from September 2025 through February 2026. After years of underperformance, oilfield services companies formed bottoms in April 2025 and began recovering. Lyn added to SLB and HAL in October 2025 (citing the September 28 report where she called them "interesting places to deploy capital"). Valaris (VAL) was the most volatile — subject to a Transocean merger announcement in February 2026 that drove VAL to all-time highs, at which point Lyn sold the position (after a 90% gain from the low).
 
-**The profitable layer of AI:**
-- Hardware companies (NVDA, TSM, memory makers) capture profit because they have scarcity/moat
-- Software/application companies capture little profit because they face intense competition
+Within five months of the September 2025 recommendation, SLB +36-43%, HAL +43%, VAL +90% (including merger premium).
 
-**Memory stocks (Feb–May 2026 thesis):**
-- AI agents need persistent memory (RAM-intensive); this is a new structural demand driver
-- Prior decade: "soft ceiling" on RAM demand — now broken
-- Three companies make almost all RAM: **Micron (MU)** (US), **SK Hynix** (Korea), **Samsung** (Korea)
-- All three at fresh all-time highs as of May 2026
-- Trade: Sold MU June 18 cash-secured puts at $380 (stock at $420) — entered ~$350 if assigned
+**Transporters** (EPD, OKE): The "steady income" energy play. Enterprise Products Partners (EPD) is Lyn's preferred midstream holding — 7% yield, 25 consecutive years of annual distribution increases, investment-grade balance sheet. Held through the entire period. OKE (Oneok) also highlighted as reasonable at 5.5% yield with similar distribution growth track record. The transporter thesis: they make money from volume (gas moving through pipelines) rather than energy price, so they benefit from volume growth regardless of oil/gas price direction.
 
-**TSM** (Taiwan Semiconductor): Best chip manufacturer on earth; reasonable 33x P/E given 17.5% growth; sold previous position at 2x in Oct 2025; remains on watchlist
+### Hormuz Crisis Impact on Energy (March-May 2026)
+Beginning March 1, 2026 with US/Israel strikes on Iran, Lyn's energy portfolio exposure became directly relevant. With 20% of global oil production going through the Strait of Hormuz effectively blocked, energy producers reached all-time highs. XLE (US energy ETF) and IXC (global energy ETF) both hit new records by mid-March. Lyn held her positions and did not chase new entries, instead adding to watchlists and waiting for resolution. By May 2026, the crisis remained ongoing (11 weeks) with Dubai physical oil swaps at ~$140/barrel and Brent futures ~$100.
 
-**AMD** (Advanced Micro Devices): Bought near April 2025 lows; sold at ~2x in Oct 2025 alongside TSM
+## Technology: AI Hyperscalers and Software
 
-[The Boom in AI Agents, 2026-02-01; Emerging Markets Breakout, 2026-05-10]
+Lyn's view on technology is the most distinctly bearish sector call across the entire 2024-2026 period relative to market consensus:
 
-### Hyperscalers — Cautious to Bearish
+**The Free Cash Flow Problem:** Lyn's core critique of hyperscalers (GOOGL, MSFT, META, ORCL, AMZN) is that accounting profits are artificially elevated because AI GPU capex is depreciated over long periods (typically 3-5 years) while the actual economic return may be much faster or slower. Free cash flow (which is harder to manipulate) shows stagnation in 2025 even as reported earnings grew. Microsoft, Meta, and Oracle issued $120B in bonds in 2025 (4x their historical annual rate) specifically because they could not fund their capex from cash flow.
 
-**The core problem:** Hyperscalers (MSFT, META, ORCL, GOOGL) are forced into massive GPU capex to compete with each other. This destroys free cash flow despite profit growth.
+**Specific calls:**
+- **GOOGL (Alphabet)**: Bullish from 2022 through 2025. Entry thesis: AI threat to search was overblown, YouTube growth intact, AI player in own right. Added when it was at ~$120 (2022-2023). By November 2025 at ~$300, Lyn shifted to neutral — thesis played out, valuation no longer cheap. Sold "Other Holdings" position. Reduced newsletter position from 12% to 8%.
+- **MSFT (Microsoft)**: Neutral/cautious. Capex spending growing faster than free cash flow.
+- **META**: Only hyperscaler that outperformed from November 2025 through February 2026. Lyn was less negative.
+- **ORCL (Oracle)**: Most concerning of the group. Credit default swaps decoupled from market pricing by November 2025 — suggesting bond market stress. $29B debt / growth decelerating.
 
-- FCF charts for MSFT, META, ORCL, GOOGL all show stagnation vs. earnings growth
-- ORCL credit default swaps decoupling — "most concerning of the group"
-- **Sold GOOGL** in Nov 2025 at $300 (vs $120 entry 2022, $160 April 2025): "thesis complete"
-- **Reduced GOOGL** from 12% to 8% in growth pie (Nov 2025)
+**ACN (Accenture)**: Added in October 2025. Thesis: AI implementation company (20x PE, AA- credit). As hyperscalers build AI tools, someone has to integrate them into corporate workflows. ACN is the world's largest IT services firm and the natural beneficiary of enterprise AI adoption.
 
-**NVDA:** Not a position; acknowledged as "AI stock to own" but approached the way Cisco was in the dot-com era — fundamentally great, but the question is whether valuations account for eventual competition.
+**TSM (Taiwan Semiconductor)**: Added in April 2025 at Liberation Day lows, sold in October 2025 after doubling. Traded the chip cycle without long-term commitment.
 
-**The AI capability paradox:**
-- AI is an incredible productivity tool (14-hour coding tasks at 50% success rate as of Feb 2026)
-- But AIs hallucinate confidently, don't truly "think," and make basic logic errors
-- The "killer app" is humans who use AI well, not AI replacing humans entirely
-- **Block Inc (XYZ)** 40% workforce reduction (Mar 2026) seen as bellwether — if it works, more will follow
+**AMD**: Added in April 2025 with TSM. Sold cash-secured puts at $80 June 2025 strike as a lower-risk entry strategy. Sold position October 2025 after it doubled.
 
-[A Look at the AI Hyperscalers, 2025-11-23; A Look at Disrupted Software Companies, 2026-02-15; Tariffs, Iran, and Rapid Impacts from AI, 2026-03-01]
+**MU (Micron)**: Added via cash-secured puts ($380 strike, June 2026 expiry) in April 2026 during the Hormuz crisis. Thesis: AI agents require massive RAM demand. Micron is the only US-based RAM manufacturer.
 
-### Software (SaaS) — Wait for Rubble to Settle
+## Software (SaaS): Watch List for Future Contrarian Entries
 
-Lyn is bearish on the near-term trajectory for SaaS stocks but expects interesting contrarian opportunities:
+**ADBE (Adobe)**: The one SaaS stock Lyn is actively accumulating during the 2025-2026 AI disruption selloff. Original 2019 entry at ~$230. Stock went to $650, back to $250, back to $630, and has now fallen back below its 2022 lows at ~$260 (as of February-March 2026). Current valuation: ~11-12x forward earnings, fortress balance sheet (equal cash and debt), aggressive share buyback program. Bull thesis: professional creative market still dominated by Adobe; AI integration (Firefly AI product) showing 45% QoQ growth in generative credits consumed; freemium strategy attracted 80M monthly active users (50% YoY growth). 10.9% ARR growth with 10.2% expected next year — not glamorous but priced for zero growth.
 
-- AI disrupting per-seat pricing models → fewer users needed per company
-- Jevons Paradox may offset some of this (more demand if cheaper), but not uniformly
-- **Equal-weight S&P 500 outperforming market-weight** since Nov 2025 — evidence of mega-cap valuation rotation
+**CRM (Salesforce)**: On the watch list but not yet bought. Cited as "interesting once there's evidence of a price bottom." At ~15x forward earnings by mid-2026 — starting to get interesting.
 
-**Current positions:**
-- **ADBE** (Adobe): Dabbling; first entry below historical average valuation; ~11–12x forward earnings as of Feb 2026; "value play, not value trap" is Lyn's lean but conviction is modest
-- **PYPL** (PayPal): Strong conviction add; ~15x earnings, fortress balance sheet, OpenAI partnership; strong earnings Nov 2025; increased to 12% in growth pie
-- **ACN** (Accenture): Added Oct 2025; AI implementation consultants benefit from enterprise AI adoption — rare case where AI makes them more valuable, not less; first time at or below historical valuation
+**INTU (Intuit)**: Watch list. Accounting/tax software showing disruption fears. "Patient play: let things burn down and stabilize, then pick through the rubble."
 
-**Watching but not buying:**
-- **FI** (Fiserv): Triple miss on earnings Nov 2025; still holding but watching for technical bottom
-- **CRM** (Salesforce): Watching closely during Hormuz-related sell-off
-- **INTU** (Intuit): On watchlist as accounting software — Jevons Paradox unlikely (demand constrained)
-- **DEO** (Diageo spirits): Deep value; similar to tobacco thesis; watching for bottom formation
+**Equal-Weight S&P 500 vs Market-Weight:** In February 2026, Lyn introduced a structural thesis that AI capex spending (massive and with uncertain returns) is shifting value away from asset-light network-effect mega-caps toward companies with physical assets or regulated moats. Since November 2025, equal-weight S&P 500 sharply outperformed market-weight. Lyn views this as early innings of a structural shift, not a one-time mean reversion.
 
-[Two AI Stock Rotations, 2025-10-12; Liquidity Shutdowns, Tariffs, and Earnings, 2025-11-09; A Look at Disrupted Software Companies, 2026-02-15]
+## Healthcare
+
+Healthcare sector reached 25-year relative performance lows versus the S&P 500 by August 2025 — driven by Medicare Advantage reimbursement cuts, political pressure on drug pricing, and coverage-related litigation/regulatory risk.
+
+**ELV (Elevance Health, formerly Anthem)**: Added in August 2025 on sector washout. Catalyst: CEO personally bought $2.4M in stock. Blue Cross/Blue Shield licensee. Lyn's rationale: insider buying at generational sector lows is a strong contrarian signal.
+
+**UNH (UnitedHealth Group)**: Not held but Berkshire Hathaway's disclosed $1.5B new position was cited in the same August 2025 report — another smart-money contrarian signal at sector lows.
+
+## Precious Metals: Gold, Silver, Platinum
+
+**Gold:** Held continuously since 2018 at ~$1,500/oz. Never sold. Structural thesis: multipolar world, central bank diversification from Treasuries to gold, fiscal dominance. The dollar reserve share in central bank portfolios peaked in 2001 and has declined; gold is gaining share. This is a generational secular trend.
+
+*Key price levels across the period:*
+- April 2025: $3,200 — First tactical "6-12 month consolidation" warning issued
+- August 2025: $3,500 — Breakout from consolidation
+- October 2025: $4,000+ — First time ever
+- October 2025 peak: $4,300 — Most overbought monthly RSI in history; second tactical caution warning
+- Late December 2025: Gold at $4,200 — "Hold, not a buy, not a sell"
+- January 2026: Gold hits all-time high before major multi-decade corrective drop (Jan 29-30) from $5,500 to $4,800 (estimated from the silver data: gold at $5,500 equivalent implied, with silver at $120 and platinum at $2,900)
+- March-May 2026: Post-Iran war correction with gold in $4,000+ range
+- Current view: "Fairly priced, not undervalued as it was in 2018. Hold, not buy aggressively."
+
+**Silver:** Added alongside gold in 2018-2019. Held continuously. By December 2025, silver at $67/oz (+39% since June 2025). Silver reached $120 in January 2026 before the crash to $85 (a 4x in months, from $30 in May 2025). Lyn noted that "silver could easily jump to $100 or fall back to $40 — neither would surprise me." By March-April 2026, in the $60-70 range, treated as a neutral hold.
+
+**Platinum:** Held physically (Lyn mentions owning physical platinum bars). Spent years as "the portfolio dud." Broke out spectacularly in 2025 — +62% through September 2025, reaching $2,000+ by December 2025, then $2,900 at January 2026 peak before the crash. As of January 2026, Lyn cited platinum as the most interesting precious metal to add to — still at roughly half the price of gold on a per-ounce basis.
+
+## Spirits and Beverages: Watch List
+
+New category introduced in March 2026. Diageo (DEO) cited as the world's largest premium spirits company, trading at under 12x earnings (down from 33x peak), new CEO implementing strategic reset, A- credit rating. The tobacco-stock parallel: in 2022-2023, tobacco stocks (BTI) had fallen to generational valuation lows with 7-9% dividend yields and eventually doubled. Spirits are in a similar position due to Gen Z's lower alcohol consumption rates. Lyn is watching but not yet buying, waiting for evidence of a price bottom.
+
+## Airlines and Travel
+
+**Copa Airlines (CPA)**: Small position added July 2025 to "Other Holdings"; added to Newsletter Portfolio dividend pie in February 2026. Panama geographic hub; single-fleet Boeing 737 for efficiency. Single-digit PE, strong balance sheet, growing dividend. Lyn's rationale: "a scattering of small uncorrelated bets within a diversified portfolio can reduce overall risk."
 
 ---
 
-## Healthcare — Selective, Not Broad
-
-Healthcare underwent a significant selloff in 2025 driven by political/regulatory pressure and managed care cost issues.
-
-**Lyn's view:** Selective entries, not broad sector exposure. Managed care has structural issues but some names are attractive at deep discounts.
-
-- **UNH** (UnitedHealth): Berkshire bought during selloff; Lyn watched but preferred ELV
-- **ELV** (Elevance Health, formerly Anthem): **Preferred over UNH** — CEO bought $2.4M of stock personally during drawdown (strong insider signal); added to portfolio [A Look at the Healthcare Sector Selloff, 2025-08-17]
-- **TRV** (Travelers Companies): Insurance company used as example; doing fine despite sector noise; good balance sheet [A Tale of Two Sectors, 2025-09-14]
-
----
-
-## Commodities and Precious Metals — Structural Long, Neutral Near-Term
-
-Lyn's precious metals view evolved from "strong buy" (2018–2024) to "structural hold, no longer asymmetric" by late 2025.
-
-### Gold
-| Period | View |
-|--------|------|
-| 2018–2024 | Strong structural bull; fiscal dominance thesis |
-| Jun 2025 | "6–12 month consolidation" warning (proved correct) |
-| Aug 2025 | $3,300–$3,500 breakout sustainable; structural reasoning outweighs overbought |
-| Sep 2025 | $3,500+; structurally long; "most overbought monthly RSI in history" |
-| Oct 2025 | $4,300 peak; "one of the biggest single-day corrections"; sold GDX covered calls |
-| Dec 2025 | $4,200; stabilizing; structurally constructive |
-| Jan 2026 | $5,500 peak; sharp Jan 29/30 crash to $4,800 |
-| Feb 2026 | "Not a bubble; repricing from undervalued to fairly-valued"; no longer asymmetric |
-| Mar–May 2026 | Watching for base formation at $4,000+ level |
-
-Gold/oil ratio and S&P 500/gold ratio both hit records — evidence of gold's structural repricing vs. real assets. SPX/gold 50-month MA turned negative for first time since 2002. [Precious Metals and Commodities Update, 2025-09-28; Implications of the Fed's Structural Shift, 2025-12-21]
-
-### Silver and Platinum
-- Silver: $30 (May 2025) → $120 (Jan 2026 peak) → $85 (correction); "most overbought"; hold, don't add
-- Platinum: +62% YTD 2025 as of September; long-time laggard finally breaking out
-- Silver/oil ratio: 45-year high as of Dec 2025 — energy deeply cheap vs. silver
-- Gold/oil ratio: Record high — energy extremely cheap historically
-
-### Energy as Commodity
-- Oil: Gold/oil and silver/oil ratios at extremes → energy deeply undervalued relative to precious metals
-- This was the catalyst for Lyn loading oilfield services positions in Sep–Oct 2025
-- Validated by Hormuz crisis in 2026 (energy prices surged)
-
----
-
-## Consumer Discretionary — Cautious
-
-- **COST** (Costco): Classic example of "safe asset bubble" — 47–51x earnings; overpriced despite quality
-- **WMT** (Walmart): Similar to Costco; expensive as a quality defensive
-- **LULU** (Lululemon): Watching but not buying as of Sep 2025; NKE still unattractive at 3x LULU's P/E
-- **NKE** (Nike): Not attractive even at selloff prices
-- **BKNG** (Booking Holdings): Travel/airports as alternative to airlines for EM travel exposure
-
-**Spirits and Beer (Emerging Watch List, Mar 2026):**
-- Gen Z drinking less → sector selloff → potentially entering tobacco-like deep value territory
-- **DEO** (Diageo): Under 12x P/E from 33x peak; A- credit; new CEO cutting dividend as strategic reset; watching for price bottom before entry
-
----
-
-## Real Estate
-
-Lyn does not have direct REIT positions in the coverage period but mentions real estate as a "two-speed economy" casualty:
-- Housing: Stuck; those trying to buy struggle with high rates and low inventory
-- CRE: Ongoing drag; banks have exposure but manageable at macro level
-- Both sectors hurt by the "tight monetary policy" side of the K-shaped economy
+*See also: [emerging-markets.md](emerging-markets.md) for the EM banking thesis | [key-tickers.md](key-tickers.md) for the complete ticker reference | [bitcoin.md](bitcoin.md) for the digital assets view*

@@ -1,185 +1,91 @@
 # Lyn Alden — Emerging Markets Thesis
 
-> EM rotation thesis, country/region views, catalysts, risks, and specific positions. Synthesized from 26 premium newsletters (2025-05-25 through 2026-05-10).
+*Last updated: May 2026. Based on 62 premium newsletter articles (January 2024 – May 2026).*
 
 ---
 
-## Core EM Thesis
+## The Core Rotation Thesis
 
-The dominant thesis: **we are at the early stages of a multi-year asset rotation from US growth stocks into emerging markets, commodities, gold, and value.** This mirrors the 2002–2007 BRICS boom cycle.
+Lyn began building her formal EM rotation thesis in August 2024, formally titled her "Deep Dive: Rotation Analysis." The core argument: every major EM bull market in history has been preceded by or correlated with a weakening dollar, a Fed rate-cutting cycle, and a period where global capital was heavily overconcentrated in US equity markets. All three conditions were beginning to align in late 2024.
 
-**The mechanism:**
-1. US economy weakens → Fed cuts rates → dollar weakens
-2. Weaker dollar reduces cost of dollar-denominated debt in EM countries
-3. EM economies recover → commodity demand rises
-4. Global capital rotates from overvalued US markets to cheap EM markets
-5. EM currency appreciation → more capital inflows → virtuous cycle
+The historical precedent she returns to repeatedly is 2001-2007: the dollar peaked near 120 DXY in 2001-2002, the Fed began cutting rates after the dot-com bubble, and capital flooded out of US equities into emerging markets, commodities, and real assets. From 2003 to 2007, the MSCI EM index gained roughly 350% while the S&P 500 gained roughly 80%. EM currencies, commodity prices, and local economies reinforced each other in a virtuous cycle.
 
-**The virtuous cycle:**
-- Dollar weakening → EM relief → capital inflows → currency appreciation → more inflows
+The 2024-2026 conditions are not identical to 2001 — AI capex spending is keeping some US sectors elevated, and China faces unique structural headwinds — but the macro backdrop rhymes: dollar at multi-year highs starting to turn, Fed beginning cuts, US equity valuations stretched at 20-25x earnings versus EM at 10-12x earnings.
 
-**The vicious cycle (prior decade):**
-- Dollar strengthening → EM squeeze → capital outflows → currency depreciation → more outflows
+**Two primary catalysts Lyn identified:**
+1. Central bank rate-cutting cycles creating breathing room for dollar-indebted EM economies
+2. US policy uncertainty (tariffs, geopolitics, AI disruption) reducing the relative attractiveness of US equity allocations for foreign institutional capital
 
-[Fiscal Spending and Price Consolidations, 2025-06-08; Emerging Markets Breakout, 2026-05-10]
+## The Dollar-EM Transmission Mechanism
 
----
+Lyn explains this mechanically: EM economies have substantial dollar-denominated liabilities owed to creditors across the world. When the dollar is strong, their liabilities appreciate relative to their local currency assets and cashflows — a financial squeeze that forces them to keep interest rates higher than fundamentals would otherwise warrant (to defend their currencies), reducing domestic economic activity and pushing global capital further away. A strong dollar is a self-reinforcing negative spiral for EM.
 
-## Historical Context
+When the dollar weakens, the reverse occurs. Liabilities become more manageable in local currency terms, central banks gain room to cut rates, economic activity improves, capital flows back in, currencies rise, which attracts more capital — a self-reinforcing virtuous cycle. Lyn describes this vividly using Brazil: in three historical dollar-spike periods (mid-1980s, 1997-2002, 2014-2016), Brazil's dollar-denominated GDP fell dramatically and oil consumption declined for years. The dollar is the transmission belt between US monetary policy and EM economic health.
 
-Three prior dollar weakening cycles produced dramatic EM outperformance:
-- **1971–1980**: Gold standard default triggered dollar weakness; EM/commodities boom
-- **1985–1990**: Plaza Accord (coordinated dollar weakening); EM recovery
-- **2002–2010**: Dotcom bust + Fed rate cuts; BRICS boom; Brazil's biggest bank (ITUB) ran 8x
+## Results Through May 2026: What Played Out
 
-**Why 2024–2026 is the new catalyst:**
-- US capital concentration in equities at all-time extremes (Mag 7 dominance)
-- Fed cutting rates for first time since 2019
-- Dollar already softening from 2022 peak
-- Supreme Court struck down tariffs (Feb 2026) → reduced US protectionism
-- Unlike 2019, there is no COVID-equivalent disruption blocking the rotation so far
+The thesis has largely played out as predicted, though with nuances. By year-end 2025 (the December 2025 article data point):
 
-**What was different about 2019 (the false start):** Fed did cut rates and dollar started softening, but COVID hit in 2020, sending massive capital back to US safe havens, and Europe's energy crisis cemented the "US energy advantage" trade. [Emerging Markets Breakout, 2026-05-10]
+- ITUB (Brazil's largest bank) was up 81% in dollar terms year-to-date in 2025, versus the S&P 500's 18% total return.
+- EWZ (Brazil ETF) was up 47% in dollar terms.
+- CIB (Bancolombia) reached post-2020 highs in dollar terms.
+- IEMG (broad EM ETF) massively outperformed SPY throughout 2025.
 
----
+By May 2026, the EM vs S&P 500 ratio had formed a multi-year bottom and was "gradually rolling up" — a structural breakout, not just a year or two of tactical performance.
 
-## Evidence of Rotation Underway
+The biggest EM outperformers were South Korean and Taiwanese memory and chip stocks (SK Hynix, Samsung, TSM) — which benefited from the AI agent memory demand boom. Lyn acknowledges this concentration but frames it as a feature: the deep bench of cheap Chinese, Indian, and Latin American stocks represents future waves of EM outperformance once the chip run consolidates.
 
-As of May 2026:
-- **IEMG +54.95% vs IVV (S&P 500) +32.23%** over prior 12 months — EM crushing S&P
-- **MSCI EM / S&P 500 ratio**: Found multi-decade low ~0.275, rolling upward
-- **S&P 500 / Gold ratio**: Peaked 2024, sharply rolling over
-- **DXY**: Down from 2022 peak; choppy ~98–101 range
-- Individual EM stock winners: ITUB +81% in dollar terms for full year 2025 [Pricing Risk Fairly, 2025-12-07]
+## Latin America
 
-> "The rotation is already underway but still early relative to history." [2026-05-10-emerging-markets-breakout.md]
+**Brazil** is Lyn's highest-conviction EM position, held continuously from 2020 onward. The primary vehicle is ITUB (Itau Unibanco, NYSE). Thesis: one of the 10 largest banks in the world by assets, trading at 6-8x earnings through most of the period, with 4-5% dividend yields growing annually. Brazil had an 8x appreciation in ITUB during the 2002-2007 EM bull market, and Lyn repeatedly notes that there is no structural reason why a similar move cannot recur.
 
----
+Key stress test — July 2025: Trump threatened 50% tariffs on Brazil in a political dispute over Bolsonaro. Lyn analyzed the threat and dismissed it: Brazil exports only ~$41B to the US annually on a $2.2T GDP economy. Those exports are concentrated in commodities with ample alternative buyers globally. Impact: minimal. The stock dipped, she accumulated, it subsequently rose 12% within weeks and finished the year up 81% in dollar terms.
 
-## Latin America — Most Constructive Region
+**Colombia** — CIB (Bancolombia) added as a second Latin American bank position. Strong dividend yields, trading at multi-year low relative valuations, beneficiary of the same EM dollar cycle rotation.
 
-### Brazil
-**Macro setup:** Brazil runs ~10.5% interest rates against ~4.5% inflation = very high real rates. This is a "coiled spring" — their central bank has been in currency-protection mode for years. As the Fed eases, Brazil has enormous room to cut rates and stimulate domestically.
+**Copa Airlines (CPA)** — Added to "Other Holdings" in July 2025 and to the Newsletter Portfolio dividend pie in February 2026. Panama-hub geography; single-fleet (all Boeing 737) for cost efficiency; single-digit PE ratio; $900M+ cash equivalents; total net debt roughly equal to one year's net income. Lyn view: small but uncorrelated EM-adjacent position. The stock broke out to new highs by early 2026.
 
-**Key stock: ITUB (Itau Unibanco)**
-- Brazil's largest bank
-- 8x run during 2002–2007 BRICS boom, then 15+ years of sideways
-- P/E ~10–11x, EPS yield ~9.5%, dividend yield ~5%, earnings growth ~7%
-- Held across multiple portfolios; up 81% in dollar terms in 2025 alone
-- Despite 50% US tariff threat (July 2025), proved resilient — Brazil exports are mostly commodities (soybeans, iron ore) that can be redirected [Tariffs, Liquidity, Bitcoin, and LatAm Equities, 2025-07-20]
-- Added in 2025, continued as core holding through 2026
+**Performance note through May 2026:** "How many people had Latin American financials outperform during a trade war on their bingo card?" — Lyn's rhetorical summary of the 2025 result.
 
-**Other Brazil/LatAm watch:**
-- **ILF** (iShares Latin America 40 ETF): Near historic relative lows vs S&P 500; Lyn tracks as potential 5x+ if full cycle turns
-- **CIB** (Bancolombia): Added to portfolio Aug 2025 [The Silent Bull Market in Dividends, 2025-08-31]
+## Southeast Asia
 
-### Panama / Copa Airlines (CPA)
-- Panama hub between North and South America
-- Single-aircraft-type fleet (all Boeing 737) = lowest maintenance/training costs in region
-- Single-digit P/E, hefty dividend, $900M+ cash, strong balance sheet
-- Added as small position in Other Holdings (July 2025), scaled to newsletter portfolio (Feb 2026)
-- "A scattering of small individual uncorrelated bets" — Lyn maintains conservative position sizing on airlines
-[Tariffs, Liquidity, Bitcoin, and LatAm Equities, 2025-07-20; The Boom in AI Agents, 2026-02-01]
+**India** — Lyn's view on India is the most nuanced and evolving of all her EM positions. In August 2024, she was tepid, noting India is "structurally interesting but rarely cheap." Through most of 2025, Indian equities (INDA) underperformed their EM peers, partly because India trades at premium valuations relative to other EM countries given its growth profile.
 
-### Mexico
-- **OMAB** (Grupo Aeroportuario Centro Norte — Mexican airports): Mentioned as EM exposure via airports [Tariffs, Liquidity, Bitcoin, and LatAm Equities, 2025-07-20]
+December 2025 turning point: Lyn shifts from lukewarm to "increasingly bullish" on India for 2026. Reasons: (1) valuations cooled during the 2025 consolidation, (2) HDFC Bank specifically entered cheap-by-Indian-standards territory, (3) the combination of Fed rate cuts and a weaker dollar should benefit India's dollar-denominated corporate debt burden. "My base case is that the lows are in."
 
----
+**HDFC Bank (HDB)** — India's largest private bank, held as a position since mid-2020s. In April 2026, during the Hormuz crisis selloff, Lyn added to her existing position: "The valuation is currently around the lowest on record, relative to both earnings and book value." Despite India's energy vulnerability (large oil importer on a per-capita basis), Lyn has confidence the Indian government and corporate sector will manage the energy situation pragmatically.
 
-## Asia — Taiwan and South Korea Leading
+**DBS Group (DBSDY)** — Singapore-based bank with strong Southeast Asia exposure. Recommended as a way to get EM exposure within a developed-market regulatory and legal framework. Singapore is the gateway to Southeast Asian capital markets.
 
-### Taiwan
-**Taiwan Semiconductor (TSM)**
-- Dominant global chip manufacturer — no comparable competitor
-- Taiwan now has **larger MSCI EM index weight than all of China**
-- TSM sold at ~2x gain in Oct 2025 after holding since April 2025 entry
-- P/E 33x (May 2026) but earnings growing ~17.5%
-- Lyn notes TSM as still reasonable despite premium valuation
-[Two AI Stock Rotations, 2025-10-12; Emerging Markets Breakout, 2026-05-10]
+**Komatsu (KMTUY)** — Japanese heavy equipment manufacturer presented as an indirect EM proxy. Strong correlation to EM economic activity since the majority of Komatsu's revenue comes from infrastructure and mining equipment sales in developing economies. "EM correlation with developed market jurisdiction."
 
-### South Korea
-- Korea has larger MSCI EM weight than all of India
-- Memory stocks (SK Hynix, Samsung) driving performance — see sector-views.md
-- Both SK Hynix and Samsung at fresh all-time highs as of May 2026
+## China
+
+China is Lyn's most cautious EM allocation. The thesis is fundamentally attractive — JD.com at 8-11x earnings with net cash, Tencent (TCEHY) at sub-15x earnings, PDD at deep discount to growth — but Lyn applies explicit probability-weighting to the geopolitical zero-risk scenarios. Her stated framework: even if JD triples in 3 years from here (80% base case), a 20% probability of the ADR being zeroed out via sanctions or confiscation reduces the probability-weighted outcome significantly.
+
+The China thesis is that the bottom in absolute terms is "pretty firmly in" (confirmed by the chart in the April 2025 report showing MCHI resilience), but that it requires patience and small position sizes. By late 2025, China was up +28% YTD as an asset class.
+
+In February 2026, the Canada-China trade deal (49,000 EV imports/year at reduced tariffs, growing to 70,000) was cited as evidence that China's trade influence is not being isolated by US tariffs — instead, the rest of the world is pragmatically engaging with China regardless of US pressure.
+
+Key Chinese tickers Lyn has mentioned as interesting: JD (JD.com), PDD (Pinduoduo/Temu), TCEHY (Tencent), BABA (Alibaba). None are large positions given geopolitical tail risks. MCHI (China ETF) was used to illustrate the broader index movements.
+
+## Broad EM Vehicles
+
+**VWO** — Vanguard Emerging Markets ETF, held in multiple portfolios since at least 2024. Increased in April 2025.
+**IEMG** — iShares Core MSCI Emerging Markets ETF. As of February 2026, top holdings included Taiwan Semiconductor, Samsung, SK Hynix, Alibaba, Tencent, HDFC Bank, Reliance Industries, and others. Lyn explicitly endorsed this as a way to get RAM chip exposure (Samsung and SK Hynix are South Korean, which MSCI still classifies as emerging despite their wealth level).
+
+**Key ratio: Taiwan vs China within MSCI EM** — By May 2026, Taiwan had a larger allocation than all of China within MSCI EM (despite China's 60x larger population). South Korea had a larger allocation than India. This chip-stock concentration is cited as a feature (current momentum) rather than a bug (artificial), with EM's "deep bench" of cheap Chinese and Indian stocks waiting for their turn.
+
+## Risks to the EM Thesis
+
+1. **Extended Hormuz Crisis:** A prolonged Middle East energy disruption hits EM disproportionately. India, Southeast Asia, and much of Latin America are net energy importers. Higher energy costs squeeze their current accounts, push inflation higher, and may force rate hikes even as the US eases. Lyn acknowledges this but notes that as of May 2026, no major humanitarian food or energy crisis has occurred — demand destruction and reserve releases have softened the blow so far.
+
+2. **Second wave of dollar strength:** Any scenario causing capital flight back to the US dollar (global recession, another pandemic, acute war escalation) would temporarily reverse the EM cycle, as occurred in 2020.
+
+3. **China-specific:** Taiwan invasion scenario or major South China Sea conflict would effectively zero out many EM tech positions and disrupt global supply chains.
+
+4. **Own goals:** Political anti-market actions by EM governments (capital controls, nationalization, debt defaults) remain ever-present risks in individual countries.
 
 ---
 
-## China — Wait and See
-
-China is the most complex and most controversial EM market in Lyn's framework.
-
-**Bull case:**
-- Chinese tech stocks (JD, PDD, TCEHY, BABA) trading at 5–15x earnings vs. US tech at 25–40x
-- China GDP still growing ~4–5%
-- Chinese equities +28% YTD through August 2025 [A Look at the Healthcare Sector Selloff, 2025-08-17]
-- JD.com: Profitable, cash-rich, buying back shares, paying dividends, P/E ~11x — "extraordinarily cheap"
-
-**Bear case / geopolitical risk:**
-- US-China tensions create real risk of asset confiscation or sanctions (the "Russian stock" scenario — investors got effectively zeroed out)
-- Lyn assigns **20% zero-out probability over 3 years** to China stocks
-- Expected value math: 80% chance of doubling minus 20% zero = still positive expected value, but with binary risk
-
-**Lyn's framework:** Expected value investing on China. She "thinks the bottom in Chinese stock indices is likely already in" but needs to see a **higher-low vs US stocks** before getting aggressive.
-
-**Status as of 2026:** Still no confirmed higher-low vs US stocks on a relative basis. Chinese stocks had a 50% spike in late 2024 (government stimulus), gave back ~half — watching.
-
-**Specific tickers tracked:**
-- **JD** (JD.com): Most bullish individual name; cheap, profitable, capital return
-- **PDD** (Pinduoduo): Mentioned as cheap EM e-commerce [Implications of the Fed's Structural Shift, 2025-12-21]
-- **TCEHY** (Tencent): P/E 15x, EPS yield 6.7%, growing 30% — "massively cheap vs growth rate"
-- **BABA** (Alibaba): Mentioned alongside JD as cheap
-- **MCHI** (iShares MSCI China ETF): Broad exposure; waiting for base to form
-
-[Two AI Stock Rotations, 2025-10-12; Emerging Markets Breakout, 2026-05-10]
-
----
-
-## India — Building Conviction in 2026
-
-India became meaningfully more bullish starting December 2025/January 2026:
-
-**Macro setup:**
-- One of fastest-growing economies globally
-- Household debt remains relatively low → large runway for credit expansion
-- India was pragmatic on energy sourcing during Hormuz crisis (sought alternatives)
-
-**Key stocks:**
-- **INDA** (iShares India ETF): Mentioned for broad India exposure [Implications of the Fed's Structural Shift, 2025-12-21]
-- **TATA** / **TCS** (Tata Consultancy Services): Indian IT services
-- **INFY** (Infosys): Indian IT services
-- **HDB** (HDFC Bank): India's largest bank, long-term position, added to in April 2026. Merged with parent company in 2023 (drag for 3 years); expecting acceleration into year 3. P/E near record low as of April 2026 despite strong structural growth thesis. [Hormuz, Liquidity, and Upcoming Investments, 2026-04-12]
-
-Lyn expects India to **outperform other EM peers in 2026** due to young demographics and credit cycle early innings. [Three Notable Breakouts, 2026-01-18]
-
----
-
-## Southeast Asia and Singapore
-
-Singapore serves as a "one step removed" EM play — developed market jurisdiction with EM economic exposure:
-
-**DBSDY** (DBS Group Holdings): Singapore's largest bank
-- P/E 10.4x, EPS yield 9.65%, dividend yield ~4.9%, earnings growth ~10%
-- "Solid performer" since Lyn began tracking [Emerging Markets Breakout, 2026-05-10]
-
-Japan's **Komatsu (KMTUY)**: Heavy equipment manufacturer with high EM correlation — treats as an EM proxy with developed market safety.
-
----
-
-## EM ETF Framework
-
-Lyn uses **IEMG** (iShares Core MSCI Emerging Markets ETF) as the primary broad exposure vehicle:
-- Top holdings include TSM, Samsung, SK Hynix, Tencent, Alibaba, HDFC Bank, ITUB
-- South Korea classified as EM by MSCI (not by FTSE) — creates meaningful tracking difference
-- Broad EM = "deep bench" — even if chip stocks plateau, the India/Brazil/China wave follows
-
-**ILF** (iShares Latin America 40 ETF): Near historic lows relative to S&P 500; high-leverage play on dollar downcycle.
-
----
-
-## Key Risks to the EM Thesis
-
-1. **Another major geopolitical disruption** (like COVID in 2020) that sends capital back to US safe havens
-2. **China conflict in South China Sea** → zeroing out of Chinese equity positions globally
-3. **Persistent DXY strength** (e.g., Warsh Fed unexpectedly hawkish) → sustained EM headwind
-4. **Energy crisis extending into summer** (Hormuz) → EM countries hit harder than US on per-capita basis due to energy import dependence
-5. **Emerging markets "shooting themselves in the foot"** via anti-market policies or internal political crises
+*See also: [macro-framework.md](macro-framework.md) for the dollar cycle thesis | [key-tickers.md](key-tickers.md) for specific ticker reference | [sector-views.md](sector-views.md) for the US financials comparison*

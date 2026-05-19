@@ -1,133 +1,63 @@
 # Lyn Alden — Macro Framework
 
-> Core mental models, tracked indicators, and investment process. Synthesized from 26 premium newsletters (2025-05-25 through 2026-05-10).
+*Last updated: May 2026. Based on 62 premium newsletter articles (January 2024 – May 2026).*
 
 ---
 
-## Fiscal Dominance — The Central Thesis
+## Core Mental Model: Fiscal Dominance
 
-Lyn's entire macro worldview is anchored in the concept of **fiscal dominance**: a state where a country's fiscal deficits are so large and structurally entrenched that monetary policy cannot meaningfully offset them. The US entered this state around 2019 and it has been accelerating since.
+Lyn Alden's entire macro worldview rests on a single observation: the United States is in a state of **fiscal dominance**, and has been since roughly 2019. Fiscal dominance occurs when federal debt-to-GDP exceeds approximately 100% and structural fiscal deficits persistently exceed the rate at which private-sector bank lending and corporate bond issuance can organically absorb new government bonds. At that point, the traditional mechanics of monetary policy break down.
 
-Key facts underpinning the thesis:
-- US fiscal deficit runs at ~6–7% of GDP indefinitely
-- The four untouchable spending categories — Social Security, Medicare, Defense, and interest payments — collectively exceed total tax revenues
-- Interest expense alone has ballooned as rates rose; this is compounding
-- DOGE (Musk's efficiency initiative) could not succeed because discretionary spending is a small fraction of the budget. "Nothing stops this train." [A Bank and Tech Barbell, 2025-05-25]
+The clearest sign of fiscal dominance is the breakdown of the rate-hike transmission mechanism. Normally, when the Fed raises rates, borrowing costs rise, consumer demand contracts, and inflation subsides. Under fiscal dominance, higher rates actually become *stimulatory* on net, because the federal government pays out ever-larger quantities of interest income to the private sector. In 2024, the US federal government paid over $1 trillion in net interest expense annually — most of it flowing to US banks (which hold over $4 trillion in Treasuries), money market funds, and wealthy bondholders. This creates a K-shaped economy: loose fiscal policy combined with tight monetary policy enriches those who already own assets while punishing those who rely on labor income or access to affordable credit.
 
-The result: fiscal spending constantly flows into the economy regardless of what the Fed does. This creates a **floor under nominal asset prices** because new money always lands somewhere — in defense contractor payrolls, transfer payments, government bonds, etc. — and recipients buy assets.
+Nothing forces an exit from fiscal dominance in the short run. Lyn uses the phrase **"Nothing Stops This Train"** — introduced in the April 2024 report and confirmed repeatedly through May 2026 — to describe the self-reinforcing nature of large deficits. The mandatory spending components (Social Security, Medicare, Medicaid, Defense, and now net interest expense) collectively dwarf all discretionary programs. DOGE attempted minor cuts to the wrong budget lines, failed precisely as predicted in the November 2024 report, and was confirmed as essentially irrelevant by June 2025. The One Big Beautiful Bill Act (signed July 2025) added $2.75–4T in new cumulative deficits over the decade. The Supreme Court's February 2026 ruling against emergency tariff powers then removed what would have been the one plausible revenue offset.
 
-> "At the end of the day, the Fed is going to optimize for 1) maintaining bank lending and broad money creation at a moderate pace, 2) ensuring the treasury security market remains liquid, and 3) ensuring that the repo market remains liquid." [Emerging Markets Breakout, 2026-05-10]
+## The Crack-Up Boom and Asset Price Behavior
 
----
+Lyn draws on Mises's "crack-up boom" framework to explain why nominal asset prices stay elevated even as real purchasing power erodes. In a crack-up boom, government deficits continuously inject nominal demand into the financial system while the currency gradually loses purchasing power. Assets denominated in the depreciating currency — stocks, real estate, nominal bonds — can stay nominally elevated or even rise while declining in real (gold-denominated) terms.
 
-## Two-Speed Economy (K-Shaped)
+The empirical confirmation: the S&P 500 priced in gold peaked around 2000, made a lower-high around 2021, and by November 2025 the 50-month S&P 500/gold moving average turned negative for the first time since 2002 — a structural rollover signal. By April 2026, the chart showed a clean downtrend in the equity/gold ratio even as the S&P 500 itself was only modestly off its nominal highs. US stocks go up in dollars; they stagnate relative to hard assets.
 
-Fiscal dominance produces a structurally bifurcated economy:
+This framework produces Lyn's **three-pillar portfolio**: (1) profitable equities with reasonable valuations, (2) cash-equivalents and inflation-protected securities, and (3) commodity producers and hard monies — gold, silver, bitcoin. The third pillar is the direct hedge against fiscal dominance.
 
-| Winners | Losers |
-|---------|--------|
-| Asset owners (stocks, real estate) | Fixed-wage workers |
-| Defense/healthcare/government workers | Younger/lower-income consumers |
-| Older generations (asset-rich) | First-time homebuyers |
-| Fiscal transfer recipients | Small businesses (high rates + costs) |
+## The Triffin Dilemma and Trade Deficits
 
-GDP grows nominally but consumer sentiment can hit record lows simultaneously. This is because GDP captures the headline fiscal spending but not the squeeze on those excluded from it. [The Boom in AI Agents, 2026-02-01; Emerging Markets Breakout, 2026-05-10]
+The April 2025 deep dive on trade deficits and capital flows is the fullest statement of Lyn's structural trade framework. The US runs permanent trade deficits not because of mismanagement but because of its role as the reserve currency issuer. Every country that holds dollar reserves or dollar-denominated debt must accumulate more dollars than it spends; the only source of those dollars is a US current account deficit. This is the **Triffin Dilemma** — the reserve currency issuer must export currency, which requires importing more goods and services than it exports.
 
-Historically, this is what Lyn calls **"emerging market lite"**: a developed country where stocks/real estate go up in local currency even as they stagnate relative to hard assets like gold. The S&P 500/gold ratio rolling over from 2021 is direct evidence of this dynamic. [Fiscal Re-Acceleration, 2026-04-25]
+The critical new signal Lyn identified in April 2025 was **simultaneous declines in US stocks, bonds, AND the dollar** — all three falling together after Liberation Day tariffs were announced. This "capital flight" pattern is unusual and distinct from normal risk-off episodes where stocks fall but bonds and the dollar serve as safe havens. It indicated foreign institutional sellers of all three asset classes — early-stage de-dollarization in portfolio allocations. Lyn's base case became a 3–5 year period of gradual capital outflows from US markets, similar to the 2003–2007 period following the dot-com peak, when the dollar weakened from 120 to 72 on the DXY and emerging markets experienced their biggest bull cycle in decades.
 
----
+## The Activist Treasury Issuance (ATI) Mechanism
 
-## Domestic Liquidity Framework
+A specific monetary plumbing insight Lyn developed extensively: Treasury excess T-bill issuance (above the historical ~15% of total debt normal) is functionally equivalent to a Fed rate cut in terms of its liquidity impact. When Treasury issues T-bills instead of T-notes/T-bonds, it keeps short-term rates lower and puts less duration pressure on the financial system. Lyn estimates that every percentage point of excess T-bill issuance roughly approximates 1% in Fed rate cuts from a liquidity perspective.
 
-Lyn tracks US domestic liquidity through a multi-component framework, not just the Fed funds rate:
+In practice, Janet Yellen (2023-2024) and Scott Bessent (2025-2026) both maintained ~22% T-bill issuance ratios despite stated intentions to normalize. As of May 2026, Bessent's quarterly Treasury refunding documents confirmed continuation of this above-normal T-bill issuance pattern, which has remained one of the persistent pro-liquidity anchors throughout the period.
 
-**Components:**
-1. **Fed balance sheet** — the primary tool. QT reduces reserves; QE/balance sheet expansion adds them.
-2. **Treasury General Account (TGA)** — when Treasury draws down its cash account, it injects liquidity; when it builds up, it drains liquidity.
-3. **Reverse repo (RRP)** — money parked at the Fed; as money flows out of RRP into T-bills, it adds liquidity.
-4. **Bank reserves** — the aggregate level relative to "ample reserve" threshold. Below this, repo stress emerges.
+## The K-Shaped Economy
 
-**Key stress indicator:** **SOFR-IORB spread** — the difference between the secured overnight financing rate and the interest rate the Fed pays on bank reserves. When SOFR rises persistently above IORB, it signals banks are competing for reserves, a leading indicator that QT must end. Lyn used this indicator to call the end of QT months before it happened. [Liquidity Pivot and Banking Update, 2025-10-26; Fed Dilemmas and SLR Updates, 2025-06-22]
+Lyn uses "K-shaped" to describe the bifurcated US economy that fiscal dominance produces. The upper branch of the K is characterized by: asset price inflation, strong corporate profits in AI-adjacent or defense-adjacent sectors, high consumer confidence among older and wealthier cohorts, and favorable treatment by fiscal policy. The lower branch is characterized by: real wage stagnation, high cost of living, record-low consumer sentiment (officially hit multi-decade lows in Q1 2026, lower than 2008 or 2020), difficulty entering asset ownership, weak housing affordability, and job market stagnation (non-farm payrolls flat since April 2025).
 
-**The QT End Sequence (2025):**
-- Sept–Oct 2025: Fed's repo facility used persistently (not just quarter-end)
-- Oct 14: Powell acknowledged liquidity strain
-- Oct 29: Fed announced end to QT
-- Dec 10: Fed began $40B/month T-bill purchases → the "gradual print"
-- Baseline ongoing: ~$25B/month required to keep reserves ample
+By Q1 2026, the K-shape had become so pronounced that University of Michigan consumer sentiment fell to an all-time record low — lower than the Great Financial Crisis, lower than COVID lockdowns, lower than the 1970s stagflation. Lyn attributes this to the compound effect of: high fuel costs (Hormuz crisis), mortgage lock-in effect, AI disruption of white-collar job markets, and the structural weight of accumulated inflation from 2021-2024.
 
-[Liquidity Shutdowns, Tariffs, and Earnings, 2025-11-09; Implications of the Fed's Structural Shift, 2025-12-21]
+## Three Fiscal Eras (2019-2026)
 
----
+Lyn identifies three distinct phases of the current fiscal cycle in the June 2025 report:
 
-## Global Liquidity Framework
+**Era 1 (2019-2021):** Pre-COVID fiscal dominance begins, then goes explosive. Deficits reach 15-16% of GDP in 2020-2021. Asset prices detach from fundamentals. Crypto and speculative assets bubble.
 
-Beyond the domestic picture, Lyn tracks **global liquidity** through several channels:
+**Era 2 (2022):** Fiscal pause. Deficit narrows briefly as COVID spending expires. The Fed hikes aggressively. The dollar spikes from 90 to 115 on the DXY. EM currencies collapse. Bitcoin drops 75%. This is the one period where fiscal dominance temporarily yields to monetary tightening.
 
-- **DXY (Dollar Index)** — the most important single variable. Dollar strength squeezes EM via dollar-denominated debt obligations. Dollar weakness is the primary catalyst for EM outperformance.
-- **China credit impulse** — China redirecting liquidity toward industrial policy (autos, chips) rather than real estate reflation.
-- **Japan interest rates** — rising Japanese rates = yen strengthening = capital repatriation from global markets back to Japan = global liquidity headwind.
-- **Global M2** — the aggregate money supply across major economies; highly correlated with bitcoin and risk assets.
+**Era 3 (2023-2026):** Grinding re-acceleration. Interest expense balloons, adding structural pressure. DOGE fails. The One Big Beautiful Bill adds to deficits. The Supreme Court caps tariff revenue potential. By April 2026, Lyn categorizes the fiscal situation as "mildly re-accelerating" — new deficits layered on top of structural ones.
 
-Global liquidity is the dominant driver of bitcoin price on multi-month timeframes (correlation ~0.9). [A Bank and Tech Barbell, 2025-05-25]
+## Demographic and Structural Foundations
+
+Underlying everything is a demographic observation: the US (like most developed economies) faces aging demographics that structurally increase entitlement spending and reduce economic dynamism. Social Security and Medicare are politically untouchable, and their cost as a share of GDP grows automatically as the population ages. Combined with rising interest expense (which by 2025 exceeded defense spending), the mandatory spending category has essentially consumed all fiscal flexibility. The only realistic long-term resolution paths are some combination of: financial repression (holding real rates below nominal GDP growth), currency debasement (running the printing press), and gradual restructuring via inflation.
+
+Lyn's base case — stated consistently from early 2024 through May 2026 — is that developed market fiscal dominance does not end in a dramatic debt crisis but in a slow-motion chronic condition: persistently above-target inflation, weak real economic growth for median households, gradual hard-asset outperformance, and periodic sharp equity corrections when monetary tightening temporarily overrides fiscal stimulus.
+
+## "Japanification" as End State
+
+In the May 2026 report, Lyn introduces a new framing for the US economic outlook: Japanification. Japan has operated under fiscal dominance for three decades — persistent deficits, debt-to-GDP over 200%, a central bank that buys government bonds, suppressed yields, stagnant growth, and a gradual aging of the population. US outcomes are unlikely to be that extreme (reserve currency status provides enormous shock absorbers), but the directional parallel is valid: large fiscal deficits prevent deep recessions while also preventing genuine economic dynamism, AI productivity gains absorb corporate labor without creating mass unemployment, and the result is a structural low-growth-in-real-terms but resilient-in-nominal-terms economy that frustrates both bulls and bears perpetually.
 
 ---
 
-## Geopolitical Framework: Multipolar World
-
-Starting in 2022 and accelerating through 2025–2026, Lyn tracks a secular shift toward multipolarity:
-- China became the world's largest auto exporter by 2024
-- Central banks of BRICS nations accelerating gold purchases
-- China helping broker Saudi-Iran dialogue, reducing US influence
-- Russia-Ukraine war cementing Russia's financial alignment with China
-- The Hormuz Crisis (March 2026) as a potential pivot point in US ability to project power
-
-This framework supports: long gold, long EM equities, cautious on US exceptionalism. [Emerging Markets Breakout, 2026-05-10; Tariffs, Iran, and Rapid Impacts from AI, 2026-03-01]
-
----
-
-## Investment Process
-
-**Valuation tool:** FAST Graphs — Lyn's primary stock analysis framework:
-- Orange line = 15x P/E (conservative fair value)
-- Blue line = historical average P/E multiple for the company
-- When price is below both lines: buy territory
-- When price far above both lines: sell/trim territory
-
-**Position sizing philosophy:**
-- Banks: 6–12% of portfolio (largest bet category)
-- EM positions: 2–5% per country/position
-- Bitcoin: meaningful allocation but not disclosed precisely
-- Airline/commodity/micro-bets: 1–2% each ("scattering of uncorrelated bets")
-
-**Signals that shift conviction:**
-- SOFR-IORB spread elevation → liquidity tightening
-- Bank reserve levels approaching minimum → QT near end
-- mNAV premium on bitcoin treasury companies → bitcoin sentiment exhaustion
-- MVRV Z-score → bitcoin cycle positioning
-
-**Time horizon:** Primarily 12–36 months for equity theses; 3–5 years for structural themes. [Multiple articles]
-
----
-
-## "Run It Hot" Playbook
-
-Lyn tracks the US government's implicit (and sometimes explicit) strategy:
-- Accept higher inflation rather than trigger debt crisis
-- Grow nominal GDP faster than debt-to-GDP ratio
-- Use financial repression (keeping real rates below nominal growth) to slowly erode debt burden
-- Turkey analogy: inflation-adjusted assets protected; cash holdings destroyed
-
-Treasury Secretary Bessent's phrase "run it hot" captured this. It means fiscal deficits stay large, monetary policy is accommodative enough to prevent bond market dysfunction, and the "solution" to the debt problem is inflation over time. [A Bank and Tech Barbell, 2025-05-25; Fiscal Re-Acceleration, 2026-04-25]
-
----
-
-## The Hormuz Crisis (2026): A Case Study in Tail Risk
-
-From March 1, 2026 through at least May 2026, the Strait of Hormuz was effectively closed after US-Israel strikes on Iran. At its peak, ~20% of global oil/LNG was disrupted. Lyn tracked this through:
-- Energy price impact (oil futures ~$100; Dubai physical swaps ~$140)
-- Liquidity impact (DXY inched to ~100; swap lines requested by UAE)
-- Economic deceleration (US consumer sentiment hit record lows)
-- Portfolio implications: existing energy/pipeline holdings as hedge; building cash for deployment
-
-Key insight: even severe geopolitical disruption did not trigger a US domestic liquidity crisis because the Fed's standing repo and FIMA facilities served as first lines of defense. [Hormuz Crisis and Building a Watch List, 2026-03-29; Hormuz, Liquidity, and Upcoming Investments, 2026-04-12]
+*See also: [usd-liquidity-thesis.md](usd-liquidity-thesis.md) for the monetary plumbing mechanics | [bitcoin.md](bitcoin.md) for the hard-asset response to fiscal dominance | [sector-views.md](sector-views.md) for which industries benefit from this regime*

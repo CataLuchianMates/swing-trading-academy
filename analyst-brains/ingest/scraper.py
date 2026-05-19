@@ -27,7 +27,6 @@ PASSWORD = "Vancouver2025!"
 OUTPUT_DIR = Path(__file__).parent.parent.parent / "investment_research" / "lyn-alden" / "scraped"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# Only scrape articles from the last 12 months
 CUTOFF_DATE = datetime.now() - timedelta(days=365)
 
 
@@ -174,6 +173,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=10)
     parser.add_argument("--all", action="store_true")
+    parser.add_argument("--since", type=str, help="Cutoff date YYYY-MM-DD (default: 12 months ago)")
     args = parser.parse_args()
+    if args.since:
+        CUTOFF_DATE = datetime.strptime(args.since, "%Y-%m-%d")
     limit = 1000 if args.all else args.limit
     asyncio.run(main(limit))
