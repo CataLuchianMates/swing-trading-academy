@@ -16,6 +16,7 @@ PERSONAS_DIR = BRAINS_DIR / "personas"
 
 ANALYSTS = {
     "Lyn Alden": "lyn-alden",
+    "Phil": "phil",
 }
 
 MODEL = "claude-sonnet-4-20250514"
