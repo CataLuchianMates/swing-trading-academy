@@ -285,7 +285,13 @@ def main():
             with client.messages.stream(
                 model=MODEL,
                 max_tokens=2048,
-                system=system_prompt,
+                system=[
+                    {
+                        "type": "text",
+                        "text": system_prompt,
+                        "cache_control": {"type": "ephemeral"},
+                    }
+                ],
                 messages=[
                     {"role": m["role"], "content": m["content"]}
                     for m in st.session_state.messages
