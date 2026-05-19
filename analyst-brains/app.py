@@ -4,6 +4,7 @@ from pathlib import Path
 import anthropic
 import streamlit as st
 from dotenv import load_dotenv
+from supabase import create_client
 
 load_dotenv()
 
@@ -14,10 +15,56 @@ PERSONAS_DIR = BRAINS_DIR / "personas"
 
 ANALYSTS = {
     "Lyn Alden": "lyn-alden",
-    # Add more: "Marlin Capital": "marlin-capital", "Doomberg": "doomberg"
 }
 
 MODEL = "claude-sonnet-4-20250514"
+
+
+def get_supabase():
+    url = os.getenv("SUPABASE_URL") or st.secrets.get("SUPABASE_URL")
+    key = os.getenv("SUPABASE_KEY") or st.secrets.get("SUPABASE_KEY")
+    if not url or not key:
+        return None
+    return create_client(url, key)
+
+
+def load_messages(analyst_slug: str) -> list:
+    client = get_supabase()
+    if not client:
+        return []
+    try:
+        res = client.table("conversations").select("messages").eq("analyst_slug", analyst_slug).single().execute()
+        return res.data["messages"] if res.data else []
+    except Exception:
+        return []
+
+
+def save_messages(analyst_slug: str, messages: list):
+    client = get_supabase()
+    if not client:
+        return
+    try:
+        client.table("conversations").upsert({
+            "analyst_slug": analyst_slug,
+            "messages": messages,
+            "updated_at": "now()",
+        }).execute()
+    except Exception:
+        pass
+
+
+def clear_messages(analyst_slug: str):
+    client = get_supabase()
+    if not client:
+        return
+    try:
+        client.table("conversations").upsert({
+            "analyst_slug": analyst_slug,
+            "messages": [],
+            "updated_at": "now()",
+        }).execute()
+    except Exception:
+        pass
 
 
 @st.cache_data(show_spinner="Loading wiki...")
@@ -25,30 +72,28 @@ def load_wiki(analyst_slug: str) -> dict[str, str]:
     wiki_path = WIKI_DIR / analyst_slug
     if not wiki_path.exists():
         return {}
-    pages = {}
-    for md_file in sorted(wiki_path.glob("*.md")):
-        pages[md_file.stem] = md_file.read_text(encoding="utf-8")
-    return pages
+    return {
+        md_file.stem: md_file.read_text(encoding="utf-8")
+        for md_file in sorted(wiki_path.glob("*.md"))
+    }
 
 
 def load_persona(analyst_slug: str) -> str:
     persona_file = PERSONAS_DIR / f"{analyst_slug}.md"
     if persona_file.exists():
         return persona_file.read_text(encoding="utf-8")
-    return f"You are {analyst_slug.replace('_', ' ').title()}, a financial analyst."
+    return f"You are {analyst_slug.replace('-', ' ').title()}, a financial analyst."
 
 
 def build_system_prompt(analyst_slug: str, wiki_pages: dict[str, str]) -> str:
     persona = load_persona(analyst_slug)
-
     if not wiki_pages:
-        wiki_section = "*(No wiki pages available yet — wiki has not been built for this analyst.)*"
+        wiki_section = "*(No wiki pages available yet.)*"
     else:
         wiki_section = "\n\n---\n\n".join(
             f"## {name.replace('-', ' ').title()}\n\n{content}"
             for name, content in wiki_pages.items()
         )
-
     return f"""{persona}
 
 ---
@@ -93,16 +138,19 @@ def main():
                 for name in wiki_pages:
                     st.markdown(f"- {name.replace('-', ' ').title()}")
         else:
-            st.warning("No wiki built yet. Run llmwiki to generate it.")
+            st.warning("No wiki built yet.")
 
         if st.button("Clear chat"):
             st.session_state.messages = []
+            clear_messages(analyst_slug)
             st.rerun()
 
     st.title(f"Chat with {analyst_name}")
 
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+    # Load messages from Supabase if not already in session state
+    if "messages" not in st.session_state or st.session_state.get("loaded_slug") != analyst_slug:
+        st.session_state.messages = load_messages(analyst_slug)
+        st.session_state.loaded_slug = analyst_slug
 
     for msg in st.session_state.messages:
         with st.chat_message(msg["role"]):
@@ -117,7 +165,7 @@ def main():
 
         api_key = os.getenv("ANTHROPIC_API_KEY") or st.secrets.get("ANTHROPIC_API_KEY")
         if not api_key:
-            st.error("ANTHROPIC_API_KEY not found. Set it in .env or Streamlit secrets.")
+            st.error("ANTHROPIC_API_KEY not found.")
             st.stop()
 
         client = anthropic.Anthropic(api_key=api_key)
@@ -141,6 +189,7 @@ def main():
             response_placeholder.markdown(full_response)
 
         st.session_state.messages.append({"role": "assistant", "content": full_response})
+        save_messages(analyst_slug, st.session_state.messages)
 
 
 if __name__ == "__main__":
