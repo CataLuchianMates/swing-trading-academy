@@ -265,8 +265,11 @@ def main():
 
     # ── Chat history (shared across brains) ──
     if "chat_history" not in st.session_state:
-        # Load from first brain as the shared base
-        st.session_state.chat_history = load_messages("shared") or []
+        # Try shared first, fall back to lyn-alden for backwards compatibility
+        history = load_messages("shared")
+        if not history:
+            history = load_messages("lyn-alden")
+        st.session_state.chat_history = history or []
 
     st.title("🧠 Analyst Brains")
 
@@ -276,8 +279,7 @@ def main():
             with st.chat_message("user"):
                 st.markdown(entry["content"])
         else:
-            # assistant entries have a "brain" key
-            brain = entry.get("brain", "Assistant")
+            brain = entry.get("brain", "Lyn Alden")
             with st.chat_message("assistant"):
                 st.markdown(f"**{brain}**")
                 st.markdown(entry["content"])
