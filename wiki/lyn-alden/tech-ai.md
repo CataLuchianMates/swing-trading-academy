@@ -1,88 +1,144 @@
+# Lyn Alden — Technology & AI
+
+Lyn's approach to technology investing is characteristically contrarian: she was deeply skeptical of growth tech valuations in 2022 (and sold most exposure), identified specific AI beneficiaries early (Alphabet 2022-2025, Adobe 2023), and was already warning about hyperscaler overvaluation by late 2025 — before the correction materialized. Her framework for AI is structural and multi-year, not momentum-driven.
+
 ---
-title: "Technology and AI"
-wiki: "lyn-alden"
-last_updated: "2026-05-18"
+
+## The Value vs Growth Shift
+
+Lyn's January 2023 article on value vs growth laid out the framework she'd been implementing since 2020: DCF analysis shows that growth stocks are approximately 89.9% more rate-sensitive than value stocks, given that their cash flows are weighted toward the distant future. A 1% change in discount rate wipes out far more value in a stock trading at 50x earnings than in one trading at 10x earnings.
+
+Her conclusion: the 2020s would be a value decade, just as the 1970s were. After 15 years of growth dramatically outperforming value (driven by falling rates and tech platform winner-take-all dynamics), the regime was reversing. Rate hikes were the immediate catalyst, but the structural driver was the shift from asset-light tech monopolies to capex-intensive competition.
+
+She specifically sold ROKU and TWLO (high-multiple SaaS) in December 2022 and had been reducing growth exposure since mid-2022. The large-cap tech she retained — GOOGL, MSFT — was at much more reasonable valuations and had genuine AI exposure.
+
 ---
 
-# Lyn Alden: Technology and AI
+## Alphabet (GOOGL) — Preferred Hyperscaler 2022-2025
 
-## The Hyperscaler FCF Problem
+Lyn began emphasizing Alphabet as her preferred large-cap tech holding from 2022 through late 2025, with three distinct reasons:
 
-Lyn's most important technology call is her November 2025 analysis of the AI hyperscalers' free cash flow problem. The central observation: Microsoft (MSFT), Meta (META), Oracle (ORCL), and others all showed flat or negative free cash flow despite growing reported net income. The disconnect: massive GPU capex spending was consuming all cash generation.
+1. **AI threat to search overblown:** She argued consistently that despite ChatGPT and competitor AI search tools, Google's core search business would remain dominant on an investable time horizon. The practical reality: for high-stakes queries (medical, legal, financial), users still strongly prefer authoritative, indexed sources over probabilistic AI generation.
 
-The quantification: by November 2025, hyperscalers had collectively issued $120 billion in bonds during 2025 — approximately 4x their normal annual bond issuance rate. This represented extraordinary capital markets reliance to fund capex that operating cash flow could not cover.
+2. **Alphabet as AI participant:** Google DeepMind, Google Cloud AI, and Google's Tensor Processing Units (TPUs) made it one of the primary AI beneficiaries — not just a potential victim. Google had arguably the best AI research team in the world (DeepMind + Google Brain merged into Google DeepMind).
 
-The GPU depreciation debate adds further uncertainty. Company 10-Ks claim GPU useful lives of 5-6 years, justifying spreading the expense over that period. Michael Burry's analysis suggests the actual useful life is closer to 3 years, given the pace of model improvements making prior-generation chips obsolete. If Burry is right, companies are meaningfully understating annual depreciation, and their reported profits are overstated. An MIT study found 95% of enterprise AI deployments fail to generate positive ROI.
+3. **YouTube:** Structural growth in streaming consumption, podcast-video convergence, creator economy. YouTube was underpenetrated relative to traditional broadcast advertising.
 
-The investment implication: these companies were trading at very high valuations at a time when their fundamental financial characteristics were deteriorating in ways their GAAP statements obscured. Lyn's preferred hyperscaler from 2022-2025, **Alphabet (GOOGL)**, she had bought at $120 in 2022 and rode it to $300, at which point she shifted to neutral in late 2025 — "taken to neutral after $300 from $120 2022 entry, thesis played out."
+4. **Cheap relative to peers:** Throughout 2022-2024, GOOGL traded at a meaningful discount to Meta, Microsoft, and Amazon on standard multiples, despite comparable or superior underlying business quality.
 
-After her November 2025 caution report, three of the four hyperscalers (MSFT, ORCL, META with partial exception) underperformed the S&P 500 in subsequent months. META was the outlier that continued outperforming.
+Lyn published a deep dive on Alphabet in May 2022 (early coverage) and an updated deep dive in November 2024. In November 2025, after GOOGL had reached $300/share, she shifted from bullish to neutral: "I view Alphabet as a hold but not a buy... I wouldn't be surprised to see a year or two of correction." She reduced the GOOGL allocation in the newsletter portfolio.
 
-## AI as Deflationary for Software Labor
+---
 
-The most important economic implication of AI, in Lyn's framework, is that it compresses the per-seat pricing power of software-as-a-service companies while simultaneously reducing labor costs for their enterprise customers.
+## AI Framework: "10x Accessibility"
 
-The mechanism: SaaS companies charge per user per month. If AI allows one designer to do the work of three, companies need fewer design software subscriptions. The per-seat revenue model collapses. Companies can try to charge per-AI-generation-unit instead of per-seat, but switching costs are low, competition among AI providers is intense, and companies can increasingly build simpler AI-powered tools in-house.
+Lyn's first serious AI deep dive was May 2023. Her framework was "10x accessibility" — AI's primary impact is not replacing expert professionals but dramatically lowering the entry threshold for non-experts:
 
-Lyn frames this as primarily deflationary for the software layer while being inflationary for "backend winners" — companies with physical products, regulated services, or hard assets that can use AI to reduce their own SaaS and labor costs, dropping savings to margins.
+- A graphic designer with AI tools can now produce work that previously required a small team
+- A junior programmer can write production-ready code with AI assistance
+- A marketing professional without design training can generate professional visuals
 
-The broader labor market implication: Block (NYSE: XYZ, formerly Square/Twitter) laid off 40%+ of its 10,200 employees in March 2026, citing AI productivity gains. CEO Jack Dorsey provided workers generous severance (20+ weeks pay, 6 months healthcare, $5k cash, keep equipment). Stock surged 16% the day after the announcement. Lyn expects more "waves of 20% range" layoffs across tech companies in subsequent quarters, using AI as both "a real reason and an excuse" to reduce bloat.
+This expands total demand for the underlying creative and information services, even as it disrupts the labor economics of those industries. The Jevons Paradox applies: if design services become 10x cheaper, the demand for design services doesn't stay constant — it expands significantly, partially offsetting the per-unit revenue decline for software companies.
 
-## Adobe (ADBE): Value Play or Value Trap?
+Her investment conclusion in May 2023: NVDA had already run (she acknowledged it); her contrarian pick was ADBE as the AI beneficiary that hadn't been priced yet.
 
-Adobe is Lyn's primary "disrupted software stock" position. She has owned it since January 2019 (entry ~$230), watched it soar to $650, fall to $250, soar again to $630, and fall back to nearly $260 by early 2026.
+---
 
-The bear case on Adobe: Canva is competing strongly on the entry/mid-level design front. New designers increasingly start with Canva, not Adobe. This banishes Adobe to the "pro market" rather than controlling the full entry-to-pro design stack. Over time, Canva and similar tools could eat upward into professional workflows. Additionally, Figma posed a competitive threat to Adobe's UI/UX design suite; Adobe attempted to buy Figma for $20B but was blocked by regulators. Figma subsequently IPO'd (ticker FIG) at a much lower valuation.
+## Adobe (ADBE) — The Bipolar AI Stock
 
-The bull case: Adobe's revenue and earnings growth have not taken a significant hit three years into the AI boom. Creative Cloud freemium users crossed 80 million monthly active users by Q4 2025 (50% YoY growth). Firefly (Adobe's AI generation tool) showed 45% quarter-over-quarter growth in generative credits consumed. Annualized recurring revenue growth of 10.9% YoY with 10.2% expected next year.
+Lyn's history with ADBE spans the full newsletter period:
 
-Lyn's conclusion as of March 2026: "I err toward Adobe being a value play rather than a value trap." At approximately 11x forward earnings and with a fortress balance sheet (roughly equal cash and debt), the company is "trading at around 11x blended earnings (~15x trailing), priced for negligible growth." She has been gradually adding to the position but waiting for a clearer technical bottom before "pounding the table."
+**January 2019 (initial add):** Added to newsletter portfolio around $230.
+**2021-2022 (overvalued):** Rose above $650; she warned it was getting overextended.
+**May 2023 (AI pick):** Added to Other Holdings as the AI beneficiary that hadn't run. ADBE rose 44% over the following 7 months — nearly doubling NVDA's return over the same period.
+**December 2023 (warning):** "I think Adobe is getting over its skis now, with a PEG ratio closer to 3x than 2x... I view Adobe as a hold but not currently a buy." Stock subsequently fell from ~$630 to ~$260.
+**2025-2026 (value territory):** Below its 2022 lows at ~$260. Trading at ~12x blended earnings (~15x trailing). "Priced for negligible growth."
+**February 2026 (value play):** Added to No Limits Portfolio with 10 shares. Bought for Other Holdings. "I err toward Adobe being a value play rather than a value trap."
 
-Note: Adobe's longtime CEO announced he would transition to executive chairman role in March 2026, spooked already-bearish investors and caused a sell-off despite solid earnings. Lyn viewed the fundamental thesis as intact.
+Lyn's February 2026 analysis of the bull/bear debate:
+- **Bear:** Canva (photoshop/illustrator competitor), Figma (UI/UX competitor, though went public at declining valuation), AI generative design tools commoditizing the entry-level design market. Adobe gets pushed into "pro only" territory, losing the full entry-to-pro stack.
+- **Bull:** Adobe's revenue growth hasn't taken much of a hit in three years of the AI boom. Professional market remains sticky. Fortress balance sheet (cash ~= debt). Aggressive buybacks reducing share count. Jevons Paradox: cheaper design tools expand total design market, benefiting Adobe's premium products.
 
-## Salesforce (CRM), Intuit (INTU), and SaaS Watch List
+Her stated conviction: moderate, not high. "While my conviction is not as high for Adobe as it was for Alphabet from 2022-2025, I err toward Adobe being a value play." She acknowledged she would be watching the fundamental thesis closely.
 
-Lyn did not yet initiate positions in these but put them on her explicit watch list in the March-April 2026 period as AI disruption fears created potential deep-value opportunities:
+---
 
-- **Salesforce (CRM)**: AI threatens per-seat CRM subscription model
-- **Intuit (INTU)**: Accounting and tax software potentially disruptible by AI agents
-- **Others in IGV (iShares Expanded Tech-Software Sector ETF)**: ~100 companies, top dozen account for most value
+## MSTR and the Bitcoin-Software Correlation
 
-Her view: "I suspect there will be interesting buying opportunities, but the patient play is to let things burn down and stabilize, then pick through the rubble." She noted the market seems to already be pricing in worst-case AI disruption scenarios for most SaaS companies.
+An unusual pattern emerged in 2025-2026: bitcoin and software stocks (as measured by IGV, the iShares Expanded Tech-Software Sector ETF) became highly correlated. Lyn discussed this in both February and March 2026.
 
-## Micron (MU): Memory is the New GPU
+Her interpretation: both bitcoin and software stocks are "future-cash-flow" assets in the eyes of markets — they're valued based on long-horizon expected cash flows (or in bitcoin's case, monetary adoption) rather than current earnings. When risk appetite for long-duration assets falls, both sell off together. When liquidity improves, both recover together. MSTR's inclusion of both a bitcoin balance sheet and a software business made it a crystallized form of this correlation.
 
-The AI agents shift from chatbots to agentic AI (February 2026 onward) dramatically increased demand for RAM. AI agents require persistence — they can't reset after each interaction like a chatbot. This means large working memory, which is almost entirely produced by three companies: Micron (US), SK Hynix (South Korea), Samsung (South Korea).
+---
 
-Lyn's analysis: the world had been in a "soft RAM ceiling" since the mid-2010s. Smartphones and PCs had enough RAM for daily use. Gaming graphics, after a multi-decade improvement curve, plateaued. Incremental RAM stopped mattering for most people. This suppressed the baseline demand growth rate for memory.
+## Hyperscalers — November 2025 Warning and Subsequent Correction
 
-AI agents break through this soft ceiling. Having a personal AI assistant is a new mass-market application for RAM — "structurally higher baseline global demand." This is the same type of structural demand unlock that smartphones created for mobile chips in the 2010s.
+In her November 2025 deep dive on AI hyperscalers (GOOGL, MSFT, Oracle, Meta), Lyn's overall tone was cautious:
 
-**Investment action (April 13, 2026)**: Lyn sold June 18 cash-secured puts on MU at a $380 strike with MU trading at $420. Premium collected for the two-month period, and if exercised, effective cost basis ~$350.
+- **GOOGL:** Neutral (recently reduced from bullish)
+- **MSFT:** Cautious — too much capex, too high valuation, free cash flow constrained
+- **Oracle (ORCL):** Cautious
+- **Meta:** Neutral to cautious
 
-Her caveat: "I do recommend conservative position sizing with a stock that moves this sharply." Memory is highly cyclical — overinvestment in new supply could eventually crash prices as in prior cycles. But she sides with the bulls: "With the boom in AI agents, this isn't a normal cycle."
+Her core concern: "The hyperscalers have so much competition and capex to do going forward, which limits their free cash flow generation potential. And that came at a time when they were trading at very high valuations."
 
-By May 2026, MU had "massively broken out to fresh new highs" along with SK Hynix and Samsung — confirming her April thesis.
+By February 2026, three out of four hyperscalers she had been cautious on (GOOGL, MSFT, Oracle) had underperformed the S&P 500 since the November article. Only Meta outpaced the index. She noted this as the natural outcome of the shift: AI requires massive ongoing capex, which reduces the asset-light, high-free-cash-flow characteristic that drove mega-cap tech outperformance in the 2015-2023 period.
 
-## IGV (iShares Software ETF) vs Bitcoin Correlation
+---
 
-Lyn noted in February-March 2026 that bitcoin had developed an unusually high correlation with software stocks on both a 5-year and 6-month basis. Both were selling off together — "software stocks have been trading poorly, and bitcoin has been correlating with them." She attributed this to cross-ownership (tech investors often hold both), the monetarization overlap (both are "information economy" assets affected by risk-off sentiment), and the leveraged speculation element present in both.
+## TSM (Taiwan Semiconductor)
 
-When software stocks attempted a price bottom in late February/early March 2026, bitcoin also attempted to stabilize — confirming the correlation and suggesting both would likely recover or decline together.
+Lyn has been long TSM since 2022 as her preferred semiconductor play. Her reasoning: NVDA designs chips but doesn't fabricate them. All of NVDA's chips are fabricated by TSMC. All of AMD's advanced chips. Apple's M-series chips. Qualcomm. Essentially every advanced semiconductor runs through TSMC's fabs.
 
-## AI Capabilities: METR Benchmark
+At historically lower P/E multiples than NVDA, TSM was her preferred way to capture the AI chip demand without paying the full NVDA growth premium. She noted that TSMC's Taiwan geopolitical risk was real but manageable in a portfolio context — the risk was widely known and priced to some degree.
 
-Lyn referenced the METR research institute's February 2026 AI capability study as context for AI adoption:
+---
 
-- Latest AI models: 14-hour tasks with 50% success rate, or 1-hour tasks with 80% success rate (all completed in minutes by AI)
-- The latest data points "accelerated above the prior exponential curve"
-- Applies to coding, financial modeling, powerpoint decks, research compilation, and increasingly other domains
-- AI is wrong frequently and confidently — "confidently wrong" is the specific problem. The car wash example demonstrated that even frontier models fail basic logic tests, then double down rather than recognize the error.
+## SaaS Disruption — The Broader Landscape
 
-Her framework for AI usefulness: AI as productivity multiplier for skilled users who know its limitations > AI as replacement for unskilled users who trust it blindly. "The real killer app is the human employee that knows how to use AI."
+Lyn's March 2026 article on SaaS disruption laid out the most comprehensive analysis of what AI means for software companies:
 
-## Equal-Weight S&P 500 as AI Signal
+**Per-user pricing model under pressure:** SaaS companies typically charge per user per month. As AI increases the productivity of each user, companies need fewer users of a given software to accomplish the same work. Revenue per unit of work accomplished falls.
 
-Lyn flagged the equal-weight S&P 500 (RSP) outperforming the market-cap-weighted S&P 500 (SPX) starting in November 2025 as a potential structural signal. If AI benefits consumers and smaller companies by making software/productivity tools cheap and accessible, rather than benefiting mega-cap tech companies as previous technology waves did (the 2010s social media era benefited mega-caps disproportionately), then capital should gradually rotate from concentrated mega-caps toward the broader market.
+**Countervailing force:** Jevons Paradox. If software becomes 10x cheaper and 10x more accessible, the total amount of work done with software can expand dramatically. Not all software is equal on this dimension: accounting/compliance software has a fixed total demand ceiling (there's only so much accounting to do); creative/design software may have much higher demand elasticity.
 
-The mechanism: mega-caps in the 2010s were asset-light network effect businesses. Users gave up data in exchange for free products; the companies captured value with minimal capex and massive free cash flow. AI breaks this: hyperscalers need massive capex ($120B+ in bonds), user switching costs are low, no single company has a durable AI moat. The value accrues to consumers (cheaper productivity tools) and to hard-asset businesses that use AI to reduce backend costs.
+**Company-specific assessment:**
+- CRM (Salesforce): Sales software at significant discount, on her March 2026 watchlist. "Patient play — let things burn down and stabilize, then pick through the rubble."
+- INTU (Intuit): Accounting software. Lower demand elasticity (less Jevons). More vulnerable to disruption than design software.
+- ADBE: Her current hold/accumulation thesis.
+
+**Backend winners:** Physical companies, regulated financial services, and commodity businesses are AI-resistant in their core operations but can benefit from AI reducing their backend costs (legal, accounting, design, coding). Lyn specifically called out EPD and similar physical/regulated companies as "winners" from this dynamic.
+
+---
+
+## The AI-as-Deflationary-for-Labor Thesis
+
+Lyn's labor market analysis in 2026 incorporates a direct AI impact:
+
+Block Inc (NYSE: XYZ) in March 2026 announced layoffs of 40%+ of its 10,200 employees, with CEO Jack Dorsey explicitly attributing the reduction to AI productivity advances making the headcount unnecessary. Lyn's view: "I expect it will be successful... We'll see more announcements like this in the coming quarters, although maybe more in the 20% range rather than 40%+."
+
+She frames this as the mechanism of AI's impact on labor markets: not sudden replacement but gradual reduction in headcount needs, executed through attrition and restructuring rather than immediate mass layoffs, with AI tools allowing remaining employees to accomplish more. The winners are the employees who learn to use AI as a productivity tool, not those who use it as a substitute for thinking.
+
+For markets, AI-driven labor cost reduction is deflationary for services inflation (which has been the stubborn component of post-COVID CPI) but potentially positive for corporate profit margins in sectors that successfully implement it.
+
+---
+
+## PYPL (PayPal) — Deep Value Watch
+
+PYPL entered Lyn's radar as a deep value opportunity in 2025-2026. After falling from ~$300 in 2021 to under $60, PayPal was trading at low single-digit P/E multiples relative to its normalized earnings power. As a payments network with 400+ million users, PYPL retains substantial franchise value despite losing market share to newer fintech entrants.
+
+In her November 2025 hyperscaler article, she increased the PYPL allocation in the newsletter portfolio (offsetting the GOOGL reduction). By March 2026 (Hormuz watchlist), PYPL was on her payments sector watchlist alongside V.
+
+She distinguishes PYPL from V: Visa has a near-impenetrable network moat (impossible to replicate); PYPL's competitive position is weaker but its valuation compensates for that, making it more of a deep value play than a quality franchise play.
+
+---
+
+## MU (Micron Technology) — AI Agents Memory Play
+
+In April 2026, Lyn established a cash-secured puts position on MU (Micron Technology), specifically tied to the AI agents thesis. Her view: as AI agents become more capable and are deployed at scale, they require high-bandwidth memory (HBM) at scale — memory chips that can transfer data fast enough to feed GPU clusters. Micron is one of only three global producers of advanced memory chips (alongside Samsung and SK Hynix).
+
+The trade: sold June 18, 2026 $380 cash-secured puts at $420 underlying. Premium: approximately significant. The effective buy-in if put: $380 (and premium received offsets further).
+
+---
+
+*Last updated: 2026-05-19 — built from 112 articles (Feb 2022 – May 2026)*

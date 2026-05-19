@@ -1,77 +1,115 @@
+# Lyn Alden — USD & Liquidity Thesis
+
+Lyn's liquidity framework is one of the most mechanically specific aspects of her work. Rather than hand-waving about "easy money" or "tight money," she tracks a precise formula and its underlying components to anticipate turning points in risk assets.
+
 ---
-title: "USD Liquidity Thesis"
-wiki: "lyn-alden"
-last_updated: "2026-05-18"
+
+## The Core Formula
+
+**Domestic Liquidity = Fed Balance Sheet − Treasury General Account (TGA) − Reverse Repo Facility (RRP)**
+
+This is Lyn's primary proxy for US dollar liquidity available to the financial system. She first showed it explicitly in November 2022 in an Energy Transfer update, plotting the formula's output against S&P 500 price. The chart showed a tight correlation that persisted for years.
+
+The intuition behind each component:
+
+**Fed Balance Sheet:** When the Fed expands its balance sheet (buying bonds, providing credit facilities), it injects reserves into the banking system. This is the classic QE mechanism. The Fed was running QT from June 2022 through late 2024, shrinking the balance sheet by ~$80B/month at its peak, then slowing to ~$25B/month, then reversing to ~$40B/month expansion beginning December 2025.
+
+**Treasury General Account (TGA):** The TGA is the US government's operating bank account at the Federal Reserve. When Treasury issues bonds and collects the proceeds, the TGA rises — this drains reserves from the banking system, because buyers of those bonds send money to the Fed rather than keeping it in circulation. Conversely, when the TGA falls (Treasury spending, or debt ceiling standoffs where Treasury can't issue), it pumps liquidity into the system. The TGA had $583 billion in May 2025 after tax season; it typically depletes over summer and refills after a debt ceiling raise.
+
+**Reverse Repo Facility (RRP):** The RRP is a facility where money market funds and other entities park cash at the Fed overnight, earning a guaranteed rate. When the RRP is high, that money is sitting at the Fed rather than circulating in the financial system. From peak RRP of ~$2.5 trillion in late 2022 through 2024, the facility drained as money market funds found better returns in T-bills, injecting ~$2.5 trillion into the financial system — far exceeding QT's drain. By mid-2024 the RRP was near zero. By 2026 the Fed's repo usage (the other direction — where banks borrow from the Fed) had become the key stress indicator.
+
 ---
 
-# Lyn Alden: USD Liquidity Thesis
+## The 2023 Liquidity Paradox — Why Stocks Rose During QT
 
-## The Liquidity Framework
+The 2023 stock rally confused many observers: the Fed was hiking rates AND running QT. Yet the S&P 500 was up dramatically. Lyn's formula explains it entirely.
 
-Lyn's liquidity framework holds that asset prices — especially bitcoin, gold, and emerging market equities — are driven primarily by global M2 (measured in dollar terms). Bitcoin moves in the same direction as global M2 approximately 83% of the time on a 12-month rolling basis, making it the most liquidity-sensitive major asset class she tracks. The mechanism is straightforward: when global dollar liquidity expands, it inflates the price of risk assets denominated in dollars. When it contracts, those same assets deflate.
+From January 2023 through December 2023:
+- Fed balance sheet shrank by ~$1 trillion (negative for liquidity)
+- RRP drained from ~$2.3 trillion to ~$700 billion — a ~$1.6 trillion injection into the system
+- Net result: domestic liquidity was flat to positive despite aggressive Fed tightening
 
-She breaks down domestic US liquidity into its key components:
+The RRP drain was driven by the shift in T-bill yields above the RRP rate. Once 3-month T-bills yielded more than parking at the Fed, money market funds naturally migrated, draining the RRP and injecting that capital into the T-bill market and broader financial system.
 
-- **Fed balance sheet**: The primary variable. During QT (2022-2025), it subtracted base liquidity at ~$60B/month. Now in the gradual print phase, it adds ~$25-40B/month.
-- **Treasury General Account (TGA)**: When the TGA rises (government accumulates cash), it drains reserves from the banking system. When it falls, reserves return. The TGA overfilled to $958B during the government shutdown in late 2025, providing a severe but temporary drag.
-- **Reverse Repo Facility (RRP)**: From a peak of >$2.3 trillion in May 2023, the RRP drained steadily as money market funds shifted into T-bills. By April 2025 it was near zero (~$94B), having released approximately $2.2 trillion of liquidity into the system over two years. This was the liquidity buffer that sustained markets through 2023-2024 despite ongoing QT.
-- **Bank reserves**: The residual. When reserves drop near the "ample" threshold, the Fed is forced to respond. They track cash as a percentage of total bank assets; acute stress occurred in Q4 2025 when bank cash dropped toward 12% of assets, triggering SOFR-IORB spread spikes.
+---
 
-## The Gradual Print (December 2025 Onward)
+## Activist Treasury Issuance (ATI)
 
-On December 10, 2025, at the FOMC meeting, Powell announced the Fed would simultaneously cut rates by 25bp AND begin net balance sheet expansion. The specific plan:
+Lyn introduced this term in August 2024, citing a paper by Stephen Miran and Nouriel Roubini. Treasury Secretary Yellen had deliberately skewed bond issuance toward short-term T-bills rather than longer-duration notes and bonds. This was consequential because:
 
-- **$40 billion/month** in short-duration Treasury purchases (T-bills and up to 3-year T-notes) from December 2025 through April 2026 tax season, to buffer against the seasonal liquidity drain
-- **~$25 billion/month** as the structural baseline thereafter, calibrated to maintain reserves as a roughly constant share of nominal GDP
-- Ongoing passive runoff of mortgage-backed securities continues; only Treasury side is expanding
+- T-bill issuance absorbs money market funds that would otherwise remain in the RRP (liquidity-neutral to positive)
+- Long-term note/bond issuance absorbs real savings from the private sector (liquidity-draining, competing with private investment)
 
-Lyn had forecast this outcome as early as April 2024, when the NY Fed's own projections showed balance sheet bottoming in 2025 and resuming growth in line with nominal GDP. She called the timing "perhaps a few months earlier than my base case" — she expected early 2026, and it came in December 2025.
+Yellen's T-bill-heavy strategy from mid-2023 through 2025 was, in Lyn's estimation, equivalent to approximately a 100 basis point rate cut in terms of financial conditions easing — perhaps 1% of GDP in stimulus. Bessent continued this policy in 2025-2026.
 
-Powell's exact framing: "We need to keep reserves at ample levels even at times when reserves are at a low level temporarily... $20 or $25 billion per month is what structural balance sheet growth requires." He explicitly stated this was "separate from monetary policy" — a crucial distinction Lyn has long anticipated they would make to avoid calling it QE.
+---
 
-By mid-April 2026, the Fed had averaged $41.5 billion per month over the four-month period exactly as telegraphed — the most precise execution of a stated policy she had seen from the Fed in years.
+## The TGA as Tactical Liquidity Signal
 
-## The SOFR-IORB Spread as Stress Indicator
+During debt ceiling standoffs, Treasury cannot issue new bonds. As a result, the TGA depletes as spending continues without fresh borrowing. Each dollar that leaves the TGA becomes bank reserves or private sector cash — a net liquidity injection.
 
-The spread between SOFR (Secured Overnight Financing Rate) and IORB (Interest on Reserve Balances) is Lyn's preferred real-time indicator of interbank liquidity stress. When SOFR rises above IORB, it means some institutions need cash badly enough to pay above the rate the Fed itself pays on reserves — a sign of localized scarcity.
+This explained the January 2023 rally (TGA depletion during the ceiling standoff), and similar dynamics in prior and subsequent ceiling impasses. Lyn specifically tracked the TGA level in real time as an input to near-term market positioning.
 
-This spread spiked persistently from September through December 2025, and Fed usage of its standing repo facility began appearing regularly (not just at quarter-end). By January 2026, after the Fed began expanding its balance sheet, the spread normalized. A brief flare-up on February 17, 2026 ($18B repo usage) was a one-day event. By late March 2026, during the Hormuz crisis, the spread rose mildly but not acutely — domestic banking system remained functional.
+A depleting TGA is also a pro-liquidity signal even outside of standoffs, because it means Treasury is running larger deficits than tax inflows — injecting fiscal stimulus into the economy.
 
-## The Japan Wildcard
+---
 
-Lyn has described Japan's unwinding of yield curve control as the biggest global liquidity wildcard since 2022. Japan's trajectory:
+## SLR and Bank Reserve Constraints
 
-- Maintained negative short rates and yield curve control (YCC) for years
-- Began hiking in 2024 (first to 0.25%, then continued in 2025)
-- 10-year JGB yields went "nearly vertical" by December 2025
-- By April 2026, Japan had fresh multi-decade high long-term rates
+In October 2022 and subsequent articles, Lyn returned repeatedly to the Supplementary Leverage Ratio (SLR) — a bank capital regulation that requires banks to hold equity capital against all assets including Treasuries (which are otherwise considered risk-free). During COVID, the Fed granted an SLR exemption for Treasuries, which allowed banks to absorb the enormous Treasury issuance of 2020-2021 without straining their balance sheets. When that exemption expired in March 2021, it created structural pressure on bank demand for Treasuries at the margin.
 
-The mechanism by which Japan tightens global liquidity: the yen is the world's primary funding currency for carry trades. When Japanese rates rise, it incentivizes capital repatriation from US, European, and EM assets back to Japan. This can simultaneously strengthen the yen, raise global risk premia, and put selling pressure on US Treasuries (as Japanese institutions reduce their foreign bond holdings).
+Lyn argued that an SLR reform — exempting Treasuries from the SLR calculation permanently — would unlock approximately $2 trillion of additional bank balance sheet capacity for Treasury absorption. This would ease Treasury market liquidity, reduce the premium for Treasury market-makers, and potentially allow the Fed to reduce its own balance sheet further without destabilizing the Treasury market. By 2025-2026, this reform remained politically pending but Lyn viewed it as increasingly likely given Treasury market stress.
 
-Additionally, the Bank of Japan will eventually be forced to resume balance sheet growth to support its own bond market (200%+ debt/GDP), which would add global liquidity. Lyn views the timing of this as highly uncertain but ultimately inevitable — Japan will print to suppress its bond market eventually.
+---
 
-## RRP Drain: From Headwind to Neutral
+## Japan as the Global Liquidity Wildcard
 
-The RRP drain was a stealth source of liquidity from May 2023 through April 2025. Lyn tracked it closely as a partial offset to Fed QT. When the RRP was above $2 trillion, each $100B drained was roughly equivalent to $100B in new QE from a bank reserve perspective — the money moved from the RRP into T-bills and ultimately into bank accounts.
+No analysis of US dollar liquidity in 2022-2026 is complete without the Bank of Japan (BOJ). Japan's YCC policy kept domestic Japanese bond yields near zero, which drove enormous capital flows outward from Japan into US Treasuries and other global assets in search of positive real yields. This was the yen carry trade in its structural form.
 
-By the time the RRP reached near-zero in April 2025, this headwind-buffer dynamic was exhausted. There was no more RRP to drain. This meant the remaining liquidity drag from QT had to be absorbed entirely by the banking system. The result was predictable and predicted: reserve scarcity, SOFR spike, forced end of QT.
+Timeline of BOJ YCC adjustments:
+- Pre-2022: 10-year JGB capped at 0.25%
+- December 2022 (surprise): cap raised to 0.50%
+- July 2023: soft 0.50% / hard 1.00% dual cap
+- Early 2024: progressive abandonment of YCC altogether
+- 2024: BOJ raised policy rate to 0.25% in July 2024, triggering the August yen carry trade unwind
+- 2025-2026: BOJ continued hiking, with Japan 10-year yields rising above 1%
 
-## The Dollar Cycle and Emerging Markets
+Each YCC adjustment drained global liquidity at the margin by incentivizing Japanese investors to repatriate capital. Japan ran FX interventions twice in 2022 (~$20 billion) and twice in 2024 (~$35 billion + $23 billion) to slow yen depreciation that had been driven by the YCC-enabled carry trade.
 
-Lyn's dollar framework is binary between a strong-dollar regime (favors US assets, hurts EM) and a weak-dollar regime (favors EM, gold, commodities). She identifies the current weak-dollar era as beginning when the DXY peaked at 110 in late 2024 and fell below 100 by mid-2025.
+New PM Takaichi's $135 billion fiscal stimulus package (October 2025) — equivalent to roughly $1 trillion in US GDP terms — was simultaneously good for Japan's domestic economy and created a cross-current of yen-positive forces (repatriation for domestic investment) vs global liquidity (more JGB issuance to fund the deficit).
 
-The weak dollar thesis rests on:
-1. Large and persistent US trade deficits (Triffin Dilemma supply of dollars to the world)
-2. Large fiscal deficits that the Fed now monetizes at $25-40B/month
-3. AI capex boom attracting less foreign capital inflow as hyperscalers show negative FCF
-4. Growing EM capital markets providing domestic alternatives for local investors
-5. Activist Treasury Issuance (heavy T-bill weighting maintained by Bessent) keeping short-end rates suppressed
-6. Potential Mar-a-Lago Accord: Lyn has referenced the possibility of an intentional dollar devaluation agreement reminiscent of the 1985 Plaza Accord
+By 2026, Japan's rising rates were one of the primary headwinds to global liquidity, partially offsetting the dollar's weakening trend. Lyn held SMFG and MUFG (Japanese megabanks) and EWJV (Japanese value ETF) as direct beneficiaries.
 
-As of May 2026, the DXY sits near 99-100, with Lyn viewing the structural trend as more downward than upward despite temporary crisis-driven bounces (as seen during the Hormuz crisis in March 2026 when DXY briefly touched 100).
+---
 
-## The Supplementary Leverage Ratio (SLR)
+## The 1940s Yield Curve Control Parallel
 
-The SLR requires banks to hold capital against all assets, including nominally risk-free Treasuries. This creates an artificial disincentive for banks to hold large quantities of US government debt. During periods of large Treasury issuance, SLR constraints limit the banking system's absorptive capacity, contributing to liquidity pressure.
+In her December 2022 deep dive on US liquidity and Treasuries, Lyn drew the explicit parallel between current Fed policy and the 1940s yield curve control. During WWII and for years after, the Federal Reserve pegged the 10-year Treasury yield at 2.5% while the federal government ran enormous deficits. CPI averaged 5-6% per year, effectively imposing negative real rates and inflating away a significant portion of the WWII debt.
 
-The Fed announced SLR reform in June 2025 — a 1.5 percentage point reduction for large banks — which effectively increased bank balance sheet capacity for Treasuries. Lyn viewed this as a structural pro-liquidity change that complemented the Fed's gradual print and gave banks more room to absorb Treasury issuance. This was one of the levers that Lyn had identified as capable of reducing the minimum Fed balance sheet size by "a few hundred billion dollars" without directly reducing liquidity.
+The mechanism was: Fed bought whatever supply of Treasuries the market wouldn't absorb at the target yield. Combined with capital controls, this prevented private savers from escaping into gold or foreign assets. The result was financial repression — a transfer of purchasing power from savers to the government/debtors.
+
+Lyn does not believe formal YCC is imminent in the US because: (1) the dollar's reserve status and the depth of dollar-denominated global debt creates natural demand for Treasuries without the Fed intervening, (2) political will for explicit yield control would be enormous and would signal desperation. However, she does believe the functional outcome — real yields below inflation for extended periods, the Fed eventually absorbing large fractions of Treasury supply — is the path of least resistance over the current decade.
+
+---
+
+## The "Gradual Print" — QT to QE Transition
+
+From mid-2022 through late 2024, the Fed ran QT, reducing its balance sheet from ~$9 trillion to ~$7 trillion. Beginning December 10, 2025, the Fed pivoted to balance sheet expansion at approximately $40 billion/month. By the December 2025 through April 2026 period, the Fed was averaging $41.5 billion/month.
+
+Lyn termed this the "gradual print" — not dramatic, not crisis-driven, but a structural acknowledgment that the balance sheet needed to grow in line with the expanding economy and expanding Treasury issuance. She views this as the beginning of the next multi-year phase: the Fed gradually expanding its balance sheet while the Treasury continues running 5-7% of GDP deficits, creating a slow but persistent uplift to nominal asset prices. In a fiscal dominance environment, this is the equilibrium state.
+
+Her May 2025 article anticipated this exact shift: "This flat liquidity situation will likely to persist into Q4 2025. They've already slowed their rate of quantitative tightening twice, which extends the time they can continue to do it. By 2026, the Fed will likely shift toward persistent balance sheet expansion, albeit at a mild pace."
+
+---
+
+## Practical Investment Implications of the Liquidity Framework
+
+Lyn uses the liquidity formula in real time to calibrate risk. When domestic liquidity is rising (Fed expanding, TGA falling, RRP draining), she is more comfortable adding to offensive positions — bitcoin, EM equities, energy producers. When liquidity is falling or uncertain, she increases allocation to the defensive end of the barbell — T-bills, EPD income, gold.
+
+The dollar cycle is the global version of this framework. A weakening dollar (which tends to coincide with US liquidity expansion) is the most reliable catalyst for EM outperformance. A strengthening dollar (US liquidity tightening) is a headwind for all dollar-indebted entities globally — EM sovereigns, corporates, and currencies all face pressure when their dollar debt burdens rise relative to local revenues.
+
+The dollar peaked at ~114 in September-October 2022. By February 2026 it was at a multi-year low. By May 2026 it had weakened further to ~98-100 after the Hormuz crisis and Supreme Court tariff ruling. Lyn explicitly identified the 2026 dollar weakness as the trigger for the EM breakout.
+
+---
+
+*Last updated: 2026-05-19 — built from 112 articles (Feb 2022 – May 2026)*

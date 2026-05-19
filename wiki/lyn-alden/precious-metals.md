@@ -1,101 +1,112 @@
+# Lyn Alden — Precious Metals
+
+Gold and silver are persistent components of Lyn's portfolio, serving as debasement insurance and crisis hedges that are structurally different from both equities and bonds. Her precious metals framework is tied directly to her fiscal dominance thesis, with the SPX/gold ratio as her key indicator of regime shifts.
+
 ---
-title: "Precious Metals"
-wiki: "lyn-alden"
-last_updated: "2026-05-18"
+
+## The SPX/Gold Ratio as a Long-Term Signal
+
+Lyn has tracked the SPX/gold ratio (S&P 500 price divided by the gold price in dollars) as one of the most reliable macro regime indicators over decades. The ratio tells you how many ounces of gold it takes to buy one unit of the S&P 500.
+
+Historical pattern:
+- **1966–1980:** SPX/gold fell dramatically (gold outperformed stocks). Era of fiscal expansion, Vietnam War spending, stagflation.
+- **1980–1999:** SPX/gold rose dramatically (stocks crushed gold). Era of Volcker disinflation, tech boom, fiscal discipline.
+- **1999–2011:** SPX/gold fell again (gold massively outperformed). Dot-com bust, 9/11 fiscal expansion, GFC.
+- **2011–2020:** SPX/gold rose (stocks beat gold during disinflation era).
+- **2020–present:** Lyn argued this is the beginning of a new down-cycle for SPX/gold.
+
+By April 2026, the SPX/gold ratio was rolling over on both medium and long-term timeframes. Lyn cited this as evidence that the regime shift she had predicted since 2020 was finally manifesting. Gold above $4,000 while the S&P 500 was only slightly off its highs meant the ratio was compressing rapidly.
+
 ---
 
-# Lyn Alden: Precious Metals
+## Gold — Bottom to $4,000+: The Full Price Path
 
-## Why Precious Metals in the Portfolio
+**September-October 2022 (Bottom):**
+Gold bottomed at approximately $1,620 in late September 2022, when the dollar index peaked at 114. In her October 2022 gold market analysis and November 2022 Brazilian equities article, Lyn made a bottom call: gold was finding support as the dollar showed its first signs of rolling over. She described the dollar downtrend break as the necessary catalyst for gold to reverse.
 
-Lyn began accumulating precious metals in her newsletter portfolio in autumn 2018. Her framework for precious metals differs from bitcoin in one important way: she focuses on the *physical* commodity or physical-backed trusts rather than the producers, because precious metals have very high existing stockpiles relative to annual new supply. This gives them stable monetary value but limits the pricing power of producers.
+**November 2022–2023 (Recovery):**
+Gold recovered from ~$1,620 to ~$1,900-$2,000 through 2023. The December 2022 gold article series (defensive assets deep dive) noted that the SPX/gold ratio was already beginning to roll over from its 2020 peak. BMY and BTI were preferred defensive assets alongside gold for their cash flow, but gold was added as pure monetary insurance.
 
-Her foundational arguments for holding precious metals:
+**2024 (Breakout Above $2,000):**
+Gold broke decisively above the $2,000 level in 2024 on sustained central bank buying. Emerging market central banks — particularly China, India, Russia, and various Middle Eastern sovereigns — had been accumulating gold reserves at record rates as part of their diversification away from dollar-denominated reserves in the BRICS+ realignment context. Lyn viewed this structural demand as the driver of gold's sustained breakout and not dependent on the Fed pivoting quickly.
 
-1. **Fiscal dominance and currency debasement**: Governments running persistent deficits with central bank accommodation devalue their currencies over long horizons. Gold and silver store value across these cycles in ways that bonds cannot.
+**2025 (Acceleration to ~$3,000):**
+Gold continued higher through 2025 as the Fed signaled and then executed its shift from QT to balance sheet expansion. Lyn noted that at these levels, PHYS was starting to approach what she considered overbought on shorter-term timeframes, but she maintained the holding as a structural position rather than a trading position.
 
-2. **Multi-polar world reducing Treasury demand**: As the global order fragments, sovereign central banks at the margin have been diversifying reserves from US Treasuries into gold. The Money Metals chart she references shows the dollar's share of global reserves declining from the 1960s to today, with gold stabilizing after a multi-decade decline. She views the 2010s as the generational peak of the "bond vs gold" relationship.
+**January 2026 (Sharp Drop, Then Recovery):**
+A sharp sell-off in late January 2026 (gold dropped roughly 5-10% in weeks) prompted Lyn to comment: "I've not been in the camp that thinks it's all just a bubble (rather, I think it's a sustained re-pricing out of a long state of undervaluation), but the contrarian in me does get quite nervous around extremely overbought levels." She treated the pullback as healthy digestion and maintained positions.
 
-3. **Uncorrelated diversifier**: Precious metals often don't correlate with equities or bonds in crisis scenarios, providing genuine portfolio diversification.
+**February-March 2026 (Iran Strikes, Hormuz, $4,000+ Range):**
+The Iran strikes and Hormuz closure drove gold to $4,000+ range. Gold was functioning as Lyn had expected: in an inflationary supply shock, it is the safe haven, not long-duration Treasuries. The dollar weakened, global uncertainty spiked, and gold captured both the safe haven bid and the inflationary commodity bid simultaneously. By March 2026, Lyn had shifted from bullish to neutral on gold — not because the thesis was wrong, but because the rapid move left gold "not a screaming buy at these levels, more a hold."
 
-4. **Bearer assets with zero counterparty risk**: Physical metals held directly cannot be defaulted upon, unlike bonds or even gold ETFs (which require trust in custodians).
-
-## Gold's Epic Run (2018-2026)
-
-Lyn entered gold near the end of its multi-year consolidation. The price trajectory she witnessed:
-
-- **2018-2019 entry**: ~$1,200-$1,500/oz, deeply out of favor
-- **2020**: Covid stimulus rally to ~$2,000
-- **2021-2022**: Consolidation and mild correction despite inflation
-- **2023**: Recovery toward $2,000
-- **Early 2025**: Gold broke to $3,000, then $3,200 during April tariff panic
-- **April-August 2025**: 6-month consolidation after the rapid rise. Lyn warned in April 2025 of a potential 6-12 month gold consolidation, which proved accurate. Gold chopped between roughly $3,200-$3,500 for five months.
-- **September 2025**: Decisive breakout through $3,500. This was the "true breakout" after the false tests earlier.
-- **October 2025**: First touched $4,000. Then the record single-day correction, with gold falling to ~$4,100 after touching $4,300. Lyn called it the "most overbought monthly RSI in history."
-- **November-December 2025**: Choppiness and consolidation around $4,200.
-- **January 2026**: New all-time highs above $4,300, then a sharp sell-off in late January.
-- **January 29-30, 2026 (The Crash)**: Gold fell from $5,500 to $4,800 — a record-breaking single-period decline. Lyn had repeatedly warned about precious metals becoming extremely overbought and had shifted to neutral months earlier. Despite the crash, she noted gold was "still up huge from where it was just weeks/months ago."
-- **February-March 2026**: Stabilization and partial recovery. Gold grinded back above $4,800, then sold off again during the Hormuz crisis as investors liquidated to cover other losses. By March 29, 2026, gold was in the "$4,000+" range and Lyn was watching closely for a local bottom.
-- **April 2026**: Gold, silver, and platinum all put in "temporary price bottoms since mid-to-late March."
+---
 
 ## Silver
 
-Silver's trajectory was even more volatile than gold:
+Silver has dual properties that distinguish it from gold: it is both a monetary metal and an industrial metal (electronics, solar panels, medical devices). This gives it more volatility and more economic cycle sensitivity.
 
-- Late 2024: ~$30/oz
-- **May 2025**: $33/oz
-- **Summer 2025 spike**: Silver went "vertical from $33 to $46 in summer" (39% in months)
-- **September-October 2025**: $46-50, approaching all-time highs near $50
-- **Late December 2025**: $67/oz (new all-time high territory)
-- **January 29-30, 2026 crash**: Fell from $120 to $85 — a 4x in months then a catastrophic crash
-- **February-March 2026**: Stabilization above $60
-- **March-April 2026**: Recovery; silver in "$60+" range
+Lyn was explicitly more cautious about silver than gold through most of 2022-2025, viewing it primarily as a speculative trading vehicle rather than a strategic hold. She held gold (via PHYS) as the preferred monetary metal.
 
-Lyn's 2025 note: "Silver could easily jump to $100 or fall back to $40. Neither would surprise me." This proved prescient — silver went to $120 before falling to $85.
+By 2025, the solar panel buildout — particularly from China's massive green energy industrial policy — became a secular demand driver for silver that added to the monetary case. When Hormuz disrupted energy markets, silver benefited from both the safe haven bid and the energy transition narrative (if oil disruption accelerates solar deployment, silver demand rises structurally).
+
+Silver reached $60+ in the March 2026 Hormuz crisis move. As with gold, Lyn shifted to neutral rather than bullish at these elevated levels.
+
+---
+
+## GDX — Gold Miners (Covered Call Exit)
+
+Lyn held GDX (VanEck Gold Miners ETF) as part of her precious metals complex. Gold miners provide leveraged exposure to gold prices — their profit margins expand or contract significantly with the gold price because their operating costs are largely fixed. A mine with $1,800/oz production costs earns zero at $1,800 gold and enormous margins at $3,000 gold.
+
+In her February 2026 article, Lyn noted that GDX was "automatically exited with a major gain due to covered calls being exercised amid soaring prices." She had been selling covered calls against her GDX position — a premium generation strategy that caps upside. When gold and miners surged, the calls were exercised and she was sold out of the position at a large profit. She did not repurchase at the elevated post-Hormuz prices.
+
+---
+
+## PHYS — Sprott Physical Gold Trust
+
+PHYS (Sprott Physical Gold Trust) is Lyn's primary gold vehicle. She prefers it over GLD (SPDR Gold Shares) specifically because of PHYS's redemption feature: investors can request delivery of physical gold bars in large enough quantities. This eliminates the counterparty risk that she argues exists with all paper gold instruments.
+
+GLD holds gold in HSBC vaults in London and has multiple layers of sub-custodians. PHYS holds allocated gold in Sprott's Canadian vault with simpler, cleaner custody and the physical delivery option. In a tail risk scenario where paper gold contracts are called into question, PHYS is closer to the real asset.
+
+---
+
+## SAND — Sandstorm Gold Royalties
+
+Lyn held Sandstorm Gold (SAND) as a royalty company exposure. Gold royalty companies (also Franco-Nevada, Wheaton Precious Metals in the peer set) receive a percentage of gold or silver production from mines in exchange for upfront capital. They have:
+
+- Fixed or no operating costs (they just collect a royalty)
+- Natural diversification across many mines and geographies
+- Leverage to gold prices without the management, operational, and political risks of running a mine directly
+
+Sandstorm is the smaller end of the royalty universe, which offers more upside optionality if growth projects succeed, but also more concentration risk than Franco-Nevada. Lyn included it as a small position for its royalty structure's advantaged exposure.
+
+---
+
+## TIP and STIP — TIPS ETFs
+
+Lyn holds both TIP (iShares TIPS Bond ETF, tracks longer-duration TIPS) and STIP (iShares 0-5 Year TIPS Bond ETF). She added TIP in October 2023 when the 10-year real yield reached 2.36% and the 5/30-year real yield reached 2.46% — the highest real yields since the pre-GFC period. At those levels, TIPS provided unusually high inflation-adjusted compensation.
+
+Her framing: TIPS are "cash that beats inflation" — they provide a real yield above CPI and thus preserve purchasing power, which is the primary function she expects cash/bonds to serve in a portfolio during a fiscal dominance era. At 2.36% real yield, they were also attractive relative to nominal Treasuries even before pricing in fiscal dynamics.
+
+She specifically distinguished TIPS from nominal long-duration Treasuries. Long bonds (TLT, 20-30 year Treasuries) are the worst-case instrument in a fiscal dominance scenario: their real yields can turn deeply negative while their nominal yields are rising (price falls). TIPS adjust for CPI, so at least their principal keeps pace with official inflation. She views long nominal Treasuries as structurally unattractive in the current regime.
+
+---
 
 ## Platinum
 
-Platinum was the "dud" in Lyn's precious metals portfolio for years and she freely acknowledged this. The thesis was always that platinum's industrial demand profile and historical relationship to gold (it used to trade at a premium to gold) made it extremely cheap relative to gold at under $1,000/oz.
+By early 2026, platinum had also become part of Lyn's metals commentary. After years of being a "dud" in portfolios — she referenced it explicitly as such before its eventual breakout — platinum finally showed momentum in late 2025. It is primarily an industrial metal (catalytic converters, hydrogen fuel cells), with some monetary heritage. At deeply discounted prices relative to gold (historically platinum traded at a premium to gold), it offered value that the market was finally beginning to recognize.
 
-The breakout came:
-- **June 2025**: Platinum went "explosive" — up 62% YTD by September 2025 (the biggest percentage gainer of the three metals for much of the year)
-- Consolidated after the June breakout, then broke out again
-- **December 2025**: Exceeded $2,000/oz
-- **January 29-30, 2026 crash**: Fell from $2,900 to $2,100
-- **April 2026**: Recovery attempt; still roughly half the price of gold, making it the most interesting relative value of the three metals in Lyn's assessment
+---
 
-She holds physical platinum in addition to ETF/trust exposure, and reported it "funny" that the numbers finally worked out after years of being a dud.
+## Overall Precious Metals Posture by May 2026
 
-## Miners and ETFs
+By May 2026, Lyn's precious metals posture was:
+- **Gold (PHYS):** Hold. Structural thesis intact, not adding at $4,000+ levels. GDX already exited via covered call assignment.
+- **Silver:** Hold. Neutral at $60+. Overbought shorter-term.
+- **SAND:** Hold. Royalty structure provides exposure without operational risk.
+- **TIP/STIP:** Hold. Inflation insurance with real yield.
+- **Platinum:** Watching but not a primary position.
+- **Overall:** Shifted from "actively bullish" to "neutral hold." Not bearish (fiscal dominance thesis still intact), but not pounding the table at current prices after the sharp 2025-2026 moves.
 
-Lyn holds the gold miner ETF GDX in several portfolios. In October 2025 she sold covered calls on GDX (January 2026 $85 strike) to generate income during the overbought phase. When gold soared in December 2025, the covered calls were exercised and she exited GDX at a "major gain" — noted as an automatic exit in the February 2026 portfolio update.
+---
 
-She has noted GDX and individual miners provide operating leverage to gold prices but require more analytical work to find producers trading at valuations cheap enough to justify the extra risk. She largely preferred the direct commodity exposure through physical trusts or commodity-backed ETFs over miner selection.
-
-## Shift to Neutral (December 2025 Onward)
-
-After being consistently bullish on precious metals since 2018, Lyn formally shifted from bullish to neutral in her December 2025 / January 2026 reports. Key quotes:
-
-"I no longer view precious metals as offering the great asymmetric upside-vs-downside potential that they used to... Now they have a more balanced mix of upside and downside potential."
-
-"I continue to hold the metals physically and in portfolios, but would recommend caution about new capital going into them."
-
-"I've not been in the camp that thinks it's all just a bubble (rather, I think it's a sustained re-pricing out of a long state of undervaluation), but the contrarian in me does get quite nervous around extremely overbought levels."
-
-Her framework: the structural drivers of precious metals (fiscal dominance, multipolar world, reserve diversification away from Treasuries) remain intact. Most of the move from 2018-2025 was a legitimate repricing from undervalued to fairly-valued. But at the late 2025 / early 2026 peak prices, risk/reward was no longer asymmetrical. After the January 2026 crash, she noted the sell-off was "healthy" and consistent with her view of structural repricing rather than a bubble pop.
-
-## Gold/Oil Ratio: Historic Extremes
-
-Lyn highlighted in multiple reports (December 2025, January 2026) that the gold-to-oil price ratio reached the highest level in recorded history (outside of the March 2020 Covid lockdown period). Similarly, for the first time in 45 years, an ounce of silver was worth more than a barrel of oil.
-
-This ratio extreme cuts both ways. Structurally higher gold/oil ratios are possible (Luke Gromen has argued this for years), but it also suggests that oil-linked assets are deeply undervalued relative to gold. Lyn viewed this as supportive of energy producers even during her neutral-to-cautious phase on precious metals.
-
-## Current Status (May 2026)
-
-As of May 2026, with the Hormuz crisis ongoing:
-- Gold: recovering from the January crash, approximate range $4,800-$5,000 after the January $5,500 peak and $4,800 bottom
-- Silver: stabilized in $60+ range
-- Platinum: recovering toward $2,100+
-- Lyn's stance: hold, do not aggressively add new capital, watch for technical bottoms
-
-The gold/S&P 500 ratio (SPX/gold) crossed its 50-month moving average to negative territory for the first time since 2002 — a major structural signal she highlighted in her August 2025 report as confirmation that the dollar/gold relationship had fundamentally shifted.
+*Last updated: 2026-05-19 — built from 112 articles (Feb 2022 – May 2026)*
