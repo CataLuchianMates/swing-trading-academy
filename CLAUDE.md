@@ -1,5 +1,12 @@
 # Swing Trading Academy — Project Context
 
+## Hard Rules for Claude Code
+
+- **Never use the Agent tool.** Do all work directly in the main conversation. This includes wiki rebuilds, file analysis, and any large context tasks. Spawning agents makes API calls that incur costs outside the subscription.
+- The only thing allowed to use the Anthropic API key is the Streamlit app (`analyst-brains/app.py`) via Streamlit Cloud secrets.
+
+---
+
 ## What This Is
 
 A personal knowledge management system for a swing trading educator. It does two things:
