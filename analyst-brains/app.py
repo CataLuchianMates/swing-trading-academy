@@ -1,4 +1,5 @@
 import os
+import threading
 from pathlib import Path
 
 import anthropic
@@ -142,7 +143,7 @@ def build_system_prompt(analyst_slug: str, wiki_pages: dict[str, str], journal_e
     if journal_entries:
         journal_section = "\n\n".join(
             f"**{e['label']}** ({e['created_at'][:10]})\n{e['content']}"
-            for e in reversed(journal_entries)  # chronological order
+            for e in reversed(journal_entries)
         )
     else:
         journal_section = "*(No saved insights yet.)*"
@@ -163,6 +164,24 @@ These are insights the user has specifically chosen to save from past conversati
 
 {journal_section}
 """
+
+
+# ── API call ───────────────────────────────────────────────────────────────────
+
+def stream_response(api_key: str, system_prompt: str, messages: list, result: dict, key: str):
+    """Run a streaming API call and store the full response in result[key]."""
+    client = anthropic.Anthropic(api_key=api_key)
+    full = ""
+    with client.messages.stream(
+        model=MODEL,
+        max_tokens=2048,
+        system=[{"type": "text", "text": system_prompt, "cache_control": {"type": "ephemeral"}}],
+        messages=messages,
+    ) as stream:
+        for text in stream.text_stream:
+            full += text
+            result[key] = full  # update incrementally
+    result[key] = full
 
 
 # ── Auth ───────────────────────────────────────────────────────────────────────
@@ -204,26 +223,28 @@ def main():
     if not check_password():
         st.stop()
 
+    api_key = os.getenv("ANTHROPIC_API_KEY") or st.secrets.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        st.error("ANTHROPIC_API_KEY not found.")
+        st.stop()
+
+    # ── Sidebar ──
     with st.sidebar:
         st.title("🧠 Analyst Brains")
-        analyst_name = st.selectbox("Select analyst", list(ANALYSTS.keys()))
-        analyst_slug = ANALYSTS[analyst_name]
 
-        wiki_pages = load_wiki(analyst_slug)
-        if wiki_pages:
-            st.success(f"{len(wiki_pages)} wiki page(s) loaded")
-            with st.expander("Wiki pages"):
-                for name in wiki_pages:
-                    st.markdown(f"- {name.replace('-', ' ').title()}")
-        else:
-            st.warning("No wiki built yet.")
+        st.subheader("Who answers?")
+        selected = []
+        for name in ANALYSTS:
+            if st.checkbox(name, value=True, key=f"check_{name}"):
+                selected.append(name)
 
         st.divider()
 
-        # Journal viewer
-        st.subheader("📓 Saved Insights")
-        journal_entries = load_journal(analyst_slug)
+        # Journal — shown for first selected brain
+        active_slug = ANALYSTS[selected[0]] if selected else list(ANALYSTS.values())[0]
+        journal_entries = load_journal(active_slug)
 
+        st.subheader("📓 Saved Insights")
         if journal_entries:
             for entry in journal_entries:
                 with st.expander(f"**{entry['label']}** — {entry['created_at'][:10]}"):
@@ -237,73 +258,133 @@ def main():
         st.divider()
 
         if st.button("Clear chat"):
-            st.session_state.messages = []
-            clear_messages(analyst_slug)
+            for name in ANALYSTS:
+                clear_messages(ANALYSTS[name])
+            st.session_state.chat_history = []
             st.rerun()
 
-    st.title(f"Chat with {analyst_name}")
+    # ── Chat history (shared across brains) ──
+    if "chat_history" not in st.session_state:
+        # Load from first brain as the shared base
+        st.session_state.chat_history = load_messages("shared") or []
 
-    # Load messages from Supabase if not already in session
-    if "messages" not in st.session_state or st.session_state.get("loaded_slug") != analyst_slug:
-        st.session_state.messages = load_messages(analyst_slug)
-        st.session_state.loaded_slug = analyst_slug
+    st.title("🧠 Analyst Brains")
 
-    for msg in st.session_state.messages:
-        with st.chat_message(msg["role"]):
-            st.markdown(msg["content"])
+    # Render existing history
+    for entry in st.session_state.chat_history:
+        if entry["role"] == "user":
+            with st.chat_message("user"):
+                st.markdown(entry["content"])
+        else:
+            # assistant entries have a "brain" key
+            brain = entry.get("brain", "Assistant")
+            with st.chat_message("assistant"):
+                st.markdown(f"**{brain}**")
+                st.markdown(entry["content"])
 
-    # Save to journal UI
+    # Save to journal
     with st.expander("📌 Save insight to journal"):
-        label = st.text_input("Label", placeholder="e.g. EM rotation trigger, Bitcoin thesis update", key="journal_label")
-        content = st.text_area("Paste the text you want to save", height=120, key="journal_content")
+        label = st.text_input("Label", placeholder="e.g. EM rotation trigger, Bitcoin thesis", key="journal_label")
+        content = st.text_area("Paste the text you want to save", height=100, key="journal_content")
+        brain_for_journal = st.selectbox("Save under", list(ANALYSTS.keys()), key="journal_brain")
         if st.button("Save to journal"):
             if label.strip() and content.strip():
-                save_journal_entry(analyst_slug, label.strip(), content.strip())
+                save_journal_entry(ANALYSTS[brain_for_journal], label.strip(), content.strip())
                 st.success("Saved!")
                 st.rerun()
             else:
-                st.warning("Add a label and paste some content first.")
+                st.warning("Add a label and content first.")
 
-    if prompt := st.chat_input(f"Ask {analyst_name} anything..."):
-        st.session_state.messages.append({"role": "user", "content": prompt})
+    # ── Chat input ──
+    if prompt := st.chat_input("Ask your brains anything..."):
+        if not selected:
+            st.warning("Select at least one brain in the sidebar.")
+            st.stop()
+
+        # Show user message
+        st.session_state.chat_history.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        system_prompt = build_system_prompt(analyst_slug, wiki_pages, journal_entries)
+        # Build message history for API (user/assistant turns only, no brain metadata)
+        api_messages = [
+            {"role": e["role"], "content": e["content"]}
+            for e in st.session_state.chat_history
+        ]
 
-        api_key = os.getenv("ANTHROPIC_API_KEY") or st.secrets.get("ANTHROPIC_API_KEY")
-        if not api_key:
-            st.error("ANTHROPIC_API_KEY not found.")
-            st.stop()
+        if len(selected) == 1:
+            # ── Single brain — stream directly ──
+            name = selected[0]
+            slug = ANALYSTS[name]
+            wiki_pages = load_wiki(slug)
+            journal = load_journal(slug)
+            system_prompt = build_system_prompt(slug, wiki_pages, journal)
 
-        client = anthropic.Anthropic(api_key=api_key)
+            with st.chat_message("assistant"):
+                st.markdown(f"**{name}**")
+                placeholder = st.empty()
+                full = ""
+                client = anthropic.Anthropic(api_key=api_key)
+                with client.messages.stream(
+                    model=MODEL,
+                    max_tokens=2048,
+                    system=[{"type": "text", "text": system_prompt, "cache_control": {"type": "ephemeral"}}],
+                    messages=api_messages,
+                ) as stream:
+                    for text in stream.text_stream:
+                        full += text
+                        placeholder.markdown(full + "▌")
+                placeholder.markdown(full)
 
-        with st.chat_message("assistant"):
-            response_placeholder = st.empty()
-            full_response = ""
+            st.session_state.chat_history.append({"role": "assistant", "content": full, "brain": name})
 
-            with client.messages.stream(
-                model=MODEL,
-                max_tokens=2048,
-                system=[
-                    {
-                        "type": "text",
-                        "text": system_prompt,
-                        "cache_control": {"type": "ephemeral"},
-                    }
-                ],
-                messages=[
-                    {"role": m["role"], "content": m["content"]}
-                    for m in st.session_state.messages
-                ],
-            ) as stream:
-                for text in stream.text_stream:
-                    full_response += text
-                    response_placeholder.markdown(full_response + "▌")
-            response_placeholder.markdown(full_response)
+        else:
+            # ── Multiple brains — run in parallel, display side by side ──
+            results = {name: "" for name in selected}
+            threads = []
 
-        st.session_state.messages.append({"role": "assistant", "content": full_response})
-        save_messages(analyst_slug, st.session_state.messages)
+            for name in selected:
+                slug = ANALYSTS[name]
+                wiki_pages = load_wiki(slug)
+                journal = load_journal(slug)
+                system_prompt = build_system_prompt(slug, wiki_pages, journal)
+                t = threading.Thread(
+                    target=stream_response,
+                    args=(api_key, system_prompt, api_messages, results, name),
+                    daemon=True,
+                )
+                threads.append(t)
+                t.start()
+
+            # Show columns with live-updating placeholders
+            cols = st.columns(len(selected))
+            placeholders = {}
+            for i, name in enumerate(selected):
+                with cols[i]:
+                    st.markdown(f"**{name}**")
+                    placeholders[name] = st.empty()
+
+            # Poll until all threads done
+            import time
+            while any(t.is_alive() for t in threads):
+                for name in selected:
+                    placeholders[name].markdown(results[name] + "▌")
+                time.sleep(0.1)
+
+            # Final render
+            for name in selected:
+                placeholders[name].markdown(results[name])
+                st.session_state.chat_history.append({
+                    "role": "assistant",
+                    "content": results[name],
+                    "brain": name,
+                })
+
+        # Save shared history
+        save_messages("shared", [
+            {"role": e["role"], "content": e["content"]}
+            for e in st.session_state.chat_history
+        ])
 
 
 if __name__ == "__main__":
