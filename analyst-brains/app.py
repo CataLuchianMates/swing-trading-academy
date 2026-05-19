@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 
 import anthropic
+import extra_streamlit_components as stx
 import streamlit as st
 from dotenv import load_dotenv
 from supabase import create_client
@@ -104,16 +105,31 @@ def build_system_prompt(analyst_slug: str, wiki_pages: dict[str, str]) -> str:
 """
 
 
+def get_cookie_manager():
+    return stx.CookieManager(key="auth_cookies")
+
+
 def check_password() -> bool:
+    cookie_manager = get_cookie_manager()
+
+    # Already authenticated this session
     if st.session_state.get("authenticated"):
         return True
+
+    # Check cookie from previous session
+    if cookie_manager.get("analyst_brain_auth") == "1":
+        st.session_state.authenticated = True
+        return True
+
     pwd = st.secrets.get("APP_PASSWORD")
     if not pwd:
         return True
+
     entered = st.text_input("Password", type="password", key="pw_input")
     if st.button("Enter"):
         if entered == pwd:
             st.session_state.authenticated = True
+            cookie_manager.set("analyst_brain_auth", "1", key="set_auth")
             st.rerun()
         else:
             st.error("Incorrect password")
