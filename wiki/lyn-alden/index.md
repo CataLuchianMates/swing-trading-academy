@@ -1,180 +1,128 @@
-# Lyn Alden — Wiki Index
+---
+title: "Lyn Alden Wiki — Index"
+wiki: "lyn-alden"
+last_updated: "2026-05-18"
+---
 
-*Last updated: May 2026. Complete synthesis of 62 premium newsletter articles (January 2024 – May 2026).*
+# Lyn Alden Investment Research Wiki
+
+This wiki synthesizes all 62 premium newsletters from January 2024 through May 2026. Each page covers a thematic domain. This index page provides cross-reference maps and a timeline of key view changes.
 
 ---
 
 ## Wiki Pages
 
-| Page | Contents |
+| Page | Summary |
 |------|---------|
-| [macro-framework.md](macro-framework.md) | Fiscal dominance, crack-up boom, Triffin Dilemma, K-shaped economy, three fiscal eras, Japanification |
-| [usd-liquidity-thesis.md](usd-liquidity-thesis.md) | Global M2, domestic liquidity trifecta, TGA/RRP/Fed mechanics, SOFR signals, gradual print baseline, SLR, dollar cycle |
-| [emerging-markets.md](emerging-markets.md) | EM rotation thesis, Latin America (ITUB, CIB, CPA), India (HDB), SE Asia (DBS), China (JD, PDD, TCEHY), broad ETFs |
-| [bitcoin.md](bitcoin.md) | Bitcoin thesis, MVRV/HODL wave, price history, 4-year cycle debate, treasury companies (MSTR), Lightning, vs gold |
-| [sector-views.md](sector-views.md) | Banks, payments, energy, hyperscalers, software/SaaS, healthcare, precious metals, spirits watch list |
-| [key-tickers.md](key-tickers.md) | Complete reference table: ticker, stance, context, entry logic, exit history |
+| [Macro Framework](macro-framework.md) | Fiscal dominance, K-shaped economy, three fiscal eras, "nothing stops this train" |
+| [USD Liquidity Thesis](usd-liquidity-thesis.md) | Fed balance sheet mechanics, TGA, RRP drain, gradual print, SOFR-IORB, Japan wildcard |
+| [Emerging Markets](emerging-markets.md) | EM rotation thesis, LatAm (ITUB, CIB, CPA), India (HDB), SE Asia (DBSDY), China (JD, PDD, TCEHY), May 2026 breakout |
+| [Bitcoin](bitcoin.md) | MVRV/HODL waves, bitcoin treasury companies (STRF, STRC), Warsh crash, cycle history 2024-2026 |
+| [Precious Metals](precious-metals.md) | Gold $2k→$5,500 peak→$4,800 crash, silver, platinum, shift to neutral Dec 2025 |
+| [Energy](energy.md) | XOM, CVX, VAL sold at ATH merger, OIH/SLB/HAL, EPD midstream, Hormuz crisis March-May 2026 |
+| [Financials](financials.md) | USB, TFC, PNC, HDFC Bank, private credit systemic risk analysis, Visa, PayPal |
+| [Tech and AI](tech-ai.md) | Hyperscaler FCF problem, SaaS disruption (ADBE), AI agents, Micron RAM demand, Block layoffs |
+| [Stock Deep Dives](stock-deep-dives.md) | One section per company: XOM, CVX, USB, EPD, VAL cycle, CPA, GOOGL, ADBE, PYPL, HDB, DBSDY, ITUB, Komatsu, MU |
+| [Options Strategy](options-strategy.md) | Cash-secured puts (AMD, MU), covered calls (GDX), LEAP framework, position sizing |
+| [Key Tickers](key-tickers.md) | CURRENT HOLDINGS | SOLD POSITIONS | WATCHLIST | EXPLICIT AVOIDS |
 
 ---
 
-## Themes → Pages Cross-Reference
+## Cross-Reference Map
 
-### Fiscal Dominance / "Nothing Stops This Train"
-- Core theory: [macro-framework.md](macro-framework.md) — Fiscal Dominance section
-- Monetary plumbing: [usd-liquidity-thesis.md](usd-liquidity-thesis.md) — Gradual Print baseline
-- Investment implication: [sector-views.md](sector-views.md) — Banks section
-- Hard asset response: [bitcoin.md](bitcoin.md) and [sector-views.md](sector-views.md) — Gold section
-- Source articles: 240428, 240804, 250201, 250608, 251221, 260425, 260510
+### If you want to understand the macro backdrop:
+→ Start with [Macro Framework](macro-framework.md)
+→ Then [USD Liquidity Thesis](usd-liquidity-thesis.md) for the plumbing mechanics
+→ Then [Emerging Markets](emerging-markets.md) for the dollar-cycle investment implications
 
-### USD Liquidity Cycle
-- Theory: [usd-liquidity-thesis.md](usd-liquidity-thesis.md) — Primary Indicator (Global M2), Domestic Liquidity Trifecta
-- Q4 2025 predicted crisis: [usd-liquidity-thesis.md](usd-liquidity-thesis.md) — Q4 2025 Liquidity Crisis section
-- EM implications: [emerging-markets.md](emerging-markets.md) — Core Rotation Thesis
-- Bitcoin implications: [bitcoin.md](bitcoin.md) — Macro Conditions section
-- Source articles: 240804, 250302, 250413, 251026, 251207, 251221, 260104, 260118, 260201, 260425, 260510
+### If you want bitcoin positioning:
+→ [Bitcoin](bitcoin.md) for the full cycle and treasury companies
+→ [USD Liquidity Thesis](usd-liquidity-thesis.md) for global M2 driver
+→ [Key Tickers](key-tickers.md) for current portfolio allocation
 
-### Emerging Markets Rotation
-- Full thesis: [emerging-markets.md](emerging-markets.md)
-- Dollar cycle driver: [usd-liquidity-thesis.md](usd-liquidity-thesis.md) — Dollar Cycle Thesis
-- Latin America: [emerging-markets.md](emerging-markets.md) — Latin America section
-- India: [emerging-markets.md](emerging-markets.md) — Southeast Asia section
-- Specific tickers: [key-tickers.md](key-tickers.md)
-- Source articles: 240804, 240901, 241027, 250427, 251207, 251221, 260118, 260201, 260510
+### If you want energy positioning:
+→ [Energy](energy.md) for detailed company analysis and Hormuz crisis context
+→ [Precious Metals](precious-metals.md) for the gold/oil ratio extremes
+→ [Key Tickers](key-tickers.md) for current holdings
 
-### Bitcoin Cycle
-- Full framework: [bitcoin.md](bitcoin.md)
-- Treasury companies: [bitcoin.md](bitcoin.md) — Bitcoin Treasury Companies, [key-tickers.md](key-tickers.md) — MSTR
-- Lightning Network: [bitcoin.md](bitcoin.md) — Lightning section
-- AI agents demand: [bitcoin.md](bitcoin.md) — Why Lyn Holds Bitcoin
-- Source articles: 240428, 240804, 250427, 250622, 250706, 250720, 250803, 250817, 251012, 251026, 251109, 251123, 251207, 251221, 260104, 260118, 260201, 260215, 260301, 260315, 260329, 260412, 260425, 260510
+### If you want financials positioning:
+→ [Financials](financials.md) for bank thesis and private credit analysis
+→ [USD Liquidity Thesis](usd-liquidity-thesis.md) for SLR reform and Fed balance sheet context
+→ [Stock Deep Dives](stock-deep-dives.md) for USB, TFC, PNC, HDB individual deep dives
 
-### Gold / Precious Metals
-- Price history: [sector-views.md](sector-views.md) — Precious Metals section
-- Structural thesis: [macro-framework.md](macro-framework.md) — Three-Pillar Portfolio
-- Current stance (Hold not Buy): [sector-views.md](sector-views.md) — Gold sub-section
-- Tactical warnings: Articles 250427 (first 6-12 month warning), 251012 (second warning)
-
-### AI and Technology
-- Hyperscaler FCF problem: [sector-views.md](sector-views.md) — Technology section
-- AI agents investment implications: [sector-views.md](sector-views.md) — MU, ACN
-- Software disruption (SaaS): [sector-views.md](sector-views.md) — ADBE, CRM watch list
-- Equal-weight vs market-weight shift: [sector-views.md](sector-views.md) — Equal-Weight section
-- Source articles: 251123, 260201, 260215, 260301, 260315, 260329
-
-### Energy / Hormuz Crisis
-- Pre-crisis setup: [sector-views.md](sector-views.md) — Energy Services (SLB/HAL/VAL)
-- Iran strikes begin: March 1, 2026 article; [sector-views.md](sector-views.md) — Hormuz section
-- Energy as portfolio hedge: [macro-framework.md](macro-framework.md) — Three-Pillar Portfolio
-- Ongoing crisis (11 weeks as of May 2026): Articles 260301, 260315, 260329, 260412, 260425, 260510
-
-### Private Credit / Banking Risk
-- Analysis: [usd-liquidity-thesis.md](usd-liquidity-thesis.md) — Private Credit section
-- Bank exposure quantification: [sector-views.md](sector-views.md) — Banks section
-- Key data: $1.9T NDFI exposure vs $24.5T bank assets = 7-8%; $2.6T bank equity capital buffer
-- Source articles: 251026, 260315, 260425
+### If you want tech/AI positioning:
+→ [Tech and AI](tech-ai.md) for the hyperscaler FCF problem and SaaS disruption thesis
+→ [Stock Deep Dives](stock-deep-dives.md) for GOOGL, ADBE, PYPL, MU individual analysis
+→ [Options Strategy](options-strategy.md) for AMD and MU put examples
 
 ---
 
-## Timeline of Key View Changes
+## Timeline of Key View Changes (January 2024 – May 2026)
 
-| Date | Event | View Change |
-|------|--------|-------------|
-| Jan 2024 | Start of coverage | Bullish EM, structurally long bitcoin, three-pillar portfolio |
-| Apr 2024 | New York Fed balance sheet projections released | "Nothing Stops This Train" explicitly stated; Fed to resume BS growth by 2025 |
-| Aug 2024 | Fed begins cutting cycle; dollar weakening | EM rotation thesis becomes active; watching for follow-through |
-| Oct 2024 | China stimulus announced | China bottom "probably in"; maintains cautious sizing |
-| Jan 2025 | Full year begins with dollar at 110 DXY | Dollar expected to continue weakening; EM outperformance expected |
-| Apr 2025 | Liberation Day tariffs + stock/bond/dollar simultaneous selloff | Capital flight signal documented; 3-5 year dollar bear cycle base case begins |
-| Apr 2025 | Gold at $3,200 after rapid run-up | **First tactical caution on gold: "6-12 month consolidation possible"** |
-| Apr-May 2025 | Bitcoin $75k low, then rally to $112k ATH | $75k identified as likely floor; bull cycle intact |
-| Jul 2025 | Bitcoin $123k ATH; DOGE confirmed failed | Bullish; "4-year cycle" debate addressed, rejected |
-| Aug 2025 | TGA refilling to $850B target; QT continuing | **Predicted Q4 2025 would hit liquidity floor** |
-| Sep-Oct 2025 | SOFR persistently above IORB; repo facility used | Liquidity stress confirmed; Fed expected to end QT within months |
-| Oct 2025 | Bitcoin $126k ATH; $19.5B crypto flash crash | Still bullish but watching froth signals |
-| Oct 2025 | Gold $4,300 peak; most overbought monthly RSI ever | **Second tactical caution on gold** |
-| Oct 2025 | GOOGL at $300 — thesis played out | Shifted from bullish to neutral on GOOGL |
-| Oct-Nov 2025 | TSM and AMD sold after doubling | Tactical position exit; bought ACN and added PYPL |
-| Nov 2025 | Bitcoin fell below $90k; MSTRMSCI delisting announced | "Bottom forming" thesis initiated; MVRV in buying zone |
-| Nov 2025 | Nov 22, 2025 — Lyn identifies this as likely bottom | BTC low ~$82-85k; accumulation zone declared |
-| Dec 2025 | Fed ends QT; starts $40B/month balance sheet growth | "Gradual print" regime begins; liquidity floor confirmed passed |
-| Dec 2025 | 50-month S&P 500/gold MA turns negative | Structural rollover in equity/gold ratio confirmed |
-| Jan 2026 | Kevin Warsh nominated as next Fed chair | Bitcoin sells below $80k on hawkish fears; Lyn argues Warsh can't shrink BS meaningfully |
-| Jan 2026 | IEMG vs SPY — EM outperformance confirmed | EM rotation thesis validated; "deep bench" framing introduced |
-| Feb 2026 | Bitcoin second attempt at bottom (Feb 6); gold/silver massive drop (Jan 29-30) | Precious metals neutral confirmed; bitcoin still being accumulated |
-| Mar 1, 2026 | US/Israel strikes on Iran; Hormuz crisis begins | Energy portfolio provides hedge; watchlist building begins; no new positions until clarity |
-| Mar 2026 | Supreme Court rules against Trump tariffs (6-3) | ~$300B/year fiscal swing; tariff ceiling is in |
-| Apr 2026 | Lyn adds V, HDB; sells MU cash-secured puts; bitcoin at $60-70k | First new capital deployment in 6 weeks; "bottom is in" for BTC more confident |
-| Apr 2026 | Bitcoin breaks above Feb 2026 high | Final confirmation of bottom thesis |
-| May 2026 | Bitcoin above $82k; EM vs SPX ratio rolling up; Hormuz crisis ongoing at 11 weeks | Full bull thesis in effect for EM and BTC; energy held; banks held; ADBE being accumulated |
+### 2024
 
----
+**August 2024**: Formally articulated the EM rotation thesis. "This is the first significant catalyst for a rotation since 2019." Identified the virtuous cycle mechanism for EM outperformance. Added specific stocks: ITUB (Brazilian banking), JD/TCEHY (Chinese internet at historically cheap valuations), DBSDY (Singapore banking), KMTUY (Japanese heavy equipment as EM proxy).
 
-## Source Articles (All 62)
+**September 2024**: Deep-dived on Brazil as the quintessential EM beneficiary of a weak-dollar cycle. Identified ITUB as "coiled spring."
 
-| # | Date | Title |
-|---|------|-------|
-| 1 | 2024-01-07 | Macro and Portfolio Updates |
-| 2 | 2024-01-21 | Bitcoin and the Global Monetary Order |
-| 3 | 2024-02-04 | Two Special Situations |
-| 4 | 2024-02-18 | A Deep Look at Banking Stocks |
-| 5 | 2024-03-03 | A Big Week for Macro Data |
-| 6 | 2024-03-17 | Offshore Drilling Deep Dive |
-| 7 | 2024-04-07 | Market Update |
-| 8 | 2024-04-28 | Liquidity and the Next Fed Regime |
-| 9 | 2024-05-12 | Precious Metals and the Commodity Cycle |
-| 10 | 2024-05-26 | A Look at AI Infrastructure |
-| 11 | 2024-06-09 | Soft Landing or Not? |
-| 12 | 2024-06-23 | Banking Sector Update |
-| 13 | 2024-07-07 | Election Outcomes and Fiscal Policy |
-| 14 | 2024-07-21 | A New 52-Week High |
-| 15 | 2024-08-04 | Deep Dive Rotation Analysis |
-| 16 | 2024-08-18 | Bitcoin Treasury Companies |
-| 17 | 2024-09-01 | Deep Dive Emerging Markets |
-| 18 | 2024-09-15 | US Dollar and Gold Update |
-| 19 | 2024-10-06 | China Stimulus Response |
-| 20 | 2024-10-13 | Liquidity Check and Positioning |
-| 21 | 2024-10-27 | Asset Rotation Check |
-| 22 | 2024-11-10 | Post-Election Macro |
-| 23 | 2024-11-24 | Bitcoin Treasury Structure Update |
-| 24 | 2024-12-08 | Year-End Portfolio Review |
-| 25 | 2024-12-22 | 2025 Outlook |
-| 26 | 2025-01-12 | New Year Macro Update |
-| 27 | 2025-01-26 | Bitcoin and DXY |
-| 28 | 2025-02-09 | Tariff Implications |
-| 29 | 2025-02-23 | EM and Commodity Update |
-| 30 | 2025-03-02 | GDP Warning Signs |
-| 31 | 2025-03-16 | Healthcare Sector Dip |
-| 32 | 2025-03-30 | Liberation Day Aftermath |
-| 33 | 2025-04-13 | Trade Deficits and Capital Flows (Deep Dive) |
-| 34 | 2025-04-27 | Global Equity Rotation Checkup |
-| 35 | 2025-05-11 | US Bancorp Deep Dive Analysis |
-| 36 | 2025-05-25 | A Bank and Tech Barbell |
-| 37 | 2025-06-08 | Fiscal Spending and Price Consolidations |
-| 38 | 2025-06-22 | Fed Dilemmas and SLR Updates |
-| 39 | 2025-07-06 | Bank Stress Tests and Liquidity Strains |
-| 40 | 2025-07-20 | Tariffs, Liquidity, Bitcoin, and LatAm Equities |
-| 41 | 2025-08-03 | Updates on Tariffs, Liquidity, and Strategy |
-| 42 | 2025-08-17 | A Look at the Healthcare Sector Selloff |
-| 43 | 2025-08-31 | The Silent Bull Market in Dividends |
-| 44 | 2025-09-14 | A Tale of Two Sectors |
-| 45 | 2025-09-28 | Precious Metals and Commodities Update |
-| 46 | 2025-10-12 | Two AI Stock Rotations |
-| 47 | 2025-10-26 | Liquidity Pivot and Banking Update |
-| 48 | 2025-11-09 | Liquidity Shutdowns, Tariffs, and Earnings |
-| 49 | 2025-11-23 | A Look at the AI Hyperscalers |
-| 50 | 2025-12-07 | Pricing Risk Fairly |
-| 51 | 2025-12-21 | Implications of the Fed's Structural Shift |
-| 52 | 2026-01-04 | Energy Sector Update |
-| 53 | 2026-01-18 | Three Notable Breakouts |
-| 54 | 2026-02-01 | The Boom in AI Agents |
-| 55 | 2026-02-15 | A Look at Disrupted Software Companies |
-| 56 | 2026-03-01 | Tariffs, Iran, and Rapid Impacts from AI |
-| 57 | 2026-03-15 | Private Credit, Software, and Energy |
-| 58 | 2026-03-29 | Hormuz Crisis and Building a Watch List |
-| 59 | 2026-04-12 | Hormuz, Liquidity, and Upcoming Investments |
-| 60 | 2026-04-25 | Fiscal Re-Acceleration |
-| 61 | 2026-05-10 | Emerging Markets Breakout |
+**October 2024**: Updated China stance — bottom likely in but no clear rotation signal yet. Provided expected-value framework for Chinese ADR positions accounting for geopolitical zeroing-out risk.
 
----
+### 2025
 
-*Files in this wiki are stored at: `/Users/catalinmates/Documents/Personal/swing-trading-academy/wiki/lyn-alden/`*
+**March 2025**: Tariff panic — Liberation Day crash. MOVE Index Spike 5 (rare combined dollar decline + bond volatility = capital outflows). GOOGL cited at 19x as a "buy." AMD cash-secured puts at $80 strike suggested ($4.60 premium = 5.7% in 2 months).
+
+**April 27, 2025**: Called a bullish bitcoin signal (MVRV/MACD combo) with bitcoin at $95k. Added AMD 10% growth pie position. Said RTX/FNV/WPM/SAND/ULTA sold. Increased VAL/TDW to 6%. Described DXY falling from 110 to sub-100 as major EM catalyst.
+
+**May 2025**: USB deep dive — detailed analysis of 5th largest US bank. Bitcoin reclaimed $100k ($103k at writing). Powell's term scheduled to end May 2026.
+
+**May 2025 peak**: Bitcoin reached new ATH of $112k. Strategy's STRC announced (Nakamoto Holdings/David Bailey $710M raise). One Big Beautiful Bill passed House.
+
+**June 2025**: SLR reform formally proposed (1.5pp reduction for large banks). Israel/US Iran attacks flagged with Polymarket odds rising to 36% before July. TGA draining to $378B.
+
+**July 2025**: Bitcoin new ATH $123k intraday. Initiated CPA (Copa Holdings) as small "Other Holdings" position. Brazil tariff letter 50% from Trump — Lyn dismissed as toothless.
+
+**August 2025**: Strategy Q2 earnings — Lyn was one of 8 analyst participants. STRF added to Fortress Income. Jobs data disaster (-258k downward revision). Gold 4-month consolidation pattern confirmed.
+
+**August 2025**: SPX/gold ratio crossed 50-month MA to negative for first time since 2002 — major structural signal.
+
+**September 2025**: Fed cut 0.25% (first in 9 months). Gold $3,500+ breakout confirmed. Oilfield services (SLB, HAL, VAL) "quietly putting in bottoms." Initial jobless claims 3-year high spike (yellow light warning).
+
+**October 2025**: Gold first touched $4,000. Silver near all-time high $50. Sold TSM and AMD (both doubled from April 27 buys). Bought ACN (Accenture, ~20x P/E) and PYPL (15x earnings). MSTR cash-secured puts idea ($250/$260 Jan 2026 strike). Bitcoin treasury mNAV premiums washed out (Strategy 1.48x, Metaplanet 1.31x). Sold GDX covered calls at $85 January 2026 strike.
+
+**October 2025**: Fed repo facility used persistently (not just quarter-end) — confirmed liquidity stress. Powell announced end of QT "may be nearing." Private credit analysis: $1.7T bank loans to NDFIs, manageable. Gold largest one-day correction after $4,300 peak.
+
+**November 2025**: Hyperscaler FCF problem article — $120B collective bond issuance by MSFT/META/ORCL (4x normal). GPU depreciation debate (Burry: 3yr vs 5-6yr company claims). 95% enterprise AI fails positive ROI. ADBE increased to 12% in newsletter portfolio.
+
+**November 2025**: Fed officially halted QT December 1. Supreme Court tariff hearing — odds fell from 40% to 20% Trump wins. Government shutdown longest in US history. Fiserv "triple-miss disaster" (prior CEO inflated numbers). Bitcoin fell from $110k to $90k. SOFR-IORB spread spiked persistently.
+
+**December 10, 2025**: FOMC MEETING. Fed cut 25bp AND announced $40B/month balance sheet expansion through April 2026, then ~$25B/month permanently. The "gradual print" begins.
+
+**December 2025**: Gold at $4,200 (new record but "not a buy"). Silver $67, Platinum $2,000+. Super-regionals USB, TFC, PNC highlighted as "fairly priced risk" in an expensive market.
+
+### 2026
+
+**January 2026**: Kevin Warsh announced as leading Fed chair nominee (historically hawkish). DOJ criminal investigation into Powell — dramatic response from Powell about Fed independence. Canada-China trade deal (49,000 EVs/year). US capture of Maduro in Venezuela. Bitcoin recovered to $97k (highest since November low). Uranium back to $85/lb with bullish supply/demand setup. IEMG vs SPY — EM outperformance becoming clear.
+
+**January 29-30, 2026**: PRECIOUS METALS CRASH. Gold fell from $5,500 to $4,800. Platinum $2,900 → $2,100. Silver $120 → $85. Record single-period precious metals declines. Lyn had shifted to neutral months before — described as "healthy repricing, not bubble."
+
+**February 1, 2026**: Warsh formally nominated. Bitcoin fell below $80k, invalidating the "November 22 bottom holds" thesis. Block/Twitter laid off 40%+ of employees citing AI.
+
+**February 15, 2026**: Adobe deep dive — at ~12x forward earnings, value play not value trap. Sold VAL at ATH on RIG merger news. Replaced with ADBE in portfolios. Equal-weight S&P 500 outperforming since November 2025 flagged as potential structural signal.
+
+**February 2026**: Supreme Court tariff decision expected. Bitcoin correlating tightly with software stocks.
+
+**March 1, 2026**: IRAN WAR BEGINS. US/Israel strikes on Iran, Khamenei reported killed. Strait of Hormuz announced closed. Three ships struck, 200+ ships at anchor. Maersk suspended operations.
+
+**February 20, 2026**: Supreme Court ruled 6-3 against Trump's emergency tariff powers. Tariff ceiling effectively set.
+
+**March 2026**: Bitcoin $60-70k range, oversold. Gold stabilizing after January crash. Oilfield services (SLB, HAL): 36-43% up from September 2025 bottoms. Lyn shifted SLB/HAL to neutral/hold.
+
+**March 15, 2026**: Hormuz crisis worse than initial base case. Dubai physical oil near $140 vs futures $100. US economy showing deceleration (Q4 2025 GDP revised to only 0.7% annualized). Multiple countries fuel rationing.
+
+**March 29, 2026**: Eight weeks of Hormuz closure. Polymarket odds: 33% chance oil hits $150 by June. S&P 500 only 8% from highs (contained drawdown relative to historical precedents). Diageo, Visa, PayPal added to watchlist. Bitcoin at $60k-70k DCA range.
+
+**April 2026**: Visa added at ~25x earnings (decade-low valuation). HDFC Bank added on Hormuz crisis dip. MU cash-secured puts sold at $380 June strike. Consumer sentiment reached record all-time low (lower than 2008/2020/1970s). Fed inflation data confirmed tariffs responsible for 3.1% excess goods inflation.
+
+**April 25, 2026**: Fiscal re-acceleration analysis — One Big Beautiful Bill Act stimulatory effects beginning. "In 2026, the fiscal situation is back toward mildly accelerating again." Bitcoin hitting highs not seen since February ($82k).
+
+**May 10, 2026**: Emerging Markets Breakout confirmed. EM crushed S&P 500 year-to-date. EM/S&P 500 ratio "found multi-year bottom and gradually rolling up." MU/Samsung/SK Hynix all at fresh new highs. Bitcoin above $82k, MVRV fully reset, gradual uptrend expected. Strait of Hormuz still closed (11 weeks). Bessent continuing Yellen's T-bill-heavy issuance approach despite stated preference for long-term debt.
