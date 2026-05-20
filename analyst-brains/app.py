@@ -265,10 +265,15 @@ def main():
 
     # ── Chat history (shared across brains) ──
     if "chat_history" not in st.session_state:
-        # Try shared first, fall back to lyn-alden for backwards compatibility
         history = load_messages("shared")
         if not history:
-            history = load_messages("lyn-alden")
+            # Migrate from old per-analyst storage
+            for slug in ANALYSTS.values():
+                old = load_messages(slug)
+                if old:
+                    history = old
+                    save_messages("shared", history)  # migrate once
+                    break
         st.session_state.chat_history = history or []
 
     st.title("🧠 Analyst Brains")
