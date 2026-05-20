@@ -378,8 +378,12 @@ def main():
         # Session management
         st.subheader("💬 Conversations")
         if st.button("＋ New chat", use_container_width=True):
-            st.session_state.pop("session_id", None)
-            st.session_state.pop("messages", None)
+            new_sid = create_session()
+            if new_sid:
+                st.session_state.session_id = new_sid
+            else:
+                st.session_state.pop("session_id", None)
+            st.session_state.messages = []
             st.rerun()
 
         sessions = load_sessions()
