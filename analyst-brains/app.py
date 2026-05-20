@@ -1,3 +1,4 @@
+import base64
 import os
 import threading
 import time
@@ -378,6 +379,16 @@ def main():
             else:
                 st.warning("Add a label and content first.")
 
+    # ── Image upload ───────────────────────────────────────────────────────────
+    uploaded_image = st.file_uploader(
+        "📎 Attach a chart or screenshot (optional)",
+        type=["png", "jpg", "jpeg", "webp"],
+        key="img_upload",
+        label_visibility="collapsed",
+    )
+    if uploaded_image:
+        st.image(uploaded_image, caption="Attached", width=300)
+
     # ── Chat input ─────────────────────────────────────────────────────────────
     if prompt := st.chat_input("Ask your brains anything..."):
         if not selected:
@@ -401,12 +412,37 @@ def main():
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
+            if uploaded_image:
+                st.image(uploaded_image, width=300)
 
         # Build API message history (user/assistant only, normalized roles)
+        # Images are session-only — not persisted to Supabase
         api_messages = []
-        for m in st.session_state.messages:
+        for i, m in enumerate(st.session_state.messages):
             r = "user" if m["role"] == "user" else "assistant"
-            api_messages.append({"role": r, "content": m["content"]})
+            # Attach image to the last user message only
+            is_last_user = (r == "user" and i == len(st.session_state.messages) - 1)
+            if is_last_user and uploaded_image:
+                uploaded_image.seek(0)
+                img_bytes = uploaded_image.read()
+                img_b64 = base64.b64encode(img_bytes).decode("utf-8")
+                media_type = uploaded_image.type or "image/png"
+                api_messages.append({
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "image",
+                            "source": {
+                                "type": "base64",
+                                "media_type": media_type,
+                                "data": img_b64,
+                            },
+                        },
+                        {"type": "text", "text": prompt},
+                    ],
+                })
+            else:
+                api_messages.append({"role": r, "content": m["content"]})
 
         if len(selected) == 1:
             name = selected[0]
