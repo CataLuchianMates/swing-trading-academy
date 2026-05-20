@@ -133,11 +133,25 @@ def save_journal_entry(analyst_slug: str, label: str, content: str):
     if not db:
         return
     try:
-        db.table("journal").insert({
-            "analyst_slug": analyst_slug,
-            "label": label,
-            "content": content,
-        }).execute()
+        # Check if label already exists
+        res = db.table("journal").select("id, content").eq("analyst_slug", analyst_slug).eq("label", label).execute()
+        from datetime import date
+        today = date.today().isoformat()
+        if res.data:
+            # Append to existing entry
+            existing = res.data[0]
+            updated = f"{existing['content']}\n\n---\n\n**[{today}]**\n{content}"
+            db.table("journal").update({
+                "content": updated,
+                "created_at": "now()",
+            }).eq("id", existing["id"]).execute()
+        else:
+            # Create new entry
+            db.table("journal").insert({
+                "analyst_slug": analyst_slug,
+                "label": label,
+                "content": f"**[{today}]**\n{content}",
+            }).execute()
     except Exception:
         pass
 
