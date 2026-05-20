@@ -8,6 +8,7 @@ import anthropic
 import extra_streamlit_components as stx
 import streamlit as st
 from dotenv import load_dotenv
+from openai import OpenAI
 from supabase import create_client
 
 load_dotenv()
@@ -20,9 +21,44 @@ PERSONAS_DIR = BRAINS_DIR / "personas"
 ANALYSTS = {
     "Lyn Alden": "lyn-alden",
     "Phil": "phil",
+    "Marlin Capital": "marlin-capital",
 }
 
-MODEL = "claude-sonnet-4-20250514"
+# ── Models ─────────────────────────────────────────────────────────────────────
+
+MODELS = {
+    "Auto":             None,   # routes based on content
+    "Gemini 2.0 Flash": "google/gemini-2.0-flash-001",
+    "DeepSeek V3":      "deepseek/deepseek-chat-v3-0324",
+    "Claude Sonnet 4":  "anthropic/claude-sonnet-4",
+}
+
+MODEL_CLAUDE    = "claude-sonnet-4-20250514"
+MODEL_GEMINI    = "google/gemini-2.0-flash-001"
+MODEL_DEEPSEEK  = "deepseek/deepseek-chat-v3-0324"
+MODEL_CLAUDE_OR = "anthropic/claude-sonnet-4"   # via OpenRouter
+
+
+def pick_model(selected_model: str, has_image: bool) -> str:
+    """Return the OpenRouter model string to use."""
+    if selected_model == "Auto":
+        return MODEL_GEMINI if has_image else MODEL_DEEPSEEK
+    return MODELS[selected_model]
+
+
+def is_native_claude(model_str: str, api_key: str) -> bool:
+    """Only use native Anthropic SDK if we have an API key AND it's a Claude model."""
+    return bool(api_key) and model_str and "anthropic" in model_str
+
+
+def get_openrouter_client():
+    key = os.getenv("OPENROUTER_API_KEY") or st.secrets.get("OPENROUTER_API_KEY")
+    if not key:
+        return None
+    return OpenAI(
+        base_url="https://openrouter.ai/api/v1",
+        api_key=key,
+    )
 
 
 def get_supabase():
@@ -220,11 +256,32 @@ These are insights the user has specifically chosen to save from past conversati
 
 # ── Streaming ──────────────────────────────────────────────────────────────────
 
-def stream_response(api_key: str, system_prompt: str, messages: list, result: dict, key: str):
+def stream_via_openrouter(or_client, model: str, system_prompt: str, messages: list, result: dict, key: str):
+    """Stream response via OpenRouter (Gemini, DeepSeek, Claude-via-OR)."""
+    full = ""
+    or_messages = [{"role": "system", "content": system_prompt}] + [
+        {"role": "user" if m["role"] == "user" else "assistant", "content": m["content"]}
+        for m in messages
+    ]
+    with or_client.chat.completions.create(
+        model=model,
+        max_tokens=2048,
+        messages=or_messages,
+        stream=True,
+    ) as stream:
+        for chunk in stream:
+            text = chunk.choices[0].delta.content or ""
+            full += text
+            result[key] = full
+    result[key] = full
+
+
+def stream_via_anthropic(api_key: str, system_prompt: str, messages: list, result: dict, key: str):
+    """Stream response via native Anthropic SDK (prompt caching enabled)."""
     client = anthropic.Anthropic(api_key=api_key)
     full = ""
     with client.messages.stream(
-        model=MODEL,
+        model=MODEL_CLAUDE,
         max_tokens=2048,
         system=[{"type": "text", "text": system_prompt, "cache_control": {"type": "ephemeral"}}],
         messages=messages,
@@ -233,6 +290,15 @@ def stream_response(api_key: str, system_prompt: str, messages: list, result: di
             full += text
             result[key] = full
     result[key] = full
+
+
+def stream_response(api_key: str, system_prompt: str, messages: list, result: dict, key: str,
+                    model: str = None, or_client=None):
+    """Route to Anthropic or OpenRouter depending on selected model."""
+    if model and not is_native_claude(model, None) and or_client:
+        stream_via_openrouter(or_client, model, system_prompt, messages, result, key)
+    else:
+        stream_via_anthropic(api_key, system_prompt, messages, result, key)
 
 
 # ── Auth ───────────────────────────────────────────────────────────────────────
@@ -271,8 +337,10 @@ def main():
         st.stop()
 
     api_key = os.getenv("ANTHROPIC_API_KEY") or st.secrets.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        st.error("ANTHROPIC_API_KEY not found.")
+    or_client = get_openrouter_client()
+
+    if not or_client and not api_key:
+        st.error("No API key found. Add OPENROUTER_API_KEY to secrets.")
         st.stop()
 
     # ── Sidebar ────────────────────────────────────────────────────────────────
@@ -282,6 +350,28 @@ def main():
         # Brain selector
         st.subheader("Who answers?")
         selected = [name for name in ANALYSTS if st.checkbox(name, value=True, key=f"check_{name}")]
+
+        st.divider()
+
+        # Model selector
+        st.subheader("🤖 Model")
+        model_labels = {
+            "Auto": "⚡ Auto (recommended)",
+            "Gemini 2.0 Flash": "🟢 Gemini Flash — fast & cheap",
+            "DeepSeek V3": "🔵 DeepSeek V3 — deep analysis",
+            "Claude Sonnet 4": "🔴 Claude Sonnet 4 — best quality",
+        }
+        if not or_client:
+            available_models = ["Claude Sonnet 4"]
+            st.caption("Add OPENROUTER_API_KEY to unlock cheaper models")
+        else:
+            available_models = list(MODELS.keys())
+        selected_model = st.radio(
+            "Model",
+            available_models,
+            format_func=lambda x: model_labels.get(x, x),
+            label_visibility="collapsed",
+        )
 
         st.divider()
 
@@ -417,7 +507,13 @@ def main():
             if uploaded_image:
                 st.image(uploaded_image, width=300)
 
+        # Resolve model for this message
+        has_image = uploaded_image is not None
+        active_model = pick_model(selected_model, has_image)
+        use_openrouter = or_client and active_model and not is_native_claude(active_model, api_key)
+
         # Build API message history
+        # OpenRouter uses OpenAI format; Anthropic uses its own format
         api_messages = []
         for i, m in enumerate(st.session_state.messages):
             r = "user" if m["role"] == "user" else "assistant"
@@ -426,11 +522,16 @@ def main():
                 uploaded_image.seek(0)
                 img_b64 = base64.b64encode(uploaded_image.read()).decode("utf-8")
                 media_type = uploaded_image.type or "image/png"
-                content = [
-                    {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": img_b64}},
-                ]
-                if prompt:
-                    content.append({"type": "text", "text": prompt})
+                if use_openrouter:
+                    # OpenAI image format
+                    content = [{"type": "image_url", "image_url": {"url": f"data:{media_type};base64,{img_b64}"}}]
+                    if prompt:
+                        content.append({"type": "text", "text": prompt})
+                else:
+                    # Anthropic image format
+                    content = [{"type": "image", "source": {"type": "base64", "media_type": media_type, "data": img_b64}}]
+                    if prompt:
+                        content.append({"type": "text", "text": prompt})
                 api_messages.append({"role": "user", "content": content})
             else:
                 api_messages.append({"role": r, "content": m["content"]})
@@ -443,19 +544,31 @@ def main():
             system_prompt = build_system_prompt(slug, wiki_pages, journal)
 
             with st.chat_message("assistant"):
-                st.markdown(f"**{name}**")
+                model_tag = f" *({selected_model})*" if selected_model != "Auto" else ""
+                st.markdown(f"**{name}**{model_tag}")
                 placeholder = st.empty()
                 full = ""
-                client = anthropic.Anthropic(api_key=api_key)
-                with client.messages.stream(
-                    model=MODEL,
-                    max_tokens=2048,
-                    system=[{"type": "text", "text": system_prompt, "cache_control": {"type": "ephemeral"}}],
-                    messages=api_messages,
-                ) as stream:
-                    for text in stream.text_stream:
-                        full += text
-                        placeholder.markdown(full + "▌")
+
+                if use_openrouter:
+                    or_messages = [{"role": "system", "content": system_prompt}] + api_messages
+                    with or_client.chat.completions.create(
+                        model=active_model, max_tokens=2048,
+                        messages=or_messages, stream=True,
+                    ) as stream:
+                        for chunk in stream:
+                            text = chunk.choices[0].delta.content or ""
+                            full += text
+                            placeholder.markdown(full + "▌")
+                else:
+                    anthropic_client = anthropic.Anthropic(api_key=api_key)
+                    with anthropic_client.messages.stream(
+                        model=MODEL_CLAUDE, max_tokens=2048,
+                        system=[{"type": "text", "text": system_prompt, "cache_control": {"type": "ephemeral"}}],
+                        messages=api_messages,
+                    ) as stream:
+                        for text in stream.text_stream:
+                            full += text
+                            placeholder.markdown(full + "▌")
                 placeholder.markdown(full)
 
             save_message(session_id, slug, full)
@@ -472,6 +585,7 @@ def main():
                 t = threading.Thread(
                     target=stream_response,
                     args=(api_key, system_prompt, api_messages, results, name),
+                    kwargs={"model": active_model, "or_client": or_client if use_openrouter else None},
                     daemon=True,
                 )
                 threads.append(t)
