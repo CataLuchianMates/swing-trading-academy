@@ -379,18 +379,18 @@ def main():
             else:
                 st.warning("Add a label and content first.")
 
-    # ── Image upload ───────────────────────────────────────────────────────────
-    uploaded_image = st.file_uploader(
-        "📎 Attach a chart or screenshot (optional)",
-        type=["png", "jpg", "jpeg", "webp"],
-        key="img_upload",
-        label_visibility="collapsed",
+    # ── Chat input (with image attachment via paperclip icon) ─────────────────
+    chat_input = st.chat_input(
+        "Ask your brains anything... (📎 to attach a chart)",
+        accept_file=True,
+        file_type=["png", "jpg", "jpeg", "webp"],
     )
-    if uploaded_image:
-        st.image(uploaded_image, caption="Attached", width=300)
+    if chat_input:
+        prompt = chat_input.text or ""
+        uploaded_image = chat_input.files[0] if chat_input.files else None
 
-    # ── Chat input ─────────────────────────────────────────────────────────────
-    if prompt := st.chat_input("Ask your brains anything..."):
+        if not prompt and not uploaded_image:
+            st.stop()
         if not selected:
             st.warning("Select at least one brain in the sidebar.")
             st.stop()
@@ -404,43 +404,34 @@ def main():
         # Auto-title session from first message
         current_sessions = load_sessions()
         current_title = next((s["title"] for s in current_sessions if s["id"] == session_id), "New chat")
-        if current_title == "New chat":
+        if current_title == "New chat" and prompt:
             update_session_title(session_id, prompt[:60])
 
-        # Save + display user message
-        save_message(session_id, "user", prompt)
-        st.session_state.messages.append({"role": "user", "content": prompt})
+        # Save + display user message (text only saved to DB)
+        display_prompt = prompt or "📎 Image attached"
+        save_message(session_id, "user", display_prompt)
+        st.session_state.messages.append({"role": "user", "content": display_prompt})
         with st.chat_message("user"):
-            st.markdown(prompt)
+            if prompt:
+                st.markdown(prompt)
             if uploaded_image:
                 st.image(uploaded_image, width=300)
 
-        # Build API message history (user/assistant only, normalized roles)
-        # Images are session-only — not persisted to Supabase
+        # Build API message history
         api_messages = []
         for i, m in enumerate(st.session_state.messages):
             r = "user" if m["role"] == "user" else "assistant"
-            # Attach image to the last user message only
             is_last_user = (r == "user" and i == len(st.session_state.messages) - 1)
             if is_last_user and uploaded_image:
                 uploaded_image.seek(0)
-                img_bytes = uploaded_image.read()
-                img_b64 = base64.b64encode(img_bytes).decode("utf-8")
+                img_b64 = base64.b64encode(uploaded_image.read()).decode("utf-8")
                 media_type = uploaded_image.type or "image/png"
-                api_messages.append({
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "image",
-                            "source": {
-                                "type": "base64",
-                                "media_type": media_type,
-                                "data": img_b64,
-                            },
-                        },
-                        {"type": "text", "text": prompt},
-                    ],
-                })
+                content = [
+                    {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": img_b64}},
+                ]
+                if prompt:
+                    content.append({"type": "text", "text": prompt})
+                api_messages.append({"role": "user", "content": content})
             else:
                 api_messages.append({"role": r, "content": m["content"]})
 
