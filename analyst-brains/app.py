@@ -361,9 +361,15 @@ def main():
 
     # Save to journal
     with st.expander("📌 Save insight to journal"):
-        label = st.text_input("Label", placeholder="e.g. EM rotation trigger", key="jlabel")
-        content = st.text_area("Paste text to save", height=100, key="jcontent")
         brain_for_journal = st.selectbox("Save under", list(ANALYSTS.keys()), key="jbrain")
+        existing_labels = [e["label"] for e in load_journal(ANALYSTS[brain_for_journal])]
+        label_options = existing_labels + ["＋ New label..."]
+        chosen = st.selectbox("Label", label_options, index=len(label_options) - 1, key="jlabel_select")
+        if chosen == "＋ New label...":
+            label = st.text_input("New label name", placeholder="e.g. EM rotation trigger", key="jlabel_new")
+        else:
+            label = chosen
+        content = st.text_area("Paste text to save", height=100, key="jcontent")
         if st.button("Save to journal"):
             if label.strip() and content.strip():
                 save_journal_entry(ANALYSTS[brain_for_journal], label.strip(), content.strip())
