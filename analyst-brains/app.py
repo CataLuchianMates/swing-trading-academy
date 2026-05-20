@@ -1,5 +1,6 @@
 import os
 import threading
+import time
 from pathlib import Path
 
 import anthropic
@@ -31,43 +32,85 @@ def get_supabase():
     return create_client(url, key)
 
 
-# ── Conversations ──────────────────────────────────────────────────────────────
+# ── Sessions ───────────────────────────────────────────────────────────────────
 
-def load_messages(analyst_slug: str) -> list:
-    client = get_supabase()
-    if not client:
+def load_sessions() -> list:
+    db = get_supabase()
+    if not db:
         return []
     try:
-        res = client.table("conversations").select("messages").eq("analyst_slug", analyst_slug).single().execute()
-        return res.data["messages"] if res.data else []
+        res = db.table("sessions").select("id, title, created_at").order("updated_at", desc=True).execute()
+        return res.data or []
     except Exception:
         return []
 
 
-def save_messages(analyst_slug: str, messages: list):
-    client = get_supabase()
-    if not client:
+def create_session(title: str = "New chat") -> int | None:
+    db = get_supabase()
+    if not db:
+        return None
+    try:
+        res = db.table("sessions").insert({"title": title}).execute()
+        return res.data[0]["id"]
+    except Exception:
+        return None
+
+
+def update_session_title(session_id: int, title: str):
+    db = get_supabase()
+    if not db:
         return
     try:
-        client.table("conversations").upsert({
-            "analyst_slug": analyst_slug,
-            "messages": messages,
-            "updated_at": "now()",
-        }).execute()
+        db.table("sessions").update({"title": title, "updated_at": "now()"}).eq("id", session_id).execute()
     except Exception:
         pass
 
 
-def clear_messages(analyst_slug: str):
-    client = get_supabase()
-    if not client:
+def touch_session(session_id: int):
+    db = get_supabase()
+    if not db:
         return
     try:
-        client.table("conversations").upsert({
-            "analyst_slug": analyst_slug,
-            "messages": [],
-            "updated_at": "now()",
+        db.table("sessions").update({"updated_at": "now()"}).eq("id", session_id).execute()
+    except Exception:
+        pass
+
+
+def delete_session(session_id: int):
+    db = get_supabase()
+    if not db:
+        return
+    try:
+        db.table("sessions").delete().eq("id", session_id).execute()
+    except Exception:
+        pass
+
+
+# ── Messages ───────────────────────────────────────────────────────────────────
+
+def load_messages(session_id: int) -> list:
+    db = get_supabase()
+    if not db:
+        return []
+    try:
+        res = db.table("messages").select("role, content, created_at").eq("session_id", session_id).order("created_at").execute()
+        return res.data or []
+    except Exception:
+        return []
+
+
+def save_message(session_id: int, role: str, content: str):
+    """role: 'user', 'lyn-alden', 'phil'"""
+    db = get_supabase()
+    if not db:
+        return
+    try:
+        db.table("messages").insert({
+            "session_id": session_id,
+            "role": role,
+            "content": content,
         }).execute()
+        touch_session(session_id)
     except Exception:
         pass
 
@@ -75,22 +118,22 @@ def clear_messages(analyst_slug: str):
 # ── Journal ────────────────────────────────────────────────────────────────────
 
 def load_journal(analyst_slug: str) -> list:
-    client = get_supabase()
-    if not client:
+    db = get_supabase()
+    if not db:
         return []
     try:
-        res = client.table("journal").select("*").eq("analyst_slug", analyst_slug).order("created_at", desc=True).execute()
+        res = db.table("journal").select("*").eq("analyst_slug", analyst_slug).order("created_at", desc=True).execute()
         return res.data or []
     except Exception:
         return []
 
 
 def save_journal_entry(analyst_slug: str, label: str, content: str):
-    client = get_supabase()
-    if not client:
+    db = get_supabase()
+    if not db:
         return
     try:
-        client.table("journal").insert({
+        db.table("journal").insert({
             "analyst_slug": analyst_slug,
             "label": label,
             "content": content,
@@ -100,11 +143,11 @@ def save_journal_entry(analyst_slug: str, label: str, content: str):
 
 
 def delete_journal_entry(entry_id: int):
-    client = get_supabase()
-    if not client:
+    db = get_supabase()
+    if not db:
         return
     try:
-        client.table("journal").delete().eq("id", entry_id).execute()
+        db.table("journal").delete().eq("id", entry_id).execute()
     except Exception:
         pass
 
@@ -132,21 +175,15 @@ def load_persona(analyst_slug: str) -> str:
 def build_system_prompt(analyst_slug: str, wiki_pages: dict[str, str], journal_entries: list) -> str:
     persona = load_persona(analyst_slug)
 
-    if not wiki_pages:
-        wiki_section = "*(No wiki pages available yet.)*"
-    else:
-        wiki_section = "\n\n---\n\n".join(
-            f"## {name.replace('-', ' ').title()}\n\n{content}"
-            for name, content in wiki_pages.items()
-        )
+    wiki_section = "\n\n---\n\n".join(
+        f"## {name.replace('-', ' ').title()}\n\n{content}"
+        for name, content in wiki_pages.items()
+    ) if wiki_pages else "*(No wiki pages available yet.)*"
 
-    if journal_entries:
-        journal_section = "\n\n".join(
-            f"**{e['label']}** ({e['created_at'][:10]})\n{e['content']}"
-            for e in reversed(journal_entries)
-        )
-    else:
-        journal_section = "*(No saved insights yet.)*"
+    journal_section = "\n\n".join(
+        f"**{e['label']}** ({e['created_at'][:10]})\n{e['content']}"
+        for e in reversed(journal_entries)
+    ) if journal_entries else "*(No saved insights yet.)*"
 
     return f"""{persona}
 
@@ -166,10 +203,9 @@ These are insights the user has specifically chosen to save from past conversati
 """
 
 
-# ── API call ───────────────────────────────────────────────────────────────────
+# ── Streaming ──────────────────────────────────────────────────────────────────
 
 def stream_response(api_key: str, system_prompt: str, messages: list, result: dict, key: str):
-    """Run a streaming API call and store the full response in result[key]."""
     client = anthropic.Anthropic(api_key=api_key)
     full = ""
     with client.messages.stream(
@@ -180,7 +216,7 @@ def stream_response(api_key: str, system_prompt: str, messages: list, result: di
     ) as stream:
         for text in stream.text_stream:
             full += text
-            result[key] = full  # update incrementally
+            result[key] = full
     result[key] = full
 
 
@@ -192,18 +228,14 @@ def get_cookie_manager():
 
 def check_password() -> bool:
     cookie_manager = get_cookie_manager()
-
     if st.session_state.get("authenticated"):
         return True
-
     if cookie_manager.get("analyst_brain_auth") == "1":
         st.session_state.authenticated = True
         return True
-
     pwd = st.secrets.get("APP_PASSWORD")
     if not pwd:
         return True
-
     entered = st.text_input("Password", type="password", key="pw_input")
     if st.button("Enter"):
         if entered == pwd:
@@ -228,20 +260,46 @@ def main():
         st.error("ANTHROPIC_API_KEY not found.")
         st.stop()
 
-    # ── Sidebar ──
+    # ── Sidebar ────────────────────────────────────────────────────────────────
     with st.sidebar:
         st.title("🧠 Analyst Brains")
 
+        # Brain selector
         st.subheader("Who answers?")
-        selected = []
-        for name in ANALYSTS:
-            if st.checkbox(name, value=True, key=f"check_{name}"):
-                selected.append(name)
+        selected = [name for name in ANALYSTS if st.checkbox(name, value=True, key=f"check_{name}")]
 
         st.divider()
 
-        # Journal — shown for first selected brain
-        active_slug = ANALYSTS[selected[0]] if selected else list(ANALYSTS.values())[0]
+        # Session management
+        st.subheader("💬 Conversations")
+        if st.button("＋ New chat", use_container_width=True):
+            st.session_state.pop("session_id", None)
+            st.session_state.pop("messages", None)
+            st.rerun()
+
+        sessions = load_sessions()
+        for s in sessions:
+            col1, col2 = st.columns([5, 1])
+            label = s["title"][:35] + ("…" if len(s["title"]) > 35 else "")
+            date = s["created_at"][:10]
+            active = st.session_state.get("session_id") == s["id"]
+            with col1:
+                if st.button(f"{'▶ ' if active else ''}{label}\n{date}", key=f"sess_{s['id']}", use_container_width=True):
+                    st.session_state.session_id = s["id"]
+                    st.session_state.pop("messages", None)
+                    st.rerun()
+            with col2:
+                if st.button("🗑", key=f"del_sess_{s['id']}"):
+                    delete_session(s["id"])
+                    if st.session_state.get("session_id") == s["id"]:
+                        st.session_state.pop("session_id", None)
+                        st.session_state.pop("messages", None)
+                    st.rerun()
+
+        st.divider()
+
+        # Journal
+        active_slug = ANALYSTS[selected[0]] if selected else "lyn-alden"
         journal_entries = load_journal(active_slug)
 
         st.subheader("📓 Saved Insights")
@@ -249,51 +307,49 @@ def main():
             for entry in journal_entries:
                 with st.expander(f"**{entry['label']}** — {entry['created_at'][:10]}"):
                     st.markdown(entry["content"])
-                    if st.button("🗑 Delete", key=f"del_{entry['id']}"):
+                    if st.button("🗑 Delete", key=f"del_j_{entry['id']}"):
                         delete_journal_entry(entry["id"])
                         st.rerun()
         else:
             st.caption("Nothing saved yet.")
 
-        st.divider()
-
-        if st.button("Clear chat"):
-            for name in ANALYSTS:
-                clear_messages(ANALYSTS[name])
-            st.session_state.chat_history = []
-            st.rerun()
-
-    # ── Chat history (shared across brains) ──
-    if "chat_history" not in st.session_state:
-        history = load_messages("shared")
-        if not history:
-            # Migrate from old per-analyst storage
-            for slug in ANALYSTS.values():
-                old = load_messages(slug)
-                if old:
-                    history = old
-                    save_messages("shared", history)  # migrate once
-                    break
-        st.session_state.chat_history = history or []
-
+    # ── Main area ──────────────────────────────────────────────────────────────
     st.title("🧠 Analyst Brains")
 
-    # Render existing history
-    for entry in st.session_state.chat_history:
-        if entry["role"] == "user":
-            with st.chat_message("user"):
-                st.markdown(entry["content"])
+    # Ensure we have a session
+    if "session_id" not in st.session_state:
+        # Auto-load the most recent session if one exists
+        if sessions:
+            st.session_state.session_id = sessions[0]["id"]
         else:
-            brain = entry.get("brain", "Lyn Alden")
+            sid = create_session()
+            if sid:
+                st.session_state.session_id = sid
+
+    session_id = st.session_state.get("session_id")
+
+    # Load messages for current session
+    if "messages" not in st.session_state:
+        st.session_state.messages = load_messages(session_id) if session_id else []
+
+    # Display messages
+    for msg in st.session_state.messages:
+        role = msg["role"]
+        if role == "user":
+            with st.chat_message("user"):
+                st.markdown(msg["content"])
+        else:
+            # role is analyst slug e.g. "lyn-alden"
+            display_name = next((k for k, v in ANALYSTS.items() if v == role), role)
             with st.chat_message("assistant"):
-                st.markdown(f"**{brain}**")
-                st.markdown(entry["content"])
+                st.markdown(f"**{display_name}**")
+                st.markdown(msg["content"])
 
     # Save to journal
     with st.expander("📌 Save insight to journal"):
-        label = st.text_input("Label", placeholder="e.g. EM rotation trigger, Bitcoin thesis", key="journal_label")
-        content = st.text_area("Paste the text you want to save", height=100, key="journal_content")
-        brain_for_journal = st.selectbox("Save under", list(ANALYSTS.keys()), key="journal_brain")
+        label = st.text_input("Label", placeholder="e.g. EM rotation trigger", key="jlabel")
+        content = st.text_area("Paste text to save", height=100, key="jcontent")
+        brain_for_journal = st.selectbox("Save under", list(ANALYSTS.keys()), key="jbrain")
         if st.button("Save to journal"):
             if label.strip() and content.strip():
                 save_journal_entry(ANALYSTS[brain_for_journal], label.strip(), content.strip())
@@ -302,25 +358,37 @@ def main():
             else:
                 st.warning("Add a label and content first.")
 
-    # ── Chat input ──
+    # ── Chat input ─────────────────────────────────────────────────────────────
     if prompt := st.chat_input("Ask your brains anything..."):
         if not selected:
             st.warning("Select at least one brain in the sidebar.")
             st.stop()
 
-        # Show user message
-        st.session_state.chat_history.append({"role": "user", "content": prompt})
+        # Create session if needed
+        if not session_id:
+            session_id = create_session()
+            st.session_state.session_id = session_id
+            st.session_state.messages = []
+
+        # Auto-title session from first message
+        current_sessions = load_sessions()
+        current_title = next((s["title"] for s in current_sessions if s["id"] == session_id), "New chat")
+        if current_title == "New chat":
+            update_session_title(session_id, prompt[:60])
+
+        # Save + display user message
+        save_message(session_id, "user", prompt)
+        st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        # Build message history for API (user/assistant turns only, no brain metadata)
-        api_messages = [
-            {"role": e["role"], "content": e["content"]}
-            for e in st.session_state.chat_history
-        ]
+        # Build API message history (user/assistant only, normalized roles)
+        api_messages = []
+        for m in st.session_state.messages:
+            r = "user" if m["role"] == "user" else "assistant"
+            api_messages.append({"role": r, "content": m["content"]})
 
         if len(selected) == 1:
-            # ── Single brain — stream directly ──
             name = selected[0]
             slug = ANALYSTS[name]
             wiki_pages = load_wiki(slug)
@@ -343,13 +411,12 @@ def main():
                         placeholder.markdown(full + "▌")
                 placeholder.markdown(full)
 
-            st.session_state.chat_history.append({"role": "assistant", "content": full, "brain": name})
+            save_message(session_id, slug, full)
+            st.session_state.messages.append({"role": slug, "content": full})
 
         else:
-            # ── Multiple brains — run in parallel, display side by side ──
             results = {name: "" for name in selected}
             threads = []
-
             for name in selected:
                 slug = ANALYSTS[name]
                 wiki_pages = load_wiki(slug)
@@ -363,7 +430,6 @@ def main():
                 threads.append(t)
                 t.start()
 
-            # Show columns with live-updating placeholders
             cols = st.columns(len(selected))
             placeholders = {}
             for i, name in enumerate(selected):
@@ -371,27 +437,16 @@ def main():
                     st.markdown(f"**{name}**")
                     placeholders[name] = st.empty()
 
-            # Poll until all threads done
-            import time
             while any(t.is_alive() for t in threads):
                 for name in selected:
                     placeholders[name].markdown(results[name] + "▌")
                 time.sleep(0.1)
 
-            # Final render
             for name in selected:
                 placeholders[name].markdown(results[name])
-                st.session_state.chat_history.append({
-                    "role": "assistant",
-                    "content": results[name],
-                    "brain": name,
-                })
-
-        # Save shared history
-        save_messages("shared", [
-            {"role": e["role"], "content": e["content"]}
-            for e in st.session_state.chat_history
-        ])
+                slug = ANALYSTS[name]
+                save_message(session_id, slug, results[name])
+                st.session_state.messages.append({"role": slug, "content": results[name]})
 
 
 if __name__ == "__main__":
