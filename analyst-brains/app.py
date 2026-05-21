@@ -419,6 +419,13 @@ def check_password() -> bool:
 
 def main():
     st.set_page_config(page_title="Analyst Brains", page_icon="🧠", layout="wide")
+    st.markdown("""
+        <style>
+            #MainMenu {visibility: hidden;}
+            header[data-testid="stHeader"] {visibility: hidden;}
+            footer {visibility: hidden;}
+        </style>
+    """, unsafe_allow_html=True)
 
     if not check_password():
         st.stop()
