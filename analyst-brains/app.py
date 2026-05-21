@@ -216,6 +216,72 @@ def load_wiki(analyst_slug: str) -> dict[str, str]:
     }
 
 
+def load_article_index(analyst_slug: str) -> str:
+    """Load the pre-built scraped-index.md for an analyst (titles + teasers only)."""
+    index_path = PROJECT_ROOT / "investment_research" / analyst_slug / "scraped" / "scraped-index.md"
+    if index_path.exists():
+        return index_path.read_text(encoding="utf-8")
+    return ""
+
+
+def retrieve_articles(analyst_slug: str, question: str, or_client) -> tuple[list[str], list[str]]:
+    """
+    Pass 1 — cheap Gemini Flash call: reads the article index and returns
+    the slugs of the most relevant articles (up to 5).
+    Returns (slugs, titles_for_display).
+    """
+    index = load_article_index(analyst_slug)
+    if not index or not or_client:
+        return [], []
+
+    system = (
+        "You are an article retrieval assistant. "
+        "Given the article index below, identify up to 5 articles most relevant to the user's question. "
+        "Return ONLY valid JSON in this exact format, no other text: "
+        '{"slugs": ["slug1", "slug2"]}'
+    )
+    try:
+        resp = or_client.chat.completions.create(
+            model=MODEL_GEMINI,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": f"Index:\n{index}\n\nQuestion: {question}"},
+            ],
+            max_tokens=200,
+            temperature=0,
+        )
+        import json, re as _re
+        raw = resp.choices[0].message.content or ""
+        # Extract JSON even if model adds extra text
+        match = _re.search(r'\{.*\}', raw, _re.DOTALL)
+        slugs = json.loads(match.group())["slugs"] if match else []
+    except Exception:
+        slugs = []
+
+    # Load titles for display from the index
+    titles = []
+    for slug in slugs:
+        for line in index.splitlines():
+            if f"| {slug} |" in line:
+                parts = [p.strip() for p in line.split("|")]
+                if len(parts) >= 4:
+                    titles.append(f"{parts[1]} — {parts[3]}")
+                break
+
+    return slugs, titles
+
+
+def load_articles_by_slugs(analyst_slug: str, slugs: list[str]) -> dict[str, str]:
+    """Load full article content for given slugs."""
+    scraped_path = PROJECT_ROOT / "investment_research" / analyst_slug / "scraped"
+    articles = {}
+    for slug in slugs:
+        f = scraped_path / f"{slug}.md"
+        if f.exists():
+            articles[slug] = f.read_text(encoding="utf-8")
+    return articles
+
+
 def load_persona(analyst_slug: str) -> str:
     persona_file = PERSONAS_DIR / f"{analyst_slug}.md"
     if persona_file.exists():
@@ -223,7 +289,12 @@ def load_persona(analyst_slug: str) -> str:
     return f"You are {analyst_slug.replace('-', ' ').title()}, a financial analyst."
 
 
-def build_system_prompt(analyst_slug: str, wiki_pages: dict[str, str], journal_entries: list) -> str:
+def build_system_prompt(
+    analyst_slug: str,
+    wiki_pages: dict[str, str],
+    journal_entries: list,
+    retrieved_articles: dict[str, str] | None = None,
+) -> str:
     persona = load_persona(analyst_slug)
 
     wiki_section = "\n\n---\n\n".join(
@@ -236,11 +307,19 @@ def build_system_prompt(analyst_slug: str, wiki_pages: dict[str, str], journal_e
         for e in reversed(journal_entries)
     ) if journal_entries else "*(No saved insights yet.)*"
 
+    articles_section = ""
+    if retrieved_articles:
+        articles_section = "\n\n---\n\n# Retrieved Articles\n\nThe following specific articles were retrieved as relevant to this question:\n\n"
+        articles_section += "\n\n---\n\n".join(
+            f"### {slug}\n\n{content}"
+            for slug, content in retrieved_articles.items()
+        )
+
     return f"""{persona}
 
 ---
 
-# Your Research Notes
+# Your Research Notes (Wiki)
 
 {wiki_section}
 
@@ -251,7 +330,7 @@ def build_system_prompt(analyst_slug: str, wiki_pages: dict[str, str], journal_e
 These are insights the user has specifically chosen to save from past conversations. Reference them when relevant.
 
 {journal_section}
-"""
+{articles_section}"""
 
 
 # ── Streaming ──────────────────────────────────────────────────────────────────
@@ -545,7 +624,16 @@ def main():
             slug = ANALYSTS[name]
             wiki_pages = load_wiki(slug)
             journal = load_journal(slug)
-            system_prompt = build_system_prompt(slug, wiki_pages, journal)
+
+            # Pass 1 — retrieve relevant articles from index (only for text questions)
+            retrieved_articles = {}
+            source_titles = []
+            if prompt and or_client and load_article_index(slug):
+                with st.spinner("🔍 Finding relevant articles…"):
+                    slugs, source_titles = retrieve_articles(slug, prompt, or_client)
+                    retrieved_articles = load_articles_by_slugs(slug, slugs)
+
+            system_prompt = build_system_prompt(slug, wiki_pages, journal, retrieved_articles)
 
             with st.chat_message("assistant"):
                 model_tag = f" *({selected_model})*" if selected_model != "Auto" else ""
@@ -574,6 +662,12 @@ def main():
                             full += text
                             placeholder.markdown(full + "▌")
                 placeholder.markdown(full)
+
+                # Show which articles were retrieved as sources
+                if source_titles:
+                    with st.expander("📰 Articles retrieved", expanded=False):
+                        for t in source_titles:
+                            st.markdown(f"- {t}")
 
             save_message(session_id, slug, full)
             st.session_state.messages.append({"role": slug, "content": full})
