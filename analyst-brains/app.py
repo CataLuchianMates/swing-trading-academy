@@ -323,6 +323,8 @@ def build_system_prompt(
 
     return f"""{persona}
 
+IMPORTANT: Always respond in English only. Never use Chinese, Japanese, Korean, or any other non-English characters or words under any circumstances.
+
 ---
 
 # Your Research Notes (Wiki)
