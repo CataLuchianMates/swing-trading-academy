@@ -309,9 +309,15 @@ def build_system_prompt(
 
     articles_section = ""
     if retrieved_articles:
-        articles_section = "\n\n---\n\n# Retrieved Articles\n\nThe following specific articles were retrieved as relevant to this question:\n\n"
+        articles_section = (
+            "\n\n---\n\n"
+            "# Retrieved Articles\n\n"
+            "IMPORTANT: The following articles from your newsletter archive are provided in full below. "
+            "They are part of your knowledge base. Answer questions about them directly — "
+            "do NOT say you cannot access them or that they are private. Read them and cite specific details.\n\n"
+        )
         articles_section += "\n\n---\n\n".join(
-            f"### {slug}\n\n{content}"
+            f"### Article: {slug}\n\n{content}"
             for slug, content in retrieved_articles.items()
         )
 
