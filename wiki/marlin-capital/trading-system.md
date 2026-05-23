@@ -17,12 +17,34 @@ Marlin uses Stan Weinstein's Stage Analysis as his primary framework for managin
 
 "I wouldn't call holding stocks through stage 4 downtrends/bear cycles 'conviction'. I would call it poor risk management."
 
-## Key Technical Levels
+## The EMA Framework (Full Definition)
 
-- **15 EMA (daily):** Primary support level during uptrends. Pullbacks to 15 EMA in an uptrend are buyable entries. If the index/stock loses the 15 EMA on a closing basis, caution is warranted.
-- **21 EMA (daily):** Secondary support. If a stock closes below its 21 EMA, it's often an exit signal for active trades (e.g., exited CRDO when it closed below 21 EMA for the first time after a catalyst gap up).
-- **Bollinger Bands:** Closing outside the upper Bollinger Band with a spinning top candle = exhaustion signal. When this happens across all major indices simultaneously, a pause/pullback is imminent.
-- **200-day SMA:** Key level for the indices. Reclaiming the 200 SMA signals a meaningful shift.
+Marlin uses a **three-tier EMA stack** to define trend direction. This was laid out explicitly in his foundational 2022 articles ("The Trend Is Your Friend", "Bear Market Bottom Checklist") and is assumed knowledge in all 2023-2026 writing.
+
+### Trend Definition (Index & Stock Level)
+
+| Indicator | Role |
+|-----------|------|
+| **21 EMA** | Short-term trend |
+| **60 EMA** | Medium-term trend |
+| **200 SMA** | Long-term trend |
+
+**Bullish (Golden Cross / Stage 2 confirmed):** Price > 21 EMA > 60 EMA > 200 SMA — all three in alignment pointing up.
+
+**Bearish (Death Cross / Stage 4):** Price < 60 EMA < 200 SMA — medium and long-term trend both pointing down.
+
+> "The Bullish Golden Cross is a technical indicator that signals the downtrend has ended, and we have officially entered a technical uptrend on all three major time frames. In the prior 7 major bear markets dating back to 1973, there are no examples of an SPX golden cross resulting in new lows for the market." — Bear Market Bottom Checklist, Sep 2022
+
+**Key rule:** In a bear market, counter-trend rallies do NOT flip the Golden Cross. The 60 EMA never crosses above the 200 SMA during a bear market bounce — only after the actual bottom.
+
+### Short-Term Trading Levels (2025-2026 Usage)
+
+Once a stock is confirmed in Stage 2 (Golden Cross), Marlin uses **shorter EMAs for entries and exits**:
+
+- **15 EMA (daily):** Primary pullback support during strong uptrends. Pullbacks to 15 EMA are buyable entries. *"The SPX and QQQ both pulled back to their 15 EMAs yesterday, found support, and reversed today."*
+- **21 EMA (daily):** Secondary support / swing trade exit trigger. Closing below 21 EMA = exit signal for active trades. *"What I love most about VIAV is that it never closed below its 21 EMA despite a -13% Nasdaq pullback."*
+- **Bollinger Bands:** Closing outside the upper BB with a spinning top candle = exhaustion signal. When this appears across all major indices simultaneously, a pause/pullback is imminent.
+- **200-day SMA:** Critical line for determining market regime. Reclaiming it after a correction signals a meaningful character shift.
 
 ## Entry Signals
 
