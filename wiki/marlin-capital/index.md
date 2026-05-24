@@ -2,8 +2,8 @@
 
 **Analyst:** David Marlin  
 **Publication:** Marlin Capital (Substack)  
-**Coverage Period:** Jan 2025 – May 2026  
-**Wiki Built:** May 2026
+**Coverage Period:** Nov 2021 – May 2026 (full archive, ~1,000 articles)  
+**Wiki Built:** May 2026 | **trading-system.md rebuilt:** May 2026
 
 ---
 
@@ -18,9 +18,9 @@ His central thesis for 2025-2026: the **AI Supercycle** is the biggest technolog
 ## Wiki Pages
 
 ### [1. Trading System](trading-system.md)
-The core mechanics: Stage Analysis (Stages 1-4), EMA rules (15/21 EMA), entry criteria, exit criteria, Bollinger Band exhaustion signals, position sizing formula, "size for 0" options philosophy, and the going-to-cash discipline.
+The full mechanics synthesized from 18 foundational articles spanning the complete 2021–2026 archive: Stage Analysis (Stages 1–4), the three-tier EMA stack (21/60/200), the three portfolio system (Annual, Active Trading, SMID Cap 6), entry signals (Episodic Pivots, post-earnings gappers, base breakouts), exit rules (Stage 3/4 sell, trailing stops, tranches), short methodology (3-day bounce to declining 21 EMA), position sizing (equity -10–15% max loss, options "size for 0"), "Easy Dollar" vs "Hard Penny" environments, and the Bear Market Bottom Checklist. See [trading-system-references.md](trading-system-references.md) for the full source list.
 
-**Key quote:** *"The best trade is often no trade. The best portfolio move is often cash."*
+**Key quote:** *"I use primarily fundamental analysis for stock picking & idea generation, but solely technical analysis for exits."*
 
 ---
 
