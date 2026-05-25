@@ -279,6 +279,58 @@ Jesse Livermore principle: *"There's a time to go long, a time to go short, and 
 
 ---
 
+## Relative Strength
+
+Relative strength (RS) is how a stock's price action compares to the broader index (SPX or NDX) or to its sector peers. Marlin uses RS as a **selection filter** — not as a standalone buy signal.
+
+### What Relative Strength Looks Like in Practice
+
+During any index pullback, rank stocks by how well they held up:
+
+| Index does... | Leader does... | Laggard does... |
+|---------------|---------------|-----------------|
+| Closes below 60 EMA | Never touches 60 EMA | Breaks below 200 SMA |
+| –9% pullback (NDX) | Closes only 1 day below 21 EMA | Drops –20%+ and loses all EMAs |
+| Corrects –13% | Never closes below 21 EMA | Fills entire earnings gap |
+
+> *"What I love most about VIAV is that it never closed below its 21 EMA despite a –13% Nasdaq pullback."* — Recovery, Dec 2025
+
+> *"FSLR didn't even touch its 60 EMA, while the SPX, NDX, and Russell all closed below theirs (at lows). That is clear relative strength."* — Recovery, Dec 2025
+
+### Intra-Sector RS: Finding the True Leader
+
+Within a theme, stocks show different RS levels. The one holding up the best = the one to own:
+
+*"DPRO is far behind fellow Defense names like KTOS and AVAV in terms of relative strength."* — Always prefer the sector leader when choosing between names in the same theme.
+
+### Pre-Trade Research: RS Scans
+
+From his 4 Rules article: doing your homework before every swing trade includes **"sector and relative strength scans"** — screening for names showing the highest RS heading into a setup.
+
+### ⚠️ Critical Nuance: RS Is a Bull Trap in Bear Markets
+
+This is the most important caveat:
+
+> *"Relative strength becomes a Bull trap in Bearish Market environments."* — Bear Raid, Nov 2025
+
+In a confirmed bear market or during a Stage 4 breakdown, a stock that "holds up well" vs. its peers will still get destroyed when broad selling accelerates. Marlin saw this firsthand — writers were highlighting SNDK and ONDS as "relative strength leaders" during a pullback. Both immediately got slaughtered –16% to –20% the next session.
+
+**The rule:** Relative strength is only a valid buy signal when:
+1. The market is in a confirmed Stage 2 / Golden Cross (bull trend)
+2. The index is pulling back to support (not breaking down)
+3. The RS stock is holding key EMAs (21 EMA or 60 EMA) while the index tests its own
+
+When the broader market is in Stage 4 (Death Cross), strong RS = last name standing before it too gets hit. **"There is no escaping the selling when the market gets bearish. No stock is immune."**
+
+### How Marlin Uses RS in Portfolio Decisions
+
+- **Holding through index pullbacks:** If a stock refuses to close below its 21 EMA during a –10%+ index correction, it earns the right to stay in the portfolio
+- **Exiting laggards:** If a stock "cannot get out of its own way" and other names in the same theme are outperforming it, it's a candidate for trimming or exiting
+- **Re-entry after corrections:** After a market selloff, the stocks that showed the strongest RS during the drawdown are typically the first to break out on the recovery
+- **Confirmation at the index level:** The entire portfolio selection process is built around finding stocks in Stage 2 that are outperforming their sector peers
+
+---
+
 ## What "Leaders" Look Like
 
 Leaders are the stocks that confirm a new bull phase before the index does:
