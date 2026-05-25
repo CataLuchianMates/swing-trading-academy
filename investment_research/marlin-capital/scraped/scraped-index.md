@@ -1,5 +1,5 @@
 # Article Index — Marlin Capital
-_Last updated: 2026-05-22 21:19 | 1000 articles_
+_Last updated: 2026-05-24 20:42 | 1001 articles_
 
 | Date | Slug | Title | Summary |
 |------|------|-------|---------|
@@ -1002,4 +1002,5 @@ _Last updated: 2026-05-22 21:19 | 1000 articles_
 | 2026-05-14 | 260514-summer-melt-up | Summer Melt Up | The Nasdaq closed at a new all-time high today (+1.2%). The S&P 500 did the same (+0.6%). The market is scorching hot right now. 🔥 Today is a perfect snapshot of how strong this tape is. We just got back-to-back hot… |
 | 2026-05-18 | 260518-the-first-pause | The First Pause | US stocks finished higher last week, but the way the week ended is the key thing I’m focused on. The S&P 500 and Nasdaq both hit new ATHs on Thursday before Friday’s big selloff erased most of the week’s gains (SPX… |
 | 2026-05-21 | 260521-the-real-read | The Real Read | US stocks broke a 3 day losing streak today with a strong reversal off 15 EMA support.… |
-| unknown | scraped-index | scraped-index | _Last updated: 2026-05-22 14:28 / 1000 articles_ / Date / Slug / Title / Summary / /------/------/-------/---------/ / 2021-11-17 / 211117-wednesday-market-thread-1117 / Wednesday Market Thread 11/17 / This is where I… |
+| 2026-05-25 | 260525-10-ai-smid-caps | 10 AI SMID Caps With Massive Upside Potential | 10 AI SMID Caps With Massive Upside Potential It’s that time of the year again. Today, we are unveiling our 2026 SMID Cap Portfolio. The SMID Cap 6 has quickly become our most legendary portfolio here at Marlin Capital.… |
+| unknown | scraped-index | scraped-index | _Last updated: 2026-05-22 21:19 / 1000 articles_ / Date / Slug / Title / Summary / /------/------/-------/---------/ / 2021-11-17 / 211117-wednesday-market-thread-1117 / Wednesday Market Thread 11/17 / This is where I… |
