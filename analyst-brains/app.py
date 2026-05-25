@@ -226,13 +226,45 @@ def load_article_index(analyst_slug: str) -> str:
 
 def retrieve_articles(analyst_slug: str, question: str, or_client) -> tuple[list[str], list[str]]:
     """
-    Pass 1 — cheap Gemini Flash call: reads the article index and returns
-    the slugs of the most relevant articles (up to 5).
+    Pass 1 — identify relevant articles from the index.
+    First tries a direct title-match scan (no API call needed), then falls
+    back to a Gemini Flash call for semantic matching.
     Returns (slugs, titles_for_display).
     """
     index = load_article_index(analyst_slug)
-    if not index or not or_client:
+    if not index:
         return [], []
+
+    q_lower = question.lower()
+    lines = [l for l in index.splitlines() if l.startswith("|") and "---" not in l and "date" not in l.lower()]
+
+    # --- Direct title match (no API needed) ---
+    # Score each article by how many words from the question appear in its title
+    import re as _re
+    q_words = set(_re.findall(r'\b\w{4,}\b', q_lower))  # meaningful words only
+    scored = []
+    for line in lines:
+        parts = [p.strip() for p in line.split("|")]
+        if len(parts) < 5:
+            continue
+        slug, title = parts[2], parts[3]
+        title_lower = title.lower()
+        hits = sum(1 for w in q_words if w in title_lower)
+        if hits >= 2:
+            scored.append((hits, slug, title, parts[1]))  # hits, slug, title, date
+    scored.sort(reverse=True)
+    direct_slugs = [s[1] for s in scored[:3]]
+
+    # If we got strong direct matches, return them immediately (no API call)
+    if scored and scored[0][0] >= 3:
+        titles = [f"{s[3]} — {s[2]}" for s in scored[:3]]
+        return direct_slugs, titles
+
+    # --- Gemini Flash semantic search (fallback) ---
+    if not or_client:
+        # Return weak direct matches if any
+        titles = [f"{s[3]} — {s[2]}" for s in scored[:3]]
+        return direct_slugs, titles
 
     system = (
         "You are an article retrieval assistant. "
@@ -241,6 +273,7 @@ def retrieve_articles(analyst_slug: str, question: str, or_client) -> tuple[list
         '{"slugs": ["slug1", "slug2"]}'
     )
     try:
+        import json
         resp = or_client.chat.completions.create(
             model=MODEL_GEMINI,
             messages=[
@@ -250,25 +283,25 @@ def retrieve_articles(analyst_slug: str, question: str, or_client) -> tuple[list
             max_tokens=200,
             temperature=0,
         )
-        import json, re as _re
         raw = resp.choices[0].message.content or ""
-        # Extract JSON even if model adds extra text
         match = _re.search(r'\{.*\}', raw, _re.DOTALL)
-        slugs = json.loads(match.group())["slugs"] if match else []
+        gemini_slugs = json.loads(match.group())["slugs"] if match else []
     except Exception:
-        slugs = []
+        gemini_slugs = []
 
-    # Load titles for display from the index
-    titles = []
-    for slug in slugs:
-        for line in index.splitlines():
-            if f"| {slug} |" in line:
-                parts = [p.strip() for p in line.split("|")]
-                if len(parts) >= 4:
-                    titles.append(f"{parts[1]} — {parts[3]}")
-                break
+    # Merge: direct matches first, then Gemini results (deduplicated)
+    all_slugs = direct_slugs + [s for s in gemini_slugs if s not in direct_slugs]
+    all_slugs = all_slugs[:5]
 
-    return slugs, titles
+    # Load titles for display
+    slug_to_title = {}
+    for line in lines:
+        parts = [p.strip() for p in line.split("|")]
+        if len(parts) >= 5:
+            slug_to_title[parts[2]] = f"{parts[1]} — {parts[3]}"
+    titles = [slug_to_title.get(s, s) for s in all_slugs]
+
+    return all_slugs, titles
 
 
 def load_articles_by_slugs(analyst_slug: str, slugs: list[str]) -> dict[str, str]:
